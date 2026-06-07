@@ -18,46 +18,69 @@
 
 ## 🎯 Learning Objectives
 
-### 1. **Numerical Methods**
-- Linear systems (direct, iterative)
-- Eigenvalue problems
-- ODEs (initial value, boundary value)
-- PDEs (FD, FE, FV)
+### 1. **Numerical Linear Algebra**
+- Linear systems (LU, QR, iterative)
+- Eigenvalue problems (power, Lanczos)
+- SVD
+- Sparse matrices
 
-### 2. **Optimization**
-- Linear programming
-- Nonlinear programming
+### 2. **ODEs / PDEs**
+- **ODE solvers** (Euler, RK4, adaptive)
+- **Boundary value problems** (shooting, finite difference)
+- **PDE solvers**
+  - Finite difference (FD)
+  - Finite element (FE)
+  - Finite volume (FV)
+  - Spectral methods
+
+### 3. **Optimization**
+- Linear programming (LP)
+- Nonlinear programming (NLP)
 - Constrained optimization
 - Stochastic optimization
 
-### 3. **Statistical Methods**
-- MCMC
+### 4. **Statistical Methods**
+- MCMC (Metropolis, HMC)
 - Bayesian inference
 - Bootstrap, jackknife
 - Cross-validation
 
-### 4. **Signal Processing**
+### 5. **Signal Processing**
 - FFT, wavelets
-- Filtering
+- Filtering (low/high pass, Kalman)
 - Image processing
 - Time-frequency analysis
 
-### 5. **Applications in Physics**
-- Schrödinger equation solver
-- Maxwell solver
+### 6. **Applications in Physics**
+- **Schrödinger equation** solver
+- **Maxwell** solver
 - Diffusion-reaction
-- Molecular dynamics
+- Molecular dynamics integrators
 - Quantum Monte Carlo
 
 ---
 
 ## 📖 Resources
 
+### Primary
 - **Trefethen & Bau** — Numerical Linear Algebra
 - **Press et al.** — Numerical Recipes
-- **Newman** — Computational Physics
-- **HKUST MSPY 5240 course materials**
+- **Newman** — Computational Physics (with Python)
+- HKUST MSPY 5240 course materials
+
+### Supplementary
+- **Quarteroni, Sacco, Saleri** — Numerical Mathematics
+- **Heath** — Scientific Computing
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned (was placeholder)*
+## 🎯 Project Ideas
+
+- Solve 1D Schrödinger equation (FD method)
+- Maxwell solver (Yee lattice, FDTD)
+- Molecular dynamics integrator (Verlet)
+- 2D heat equation (Crank-Nicolson)
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

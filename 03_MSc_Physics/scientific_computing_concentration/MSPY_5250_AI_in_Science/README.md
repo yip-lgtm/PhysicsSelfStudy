@@ -22,39 +22,70 @@
 - Supervised, unsupervised, reinforcement
 - Neural networks, CNN, RNN, Transformers
 - Generative models (VAE, GAN, Diffusion)
+- Self-supervised learning
 
 ### 2. **AI for Physics**
-- Physics-informed neural networks (PINN)
-- Neural operators
-- Equivariant networks
-- Quantum machine learning
+
+#### Physics-Informed ML
+- **Physics-informed neural networks (PINN)**
+- Neural operators (DeepONet, FNO)
+- Equivariant networks (E(3)-equiv)
+- **Quantum machine learning** (QML)
+
+#### Computational Physics
+- ML-accelerated molecular dynamics
+- ML surrogate models
+- Active learning for simulations
 
 ### 3. **AI for Materials**
-- Crystal property prediction
-- Generative models for materials
+- **Crystal property prediction** (CGCNN, MEGNet)
+- **Generative models for materials** (CDVAE, DiffCSP)
 - High-throughput screening
-- Molecular dynamics + ML
+- Molecular dynamics + ML (ANI, MACE)
 
 ### 4. **AI for Chemistry/Biology**
-- Drug discovery
-- Protein structure prediction (AlphaFold)
+- Drug discovery (molecule generation)
+- **Protein structure prediction (AlphaFold, ESMFold)**
 - Genomics
+- Reaction prediction
 
-### 5. **Tools**
-- PyTorch, TensorFlow
-- HuggingFace
+### 5. **AI for Earth Sciences**
+- Weather forecasting (GraphCast, Pangu-Weather)
+- Climate modeling
+- Seismic analysis
+
+### 6. **Tools**
+- **PyTorch, TensorFlow**
+- **HuggingFace**
 - Weights & Biases
 - SLURM for GPU jobs
+- Optuna (hyperparameter tuning)
 
 ---
 
 ## 📖 Resources
 
-- **HKUST MSPY 5250 course materials**
+### Primary
+- HKUST MSPY 5250 course materials
 - **Goodfellow et al.** — Deep Learning
-- **Raissi et al.** — Physics-informed neural networks
-- **Carleo et al.** — Neural-network quantum states
+- **Raissi et al.** — Physics-informed neural networks (JCP 2019)
+- **Carleo et al.** — Neural-network quantum states (RMP 2019)
+
+### Supplementary
+- **Lu et al.** — DeepXDE (PINN library)
+- **PyTorch Lightning** documentation
+- **Hugging Face** documentation
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned (was placeholder)*
+## 🎯 Project Ideas
+
+- PINN for 1D heat equation
+- Crystal property prediction with MEGNet
+- AlphaFold-style protein structure
+- Diffusion model for molecule generation
+- Quantum ML for ground state of H2
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*
