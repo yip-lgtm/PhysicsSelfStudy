@@ -13,6 +13,7 @@ physics-selfstudy/
 ├── 01_BSc_Physics/                    # Phase 1: BSc foundation bridge
 │   ├── core_courses/                  # Notes + solved problems for required physics courses
 │   ├── math_support/                  # Calculus, Linear Algebra, Multivariable Calculus
+│   ├── minors/                        # Undergraduate Minor Programs (Physics & Astrophysics)
 │   ├── simulations/                   # Python simulations mapped to BSc courses
 │   └── notes/                         # Lecture notes, derivations, Anki exports
 │
@@ -36,10 +37,6 @@ physics-selfstudy/
 │   ├── mock_research_proposals/       # 5–10 page mock proposals (computational or nano track)
 │   └── literature_reviews/            # Annotated bibliographies + subfield reviews
 │
-├── 05_Undergraduate_Minors/           # Undergraduate Minor Programs
-│   ├── Minor_in_Physics/              # Restricted Electives (Classical Mechanics, E&M, QM, etc.)
-│   └── Minor_in_Astrophysics_and_Cosmology/  # Core + restricted courses for Astro minor
-│
 ├── resources/
 │   ├── curricula/                     # Official HKUST program PDFs / pastes (BSc, MScs, PhDs)
 │   └── mapping_files/                 # Alignment documents (BSc, Data-Driven, Physics, Nano PhD)
@@ -55,7 +52,7 @@ physics-selfstudy/
 - **Phase 1 work** → `01_BSc_Physics/`
 - **Phase 2 work** → `02_MSc_DataDriven_Modeling/` **and** `03_MSc_Physics/`
 - **Phase 3 work** → `04_MPhil_PhD_Prep/`
-- **Undergraduate Minors** → `05_Undergraduate_Minors/`
+- **Undergraduate Minors** → `01_BSc_Physics/minors/`
 - Every major simulation or project eventually moves (or is copied) to `portfolio_projects/` with a clean README and short write-up.
 - All official curriculum documents and mapping files live in `resources/`.
 
@@ -69,4 +66,4 @@ physics-selfstudy/
 This structure makes it obvious to future reviewers (HKUST admissions, mentors, or yourself in 2 years) exactly how your self-study maps to the actual degree requirements.
 
 ---
-*Maintained by PhysicsSelfStudy Project Manager (OpenClaw) — aligned with HKUST BSc Physics, Undergraduate Minors (Physics & Astrophysics), MSc Data-Driven Modeling, MSc Physics, and MPhil/PhD in Physics / Nano Science & Technology.*
+*Maintained by PhysicsSelfStudy Project Manager (OpenClaw) — aligned with HKUST BSc Physics (including Minors), MSc Data-Driven Modeling, MSc Physics, and MPhil/PhD in Physics / Nano Science & Technology.*
