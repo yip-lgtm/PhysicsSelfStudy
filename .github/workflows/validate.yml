@@ -1,0 +1,65 @@
+name: Validate Repository Structure
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  validate:
+    name: Validate Repo Structure
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check README sizes
+        run: |
+          echo "=== Checking README sizes (should be > 300 bytes) ==="
+          EMPTY_COUNT=0
+          for readme in $(find . -name "README.md" -type f); do
+            size=$(wc -c < "$readme")
+            if [ "$size" -lt 300 ]; then
+              echo "⚠️  $readme is only $size bytes"
+              EMPTY_COUNT=$((EMPTY_COUNT + 1))
+            fi
+          done
+          echo "Total stub READMEs (< 300 bytes): $EMPTY_COUNT"
+          if [ "$EMPTY_COUNT" -gt 10 ]; then
+            echo "::warning::More than 10 stub READMEs found"
+          fi
+
+      - name: Check required files
+        run: |
+          echo "=== Checking required root files ==="
+          required_files=("README.md" "STRUCTURE.md" "ROADMAP.md" "LICENSE" ".gitignore")
+          for file in "${required_files[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "❌ Missing: $file"
+              exit 1
+            else
+              echo "✅ $file exists"
+            fi
+          done
+
+      - name: Check 4 phases
+        run: |
+          echo "=== Checking 4-phase structure ==="
+          for phase in "01_BSc_Physics" "02_MSc_DataDriven_Modeling" "03_MSc_Physics" "04_MPhil_PhD_Prep"; do
+            if [ ! -d "$phase" ]; then
+              echo "❌ Missing phase folder: $phase"
+              exit 1
+            else
+              count=$(find "$phase" -name "README.md" -type f | wc -l)
+              echo "✅ $phase exists with $count READMEs"
+            fi
+          done
+
+      - name: Course count summary
+        run: |
+          echo "=== Repository Summary ==="
+          echo "Total READMEs: $(find . -name 'README.md' -type f | wc -l)"
+          echo "Total folders: $(find . -type d | wc -l)"
+          echo "Total commits: $(git rev-list --count HEAD)"
+          echo "Last commit: $(git log -1 --pretty=format:'%h %s')"

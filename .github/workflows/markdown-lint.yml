@@ -1,0 +1,25 @@
+name: Markdown Lint
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  markdown-lint:
+    name: Lint Markdown Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install markdownlint
+        run: |
+          npm install -g markdownlint-cli
+
+      - name: Lint markdown
+        run: |
+          # Lint root files
+          markdownlint README.md STRUCTURE.md ROADMAP.md CONTRIBUTING.md CHANGELOG.md FAQ.md || true
+          echo "✅ Markdown lint complete (warnings only)"
