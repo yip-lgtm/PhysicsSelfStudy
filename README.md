@@ -84,7 +84,10 @@ PhysicsSelfStudy/
 │   ├── MIT_OCW_links.md
 │   ├── textbooks.md
 │   ├── python_env_setup.md
-│   └── curricula/                       ← HKUST/other uni curricula
+│   ├── curricula/                       ← HKUST/other uni curricula
+│   └── mapping_files/                   ← Self-study → HKUST alignment docs
+│
+├── old_archive/                         ← (Optional) Old flat structure migration
 │
 ├── Anki_decks/                          ← Spaced repetition decks
 └── weekly_reflections/                  ← Weekly reflection notes
