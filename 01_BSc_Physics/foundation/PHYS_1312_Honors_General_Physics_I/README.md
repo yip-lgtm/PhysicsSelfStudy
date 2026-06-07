@@ -1,25 +1,70 @@
-# PHYS 1312 / 1314 — Honors General Physics I & II (HKUST)
+# PHYS 1312 — Honors General Physics I (HKUST)
 
-> **Phase 1 Foundation | Honors-level General Physics**
+> **Phase 1 BSc Foundation | HKUST PHYS 1312 | Honors Mechanics**
 
 ---
 
 ## 📚 Course Information
 
-| Code | Title | Term | Credits | Audience |
-|------|-------|------|---------|----------|
-| **PHYS 1312** | Honors General Physics I | Fall | 4 | Strong students |
-| **PHYS 1314** | Honors General Physics II | Spring | 4 | Strong students |
+- **Code:** PHYS 1312
+- **Name:** Honors General Physics I
+- **University:** HKUST
+- **Program:** BSc Physics
+- **Phase:** 1 (BSc Foundation)
+- **Credits:** 3
 
 ---
 
-## 🎯 Differences from PHYS 1111/1114
+## 🎯 Learning Objectives
 
-- More rigorous mathematical treatment
-- Deeper derivations
-- Additional topics
-- Smaller class size
+**Advanced honors version of PHYS 1111/1112** for students with strong physics background. More rigorous treatment, deeper mathematical analysis, additional topics.
+
+### Topics Covered (deeper than 1111/1112)
+
+1. **Mechanics**
+   - Vectors, kinematics
+   - Newton's laws (rigorous)
+   - Work, energy
+   - Conservation laws
+   - Systems of particles
+   - Rigid body rotation
+   - Oscillations (damped, driven, coupled)
+   - Lagrangian mechanics (intro)
+
+2. **Waves**
+   - Wave equation
+   - Superposition, Fourier
+   - Standing waves
+   - Group velocity, dispersion
+
+3. **Gravitation**
+   - Newton's law
+   - Kepler
+   - Gravitational potential
+   - Tidal forces (intro to GR)
 
 ---
 
-*Last updated: 2026-06-07*
+## 📖 Resources
+
+### Primary
+- **Kleppner & Kolenkow** — An Introduction to Mechanics (2nd ed)
+- **Morin** — Introduction to Classical Mechanics
+- **MIT OCW 8.01** — Classical Mechanics
+- HKUST PHYS 1312 course materials
+
+### Supplementary
+- **Goldstein, Poole, Safko** — Classical Mechanics (for depth)
+
+---
+
+## 🎯 Project Ideas
+
+- Coupled pendulum dynamics
+- Lagrangian derivation of motion
+- Wave packet propagation simulation
+- Numerical N-body problem
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

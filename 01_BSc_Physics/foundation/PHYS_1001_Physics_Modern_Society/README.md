@@ -1,29 +1,68 @@
-# PHYS 1001 — Physics and the Modern Society (HKUST)
+# PHYS 1001 — Physics and Modern Society (HKUST)
 
-> **Phase 1 Foundation | HKUST PHYS 1001 | Physics literacy for non-majors**
+> **Phase 1 BSc Foundation | HKUST PHYS 1001 | Physics + Society**
 
 ---
 
 ## 📚 Course Information
 
 - **Code:** PHYS 1001
-- **Name:** Physics and the Modern Society
+- **Name:** Physics and Modern Society
 - **University:** HKUST
-- **Term:** Spring 2025-2026
-- **Phase:** 1 (Foundation)
+- **Program:** BSc Physics
+- **Phase:** 1 (BSc Foundation)
 - **Credits:** 3
-- **Audience:** Non-physics majors
 
 ---
 
-## 🎯 Topics
+## 🎯 Learning Objectives
 
-- Physics in everyday life
-- Energy, environment, climate
-- Technology and society
-- Quantum, relativity for general audience
-- Scientific reasoning
+An introductory course for non-physics majors to understand the role of physics in modern society.
+
+### Topics Covered
+
+1. **Energy and Environment**
+   - Energy sources (fossil, nuclear, renewable)
+   - Climate change
+   - Sustainable energy
+
+2. **Medical Physics**
+   - X-rays, CT, MRI
+   - Radiation therapy
+   - Nuclear medicine
+
+3. **Communication Technology**
+   - Fiber optics
+   - Semiconductors
+   - Wireless technology
+
+4. **Everyday Physics**
+   - Household appliances
+   - Transportation
+   - Sports physics
+
+5. **Quantum Revolution**
+   - Quantum computing basics
+   - Quantum cryptography
+   - Modern materials
 
 ---
 
-*Last updated: 2026-06-07*
+## 📖 Resources
+
+- **Bloomfield** — How Things Work: The Physics of Everyday Life
+- **Krauss** — The Physics of Climate Change
+- HKUST PHYS 1001 course materials
+
+---
+
+## 🎯 Project Ideas
+
+- Energy audit of a typical home
+- Physics of sports (swing, throw, swim)
+- Climate change report (local)
+- Comparison of renewable technologies
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*
