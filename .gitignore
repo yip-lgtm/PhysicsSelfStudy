@@ -1,0 +1,43 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+
+# Simulation outputs
+simulations/output/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# IDE
+.vscode/
+.idea/
+
+# Anki
+*.apkg
+*.anki2
+
+# Build
+build/
+dist/
+*.egg-info/
