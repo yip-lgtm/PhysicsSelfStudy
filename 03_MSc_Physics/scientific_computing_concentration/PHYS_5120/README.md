@@ -14,38 +14,81 @@
 - **Concentration:** Scientific Computing
 - **Phase:** 3 (MSc Physics)
 - **Credits:** 3
+- **Note:** Instructor's approval required
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Course Overview
 
-### 1. **Electronic Structure Methods**
-- Hartree-Fock (HF)
-- Density Functional Theory (DFT)
-- LDA, GGA, hybrid functionals
+This course will introduce **atomistic computational methods** to model, understand, and predict the properties and behavior of real materials including:
+- Solids
+- Liquids
+- Nanostructures
+
+**Applications to sustainable energy** will be discussed.
+
+---
+
+## 🎯 Specific Topics
+
+### 1. **Density-Functional Theory (DFT)**
+- Kohn-Sham equations
+- Local density approximations (LDA)
+- Semi-local density approximations (GGA)
+- Hybrid functionals
+
+### 2. **Numerical Foundations**
+- Basis sets
 - Pseudopotentials
-- Plane-wave basis
 
-### 2. **Computational Tools**
-- **VASP** (Vienna Ab initio Simulation Package)
+### 3. **Hartree-Fock Method**
+- Self-consistent field (SCF)
+- Post-HF methods (intro)
+
+### 4. **Ab Initio Molecular Dynamics**
+- Interatomic interactions derived on the fly from DFT
+- **Car-Parrinello molecular dynamics**
+
+### 5. **Monte-Carlo Sampling**
+- Statistical sampling
+- Phase space exploration
+
+### 6. **Computational Spectroscopy (First Principles)**
+- IR spectroscopy
+- Raman spectroscopy
+
+---
+
+## 🛠️ Tools
+
+Students will learn how to use **free open-source packages** to do materials simulations on a **Linux computer cluster**:
+
 - **Quantum ESPRESSO**
-- **Abinit**
+- **VASP** (commercial, but common)
 - **CP2K**
+- **Abinit**
 - **SIESTA**
+- **CPMD** (Car-Parrinello)
+- **Gaussian** (HF method)
 
-### 3. **Energy Materials Applications**
-- Solar cells (perovskites, organic)
-- Battery materials (Li-ion, Na-ion, solid-state)
-- Hydrogen storage
-- Thermoelectrics
-- Catalysts
+---
 
-### 4. **Property Calculations**
-- Band structure
-- Density of states
-- Optical properties (dielectric function)
-- Phonons
-- Molecular dynamics (ab initio MD)
+## 📋 Prerequisites
+
+- **Basic knowledge of quantum mechanics** (PHYS 3036 or equivalent)
+- Instructor's approval required for taking this course
+
+---
+
+## 🎯 Applications
+
+- **Sustainable energy research:**
+  - Solar cells (perovskite, organic)
+  - Battery materials (Li-ion, Na-ion, solid-state)
+  - Hydrogen storage
+  - Thermoelectrics
+  - Photocatalysts (water splitting)
+  - Fuel cells
 
 ---
 
@@ -54,13 +97,14 @@
 ### Primary
 - **Martin** — Electronic Structure: Basic Theory and Practical Methods
 - **Kohanoff** — Electronic Structure Calculations for Solids and Molecules
+- **Parr & Yang** — Density-Functional Theory of Atoms and Molecules
 - **HKUST PHYS 5120 course materials**
 
 ### Software Documentation
-- VASP manual
 - Quantum ESPRESSO tutorials
+- CP2K tutorials
 - Materials Project API
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+*Last updated: 2026-06-07 — HKUST catalog aligned (full description)*
