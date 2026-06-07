@@ -67,6 +67,11 @@ PhysicsSelfStudy/
 │   ├── mock_research_proposals/         ← Practice proposals
 │   └── literature_reviews/              ← Key papers by topic
 │
+├── 05_Undergraduate_Minors/             ← HKUST Minor Programs
+│   ├── README.md                        ← Minors overview
+│   ├── Minor_in_Physics/                ← 9-credit Physics minor
+│   └── Minor_in_Astrophysics_Cosmology/ ← 9-credit Astro/Cosmo minor
+│
 ├── portfolio_projects/                  ← Showcase projects
 │   ├── simulations/
 │   ├── notebooks/

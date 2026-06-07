@@ -1,152 +1,72 @@
-# PhysicsSelfStudy — Repository Structure
+# Physics Self-Study Project — Repository Structure
 
-> **Detailed folder structure for the 4-phase Physics Self-Study Project**
+This repository is organized by **HKUST target programs** so that notes, simulations, projects, and deliverables are clearly mapped to specific degrees and courses. This makes portfolio building, progress tracking, and eventual application materials much cleaner.
 
----
+## Top-Level Structure
 
-## 🎯 4 Phases Overview
+```
+physics-selfstudy/
+├── README.md                          # Project overview + how to use this repo
+├── STRUCTURE.md                       # This file — explains the folder organization
+├── progress_log.md                    # Weekly hours, insights, blockers, wins
+├── cron_examples.md                   # OpenClaw cron rules for weekend blocks
+├── 01_BSc_Physics/                    # Phase 1: BSc foundation bridge
+│   ├── core_courses/                  # Notes + solved problems for required physics courses
+│   ├── math_support/                  # Calculus, Linear Algebra, Multivariable Calculus
+│   ├── simulations/                   # Python simulations mapped to BSc courses
+│   └── notes/                         # Lecture notes, derivations, Anki exports
+│
+├── 02_MSc_DataDriven_Modeling/        # Phase 2: Joint MSc Data-Driven Modeling
+│   ├── core_courses/                  # MSDM 5001–5004 + 6771
+│   ├── electives/                     # Time series, Deep Learning, Statistical ML, Optimization, etc.
+│   ├── projects/                      # Major reproducible projects (PINNs, stochastic models, etc.)
+│   └── notes/
+│
+├── 03_MSc_Physics/                    # Phase 2: MSc Physics (with concentrations)
+│   ├── scientific_computing_concentration/   # MSPY 5230, 5240, 5250 (recommended primary)
+│   ├── advanced_materials_concentration/     # MSPY 5001, 5210, 5220 (alternative)
+│   ├── electives/                     # Quantum materials, AI in Science, Solid State, etc.
+│   ├── projects/
+│   └── notes/
+│
+├── 04_MPhil_PhD_Prep/                 # Phase 3: Research readiness
+│   ├── Physics_PhD/                   # Qualifying exam practice, mock proposals for Physics PhD
+│   ├── Nano_Science_Technology_PhD/   # Qualifying exam + literature for Nano S&T PhD
+│   ├── qualifying_exam_practice/      # Mixed qualifying-style questions + solutions
+│   ├── mock_research_proposals/       # 5–10 page mock proposals (computational or nano track)
+│   └── literature_reviews/            # Annotated bibliographies + subfield reviews
+│
+├── 05_Undergraduate_Minors/           # Undergraduate Minor Programs
+│   ├── Minor_in_Physics/              # Restricted Electives (Classical Mechanics, E&M, QM, etc.)
+│   └── Minor_in_Astrophysics_and_Cosmology/  # Core + restricted courses for Astro minor
+│
+├── resources/
+│   ├── curricula/                     # Official HKUST program PDFs / pastes (BSc, MScs, PhDs)
+│   └── mapping_files/                 # Alignment documents (BSc, Data-Driven, Physics, Nano PhD)
+│
+├── portfolio_projects/                # Polished, final-version simulations + short papers (GitHub showcase)
+├── Anki_decks/                        # Spaced-repetition decks (formulas, concepts, methods)
+├── weekly_reflections/                # End-of-week insight summaries
+└── old_archive/                       # (Optional) Move old flat structure here if migrating
+```
 
-| # | Phase | Duration | Target |
-|---|-------|----------|--------|
-| 1 | BSc Physics Foundation | Year 1-2 (24 months) | BSc equivalent |
-| 2 | MSc Data-Driven Modeling | Year 2-3 (12 months) | MSc equivalent |
-| 3 | MSc Physics @ HKUST | Year 3-4 (12 months) | MSc Physics |
-| 4 | MPhil/PhD Prep | Year 4+ (ongoing) | PhD application |
+## How to Use This Structure
 
----
+- **Phase 1 work** → `01_BSc_Physics/`
+- **Phase 2 work** → `02_MSc_DataDriven_Modeling/` **and** `03_MSc_Physics/`
+- **Phase 3 work** → `04_MPhil_PhD_Prep/`
+- **Undergraduate Minors** → `05_Undergraduate_Minors/`
+- Every major simulation or project eventually moves (or is copied) to `portfolio_projects/` with a clean README and short write-up.
+- All official curriculum documents and mapping files live in `resources/`.
 
-## 📂 Top-Level Folders
+## Recommended Git Workflow
 
-### `01_BSc_Physics/`
-**Purpose:** Phase 1 — BSc Physics Foundation
-**Subfolders:**
-- `core_courses/` — Main BSc courses (PHYS 2124, 2125, 2126, 2127, etc.)
-- `math_support/` — Math prerequisites, problem sets
-- `simulations/` — BSc-level physics simulations
-- `notes/` — General notes, summaries
+1. Work inside the relevant program/course folder during the weekend block.
+2. When a project/simulation is mature and well-documented, copy or move the final version to `portfolio_projects/`.
+3. Commit frequently with clear messages (e.g., "Week 3: Lagrangian mechanics simulation + notes").
+4. Keep `progress_log.md` updated every weekend.
 
-### `02_MSc_DataDriven_Modeling/`
-**Purpose:** Phase 2 — MSc in Data-Driven Modeling
-**Subfolders:**
-- `core_courses/` — Core ML/stats courses
-- `electives/` — Elective courses
-- `projects/` — Course projects
-- `notes/` — General notes
-
-### `03_MSc_Physics/`
-**Purpose:** Phase 3 — MSc Physics @ HKUST
-**Subfolders:**
-- `scientific_computing_concentration/` — Computational physics focus
-- `advanced_materials_concentration/` — Materials science focus
-- `electives/`
-- `projects/`
-- `notes/`
-
-### `04_MPhil_PhD_Prep/`
-**Purpose:** Phase 4 — MPhil/PhD Preparation (HKUST)
-**Subfolders:**
-- `Physics_PhD/` — HKUST Physics PhD application materials
-- `Nano_Science_Technology_PhD/` — HKUST Nano Sci & Tech PhD
-- `qualifying_exam_practice/` — QE prep
-- `mock_research_proposals/` — Practice research proposals
-- `literature_reviews/` — Key papers by topic
-- **Top-level:** `04_MPhil_PhD_Prep/README.md` — Phase overview + 4-year timeline
-
-### `portfolio_projects/`
-**Purpose:** Showcase projects for CV/portfolio
-**Subfolders:**
-- `simulations/` — Physics simulations
-- `notebooks/` — Jupyter notebooks
-- `visualizations/` — Charts, plots
-- `open_source_physics/` — Community contributions
-- `mit_ocw/` — MIT OCW solutions
-- `community/` — Community projects
-
-### `resources/`
-**Purpose:** Curated learning resources
-**Subfolders:**
-- `curricula/` — HKUST and other uni curricula
-- `MIT_OCW_links.md` — MIT OCW links
-- `textbooks.md` — Recommended textbooks
-- `python_env_setup.md` — Python environment
-
-### `Anki_decks/`
-**Purpose:** Spaced repetition decks for each course
-
-### `weekly_reflections/`
-**Purpose:** Weekly reflection notes (Sat night / Sun evening)
+This structure makes it obvious to future reviewers (HKUST admissions, mentors, or yourself in 2 years) exactly how your self-study maps to the actual degree requirements.
 
 ---
-
-## 📄 Top-Level Files
-
-| File | Purpose |
-|------|---------|
-| `README.md` | Project overview, quick start |
-| `STRUCTURE.md` | This file — detailed folder structure |
-| `progress_log.md` | Daily/weekly progress tracker |
-| `cron_examples.md` | OpenClaw cron examples |
-| `openclaw_skill.json` | OpenClaw Skill definition |
-| `SETUP.md` | OpenClaw + Python env setup |
-| `ROADMAP.md` | 24+ month BSc → MSc → PhD roadmap |
-| `LICENSE` | MIT License |
-| `.gitignore` | Ignore Python/Jupyter/Obsidian |
-
----
-
-## 🗂️ Naming Conventions
-
-### Course Folders
-- Format: `PHYS_<code>_<Name>` (e.g., `PHYS_2124_Math_Methods_I`)
-- Use underscore `_` for spaces
-- Use Roman numerals for parts (I, II, III)
-
-### Project Folders
-- Format: `<month>_<topic>` (e.g., `06_Quantum_Tunneling`)
-- Or: `<week>_<project>` (e.g., `Week01_Vector_Calculator`)
-
-### Notes
-- Format: `<course>_<topic>_notes.md`
-- Or: `<date>_<topic>.md`
-
-### Commits
-- Format: `Week X: <topic>`
-- Examples:
-  - `Week 1: Vector Calculus Toolkit`
-  - `Week 2: ODE Solvers (Euler, RK4)`
-  - `Week 3: Cross product visualization`
-
----
-
-## 🛠️ How to Use This Repo
-
-### Day-to-Day
-1. **Saturday Theory Block** → write notes to `01_BSc_Physics/core_courses/<course>/notes.md`
-2. **Sunday Computational Sprint** → write code to `01_BSc_Physics/simulations/` or `portfolio_projects/notebooks/`
-3. **Sunday Review** → write reflection to `weekly_reflections/Week_<N>.md`
-4. **End of day** → update `progress_log.md`
-5. **End of week** → commit + push
-
-### Monthly
-- First Sunday: Monthly Milestone Review → update `ROADMAP.md` if needed
-
-### Per Course
-- Course README in each course folder
-- Problems in `/problems/` subfolder
-- Notes in `/notes.md`
-- Simulations in `01_BSc_Physics/simulations/`
-
----
-
-## 🎯 Open Source Workflow
-
-When contributing:
-1. **Fork** repo
-2. **Create branch** for your improvement
-3. **Make changes** in your forked repo
-4. **Submit PR** with clear description
-5. **Tag** relevant Phase (1, 2, 3, 4) in PR
-
----
-
-*Last updated: 2026-06-07*
+*Maintained by PhysicsSelfStudy Project Manager (OpenClaw) — aligned with HKUST BSc Physics, Undergraduate Minors (Physics & Astrophysics), MSc Data-Driven Modeling, MSc Physics, and MPhil/PhD in Physics / Nano Science & Technology.*
