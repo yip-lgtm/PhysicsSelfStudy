@@ -106,13 +106,15 @@ See `openclaw_skill.json` and `cron_examples.md` for full automation.
 
 ## 🎓 4-Phase Curriculum
 
-### Phase 1: BSc Foundation (Year 1-2)
+### Phase 1: BSc Foundation (Year 1-2) — HKUST Codes
 | Course | Focus | Resources |
 |--------|-------|-----------|
 | PHYS 2124 Math Methods I | Vector calc, ODE, Linear alg, Complex | MIT OCW 18.02 + 18.03 + Boas |
-| PHYS 2125 Classical Mechanics | Lagrangian, Hamiltonian | MIT OCW 8.01 + Taylor |
-| PHYS 2126 Electromagnetism | Maxwell eq, EM waves | MIT OCW 8.07 + Griffiths |
-| PHYS 2127 QM I | Schrödinger, Hydrogen | MIT OCW 8.04 + Griffiths |
+| PHYS 3032 Classical Mechanics | Lagrangian, Hamiltonian | MIT OCW 8.01 + Taylor |
+| PHYS 3142 Computational Methods | Numerical, Monte Carlo, MD | MIT OCW 18.335 + Newman |
+| PHYS 4811 ML in Physics | PINN, Neural Operators | Coursera + Bishop + Raissi |
+| PHYS 2060 Electromagnetism | Maxwell eq, EM waves | MIT OCW 8.07 + Griffiths |
+| PHYS 3050 Quantum Mechanics I | Schrödinger, Hydrogen | MIT OCW 8.04 + Griffiths |
 | Statistical Mechanics | Ensembles, Phase transitions | MIT OCW 8.08 + Pathria |
 
 ### Phase 2: MSc Data-Driven Modeling (Year 2-3)

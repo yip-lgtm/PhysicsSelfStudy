@@ -3,6 +3,15 @@
 > **Reusable automation prompt for setting up a Physics Self-Study project from scratch**
 > **Status: Already applied to https://github.com/yip-lgtm/PhysicsSelfStudy ✅**
 
+**HKUST course catalog aligned** (2026-06-07 update):
+- `PHYS_2124_Math_Methods_I` ✅
+- `PHYS_3032_Classical_Mechanics` (renamed from 2125) ✅
+- `PHYS_3142_Computational_Methods` ✅
+- `PHYS_4811_ML_in_Physics` ✅
+- `MSDM_5004_Numerical_Methods` ✅
+- `MSDM_5055_Deep_Learning` ✅
+- `04_MPhil_PhD_Prep/README.md` ✅
+
 ---
 
 ## 📋 Original Prompt (Yip's Spec)

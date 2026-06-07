@@ -1,15 +1,18 @@
-# PHYS 2125 — Classical Mechanics
+# PHYS 3032 — Classical Mechanics (HKUST)
 
-> **Phase 1 BSc Foundation | Lagrangian, Hamiltonian, Central Force, Oscillations**
+> **Phase 1 BSc Foundation | HKUST PHYS 3032 | Lagrangian, Hamiltonian, Central Force**
 
 ---
 
 ## 📚 Course Information
 
-- **Code:** PHYS 2125
+- **Code:** PHYS 3032
 - **Name:** Classical Mechanics
+- **University:** Hong Kong University of Science and Technology (HKUST)
+- **Department:** Physics
 - **Phase:** 1 (BSc Foundation)
 - **Target Duration:** 2 months (Month 3-4)
+- **Credits:** 3
 - **Difficulty:** ⭐⭐⭐⭐
 
 ---
@@ -24,17 +27,19 @@
 2. **Lagrangian Mechanics**
    - Generalized coordinates
    - Euler-Lagrange equations
-   - Constraints
+   - Constraints (holonomic, non-holonomic)
 
 3. **Hamiltonian Mechanics**
    - Hamilton's equations
    - Phase space
+   - Poisson brackets
    - Liouville's theorem
 
 4. **Central Force Problem**
-   - Kepler problem
    - Effective potential
+   - Kepler problem
    - Orbital mechanics
+   - Scattering
 
 5. **Rigid Body Dynamics**
    - Rotation matrices
@@ -47,6 +52,7 @@
 
 ### Primary
 - **Taylor** — Classical Mechanics (University Science Books)
+- **HKUST PHYS 3032 course materials** (Canvas/Classvault)
 - **MIT OCW 8.01** — Physics I: Classical Mechanics (Fall 1999)
   https://ocw.mit.edu/courses/8-01-physics-i-classical-mechanics-fall-1999/
 - **MIT OCW 8.223** — Classical Mechanics II (Spring 2017)
@@ -55,6 +61,7 @@
 ### Supplementary
 - **Goldstein** — Classical Mechanics (3rd ed)
 - **Marion & Thornton** — Classical Dynamics
+- **Hand & Finch** — Analytical Mechanics
 - Online: Walter Lewin lectures (YouTube, MIT OCW)
 
 ---
@@ -68,7 +75,7 @@
 
 ### Week 3-4: Lagrangian Mechanics
 - Generalized coordinates
-- Constraints (holonomic, non-holonomic)
+- Constraints
 - Euler-Lagrange equations
 - Applications (pendulum, Atwood machine)
 
@@ -106,4 +113,4 @@
 
 ---
 
-*Last updated: 2026-06-07*
+*Last updated: 2026-06-07 — HKUST course code aligned*

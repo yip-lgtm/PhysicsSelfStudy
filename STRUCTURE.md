@@ -43,13 +43,14 @@
 - `notes/`
 
 ### `04_MPhil_PhD_Prep/`
-**Purpose:** Phase 4 — MPhil/PhD Preparation
+**Purpose:** Phase 4 — MPhil/PhD Preparation (HKUST)
 **Subfolders:**
 - `Physics_PhD/` — HKUST Physics PhD application materials
 - `Nano_Science_Technology_PhD/` — HKUST Nano Sci & Tech PhD
 - `qualifying_exam_practice/` — QE prep
 - `mock_research_proposals/` — Practice research proposals
 - `literature_reviews/` — Key papers by topic
+- **Top-level:** `04_MPhil_PhD_Prep/README.md` — Phase overview + 4-year timeline
 
 ### `portfolio_projects/`
 **Purpose:** Showcase projects for CV/portfolio
