@@ -14,7 +14,7 @@
 
 ---
 
-## 📋 Program Requirements
+## 📋 Program Requirements (8 items, all complete now)
 
 ### 1. **Minimum Credit Requirement**
 - **MPhil:** 12 credits
@@ -37,27 +37,43 @@
 ### 4. **Graduate Teaching Assistant Training**
 - **PDEV 6800** (0 credits) — All full-time RPg required
   - 10-hour mandatory training by Center for Education Innovation (CEI)
+  - 3 GTA competencies: (1) facilitate teaching, (2) meaningful feedback, (3) design active learning
   - MPhil: 1 × 30-min session in 1 term
   - PhD: 1 × 30-min session in 2 different terms
   - Graded PP/P/F
 
 ### 5. **Professional Development**
 - **PDEV 6770** (1 credit, doesn't count) — Professional Development for RPg
-  - 3-hour mandatory training on Professional Conduct
-  - 12-hour workshops (5 themes: Communication, Research, Entrepreneurship, Self-Mgmt, Career)
+  - 3 hours mandatory on Professional Conduct
+  - 12 hours workshops (5 themes: Communication, Research, Entrepreneurship, Self-Mgmt, Career)
   - Graded PP/P/F
-- **NANO 6771** (1 credit, doesn't count) — Professional Development in Nano Sci & Tech
+- **PHYS 6771** (1 credit, doesn't count) — Professional Development in Physics
+  - Discipline-specific: ethics, teaching, research mgmt, career, entrepreneurship
+  - Graded PP/P/F
+  - Note: Despite "Nano Sci" program, the course code is **PHYS 6771** (cross-listed)
+  - Exemption: HKUST MPhil grads who completed PHYS 6770, PHYS 6000, or equivalent
 
-### 6. **English Language Requirement** (pending full catalog)
-- LANG 5000 (likely required)
-- LANG 5005 (likely required)
+### 6. **English Language Requirement**
+- **LANG 5000** (1 credit, doesn't count) — Foundation in Listening & Speaking
+  - ELPA Speaking Test before first term
+  - Required if ELPA < Level 4
+  - Graded P/F
+- **LANG 5005** (1 credit, doesn't count) — Communicating Research in English
+  - Recommended in first year
+  - Graded P/F
+  - Exemption possible for HKUST MPhil grads
 
-### 7. **PhD Qualifying Examination** (pending full catalog)
-- Likely within first 2 years
-- Required for PhD candidacy
+### 7. **PhD Qualifying Examination**
+- Specified by **Qualifying Examination Committee of the NANO postgraduate program**
+- Pass required for PhD candidacy
+- Likely within first 2 years (standard)
 
-### 8. **Thesis Research** (pending full catalog)
-- NANO 6990 (MPhil) + NANO 7990 (PhD, post-QE) — likely structure
+### 8. **Thesis Research**
+- **NANO 6990** (MPhil Thesis Research, 0 credits) — Faculty supervised
+  - MPhil: 1. Register + 2. Defense
+- **NANO 7990** (Doctoral Thesis Research, 0 credits) — Original independent research
+  - PhD: 1. Register after QE + 2. Defense
+- Graded Pass/Fail
 
 ---
 
@@ -66,14 +82,15 @@
 ```
 Nano_Science_Technology_PhD/
 ├── README.md                        ← This file (overview)
-├── program_requirements/            ← All mandatory items
+├── program_requirements/            ← All 8 mandatory items
 │   ├── PDEV_6800_GTA_Training/
 │   ├── PDEV_6770_Professional_Development_RPg/
-│   ├── NANO_6771_Professional_Development/
-│   ├── LANG_5000_Foundation_Listening_Speaking/  ← (pending)
-│   ├── LANG_5005_Communicating_Research_English/ ← (pending)
-│   ├── NANO_6990_MPhil_Thesis_Research/  ← (pending)
-│   └── NANO_7990_Doctoral_Thesis_Research/  ← (pending)
+│   ├── PHYS_6771_Professional_Development_Physics/  ← Note: PHYS not NANO prefix
+│   ├── LANG_5000_Foundation_Listening_Speaking/
+│   ├── LANG_5005_Communicating_Research_English/
+│   ├── PhD_Qualifying_Examination/
+│   ├── NANO_6990_MPhil_Thesis_Research/
+│   └── NANO_7990_Doctoral_Thesis_Research/
 ├── research_statement/              ← To be developed
 ├── cv/                              ← To be developed
 ├── recommendation_letters/          ← To be developed
@@ -117,4 +134,4 @@ Nano_Science_Technology_PhD/
 
 ---
 
-*Last updated: 2026-06-07 — Partial catalog aligned (PDEV 6800, PDEV 6770, NANO 6771 received; LANG 5000/5005, NANO 6990/7990, QE pending)*
+*Last updated: 2026-06-07 — Complete catalog aligned (8 program requirements, QE, both thesis research)*
