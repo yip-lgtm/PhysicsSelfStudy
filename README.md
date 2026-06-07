@@ -1,29 +1,29 @@
-# PhysicsSelfStudy — Open Source Physics Project
+# 🔬 PhysicsSelfStudy — Open BSc → MSc → PhD Pathway
 
-[![Status](https://img.shields.io/badge/Status-Phase%201%20%28BSc%29-blue)](#)
-[![License](https://img.shields.io/badge/License-MIT-green)](#)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Welcome-brightgreen)](#)
-[![Programme](https://img.shields.io/badge/Pathway-BSc%20→%20MSc%20→%20PhD-orange)](#)
-
-> **BSc Physics → MSc Data-Driven Modeling / MSc Physics → MPhil/PhD**
-> **HKUST-aligned | Weekend-only | Open Source**
+> **BSc Physics → MSc Data-Driven Modeling / MSc Physics → HKUST MPhil/PhD**
+> Weekend-only self-study aligned with the **Hong Kong University of Science and Technology (HKUST)** curriculum.
+> Open source, MIT licensed, community contributions welcome.
 
 ---
 
-## 🎯 Project Overview
+## 🎯 What is this?
 
-A structured, open-source, self-study project covering **24 months of BSc foundation + 24 months of MSc/PhD preparation**:
+This repository is a **structured 24+ month self-study program** that takes you from **foundational physics to research-level mastery**, with a specific path toward:
 
-- **Phase 1 (Year 1-2):** BSc Physics Foundation — Math Methods, Classical Mechanics, E&M, QM, Statistical Mechanics
-- **Phase 2 (Year 2-3):** MSc Data-Driven Modeling — ML for Physics, CFD, Quantum Computing, Statistical Inference
-- **Phase 3 (Year 3-4):** MSc Physics (HKUST) — Scientific Computing or Advanced Materials concentration
-- **Phase 4 (Year 4+):** MPhil/PhD Prep — HKUST Physics PhD or Nano Science Technology PhD
+- 🎓 **BSc in Physics** (foundation phase)
+- 🎓 **MSc in Data-Driven Modeling** (computational + ML phase)
+- 🎓 **MSc in Physics** (HKUST) — two concentrations: *Advanced Materials* or *Scientific Computing*
+- 🎓 **MPhil / PhD in Physics or Nano Science & Technology** (HKUST)
 
-**Current Phase:** Phase 1 — BSc Foundation
-**Current Course:** PHYS 2124 Mathematical Methods I
-**Started:** 2026-06-07
-**Mode:** Weekend-only (Sat Theory + Sun Coding + Sun Review)
-**Pathway:** HKUST-aligned (Physics PhD / Nano Sci & Tech PhD)
+The curriculum is **100% aligned with HKUST's official course catalog** for the academic year 2025-2026, so credits and content map directly to a real degree.
+
+---
+
+## 🚀 Why this exists
+
+- **For learners**: Most online physics resources are scattered, unstructured, or pre-university level. This is a **complete, sequenced, university-aligned path** that you can follow on weekends (~8.5h/weekend).
+- **For researchers**: Demonstrates a reproducible framework for self-directed learning, useful for industry upskilling or academic preparation.
+- **For HK Web3 / AI / Physicist community**: Bridges Physics, Data Science, and emerging technology — all critical for Hong Kong's R&D ecosystem.
 
 ---
 
@@ -31,164 +31,230 @@ A structured, open-source, self-study project covering **24 months of BSc founda
 
 ```
 PhysicsSelfStudy/
-├── README.md                            ← You are here
-├── STRUCTURE.md                         ← Detailed folder structure
-├── progress_log.md                      ← Daily/weekly progress tracker
-├── cron_examples.md                     ← OpenClaw cron examples
-├── .gitignore                           ← Python/Jupyter/Obsidian ignores
+├── 01_BSc_Physics/                  ← Phase 1: BSc Foundation (10 core + 10 electives + minors)
+│   ├── core_courses/                ← 13 main courses
+│   ├── foundation/                  ← 14 intro-level courses
+│   ├── electives/                   ← 17 advanced electives
+│   ├── math_support/                ← 2 math support courses
+│   └── minors/                      ← 2 minor programs (Physics, Astrophysics)
 │
-├── 01_BSc_Physics/                      ← Phase 1: BSc Foundation (Year 1-2)
-│   ├── core_courses/                    ← Main BSc courses
-│   │   ├── PHYS_2124_Math_Methods_I/
-│   │   ├── PHYS_2125_Classical_Mechanics/
-│   │   ├── PHYS_2126_Electromagnetism/
-│   │   └── PHYS_2127_Quantum_Mechanics_I/
-│   ├── math_support/                    ← Math prerequisites
-│   ├── simulations/                     ← BSc-level physics simulations
-│   └── notes/                           ← General notes
-│   └── minors/                          ← HKUST Minor Programs
-│       ├── README.md                    ← Minors overview
-│       ├── Minor_in_Physics/            ← 9-credit Physics minor
-│       │   └── restricted_electives/    ← 6 courses
-│       └── Minor_in_Astrophysics_Cosmology/  ← 9-credit Astro/Cosmo minor
-│           └── core_courses/            ← 5 courses
+├── 02_MSc_DataDriven_Modeling/      ← Phase 2: MSc DM (7 core + 8 electives)
+│   ├── core_courses/                ← 7 core (Comp Tools, Sci Prog, Stochastic, Numerical, Innovation, Seminars, Project)
+│   └── electives/                   ← 8 electives (Algo/OOP, Time Series, Stat ML, Deep Learning, Networks, Biz, Info Sci, OR)
 │
-├── 02_MSc_DataDriven_Modeling/          ← Phase 2: MSc Data-Driven (Year 2-3)
-│   ├── core_courses/                    ← Core ML/stats courses
-│   ├── electives/                       ← Elective courses
-│   ├── projects/                        ← Course projects
-│   └── notes/
+├── 03_MSc_Physics/                  ← Phase 3: MSc Physics (HKUST)
+│   ├── core_courses/                ← 3 required (Data Analysis, Contemporary, Seminars)
+│   ├── advanced_materials_concentration/  ← 3 courses (Semiconductor, Materials, Experimental)
+│   ├── scientific_computing_concentration/ ← 4 courses (Comp Tools, Methods, AI in Sci, Energy Materials)
+│   └── electives/                   ← 9 electives (Quantum Mat, Metamaterials, Topo 2D, Adv QM, Stat Mech, QFT, Diffraction, Project)
 │
-├── 03_MSc_Physics/                      ← Phase 3: MSc Physics (HKUST) (Year 3-4)
-│   ├── scientific_computing_concentration/  ← Comp. physics focus
-│   ├── advanced_materials_concentration/    ← Materials focus
-│   ├── electives/
-│   ├── projects/
-│   └── notes/
+├── 04_MPhil_PhD_Prep/               ← Phase 4: MPhil/PhD Prep
+│   ├── Physics_PhD/                 ← Physics MPhil/PhD program (8 requirements)
+│   ├── Nano_Science_Technology_PhD/ ← Nano Sci & Tech MPhil/PhD program (8 requirements)
+│   ├── qualifying_exam_practice/    ← QE prep materials
+│   ├── mock_research_proposals/     ← Proposal templates
+│   └── literature_reviews/          ← Reading lists
 │
-├── 04_MPhil_PhD_Prep/                   ← Phase 4: PhD Prep (Year 4+)
-│   ├── Physics_PhD/                     ← HKUST Physics PhD application
-│   ├── Nano_Science_Technology_PhD/     ← HKUST Nano Sci & Tech PhD
-│   ├── qualifying_exam_practice/        ← QE prep materials
-│   ├── mock_research_proposals/         ← Practice proposals
-│   └── literature_reviews/              ← Key papers by topic
+├── portfolio_projects/              ← Showcase projects (code + notebooks)
+│   ├── simulations/                 ← Physics simulations
+│   ├── notebooks/                   ← Jupyter notebooks (week 1+)
+│   ├── visualizations/              ← Plots and animations
+│   ├── open_source_physics/         ← Open-source contributions
+│   ├── mit_ocw/                     ← MIT OCW exercise solutions
+│   └── community/                   ← Community submissions
 │
-├── portfolio_projects/                  ← Showcase projects
-│   ├── simulations/
-│   ├── notebooks/
-│   ├── visualizations/
-│   ├── open_source_physics/             ← Community contributions
-│   ├── mit_ocw/                         ← MIT OCW solutions
-│   └── community/                       ← Community projects
+├── resources/                       ← Learning resources
+│   ├── curricula/                   ← Curriculum maps
+│   ├── mapping_files/               ← BSc/MSc/PhD mapping
+│   ├── MIT_OCW_links.md             ← MIT OpenCourseWare links
+│   ├── textbooks.md                 ← Recommended textbooks
+│   └── python_env_setup.md          ← Environment setup
 │
-├── resources/                           ← Curated resources
-│   ├── MIT_OCW_links.md
-│   ├── textbooks.md
-│   ├── python_env_setup.md
-│   ├── curricula/                       ← HKUST/other uni curricula
-│   └── mapping_files/                   ← Self-study → HKUST alignment docs
+├── Anki_decks/                      ← Spaced-repetition cards
+├── weekly_reflections/              ← Weekly study reflections
+├── old_archive/                     ← Archived old structure
 │
-├── old_archive/                         ← (Optional) Old flat structure migration
+├── .github/                         ← GitHub templates
+│   ├── ISSUE_TEMPLATE/              ← Issue templates
+│   └── workflows/                   ← CI/CD workflows
 │
-├── Anki_decks/                          ← Spaced repetition decks
-└── weekly_reflections/                  ← Weekly reflection notes
+├── README.md                        ← You are here
+├── STRUCTURE.md                     ← Full directory tree
+├── ROADMAP.md                       ← 4-phase roadmap
+├── progress_log.md                  ← Daily progress log
+├── LEARNING_TRACKER.md              ← Master progress tracker
+├── CONTRIBUTING.md                  ← How to contribute
+├── CHANGELOG.md                     ← Project history
+├── FAQ.md                           ← Common questions
+├── SETUP.md                         ← Setup instructions
+├── SETUP_AUTOMATION_PROMPT.md       ← Automation template
+├── LICENSE                          ← MIT License
+└── .gitignore                       ← Git ignore rules
 ```
 
-See `STRUCTURE.md` for full details.
+---
+
+## 📊 Current Coverage
+
+| Phase | Component | Count | Status |
+|-------|-----------|-------|--------|
+| **1** | BSc Core Courses | 13 | ✅ Catalog aligned |
+| | BSc Foundation | 14 | ✅ Catalog aligned |
+| | BSc Electives | 17 | ✅ Catalog aligned |
+| | BSc Math Support | 2 | ✅ Catalog aligned |
+| | Minors | 2 | ✅ Catalog aligned |
+| **2** | MSc DM Core | 7 | ✅ Catalog aligned |
+| | MSc DM Electives | 8 | ✅ Catalog aligned |
+| **3** | MSc Physics Required | 3 | ✅ Catalog aligned |
+| | MSc Physics Adv Materials | 3 | ✅ Catalog aligned |
+| | MSc Physics Sci Computing | 4 | ✅ Catalog aligned |
+| | MSc Physics Electives | 9 | ✅ Catalog aligned |
+| **4** | Physics MPhil/PhD | 7 req + 1 doc | ✅ Complete |
+| | Nano Sci & Tech MPhil/PhD | 8 req + 1 doc | ✅ Complete |
+| | QE Prep | Folder | ✅ Ready |
+| **Total** | **Course folders** | **84** | ✅ 100% aligned |
+
+**Every course has a comprehensive README** with description, learning objectives, topics, MIT OCW / textbook resources, and project ideas.
 
 ---
 
-## 🗓️ Weekly Schedule (OpenClaw Cron)
+## 🗓️ Study Schedule (Weekend-Only)
+
+**8.5 hours per weekend**, structured around 4 cron rules:
 
 | Day | Time (HKT) | Block | Duration |
-|-----|-----------|-------|----------|
-| Saturday | 09:00-13:00 | **Theory Block** | 4h |
-| Sunday | 14:00-18:00 | **Computational Sprint** | 4h |
-| Sunday | 19:00 | **Weekly Review** | 30min |
-| 1st Sunday/month | 20:00 | **Monthly Milestone Review** | 1h |
+|-----|------------|-------|----------|
+| **Saturday** | 09:00-13:00 | Theory Block | 4h |
+| **Sunday** | 14:00-18:00 | Computational Sprint | 4h |
+| **Sunday** | 19:00-19:30 | Weekly Review | 30min |
+| **1st Sun of month** | 20:00-21:00 | Monthly Milestone Review | 1h |
 
-**Total commitment:** ~8.5 hours/weekend
-
-See `openclaw_skill.json` and `cron_examples.md` for full automation.
+**Target:** Complete BSc foundation in 12-18 months, MSc in another 12-18 months, then PhD application cycle.
 
 ---
 
-## 🎓 4-Phase Curriculum
+## 🛠️ Quick Start
 
-### Phase 1: BSc Foundation (Year 1-2) — HKUST Codes
-| Course | Focus | Resources |
-|--------|-------|-----------|
-| PHYS 2124 Math Methods I | Vector calc, ODE, Linear alg, Complex | MIT OCW 18.02 + 18.03 + Boas |
-| PHYS 3032 Classical Mechanics | Lagrangian, Hamiltonian | MIT OCW 8.01 + Taylor |
-| PHYS 3142 Computational Methods | Numerical, Monte Carlo, MD | MIT OCW 18.335 + Newman |
-| PHYS 4811 ML in Physics | PINN, Neural Operators | Coursera + Bishop + Raissi |
-| PHYS 2060 Electromagnetism | Maxwell eq, EM waves | MIT OCW 8.07 + Griffiths |
-| PHYS 3050 Quantum Mechanics I | Schrödinger, Hydrogen | MIT OCW 8.04 + Griffiths |
-| Statistical Mechanics | Ensembles, Phase transitions | MIT OCW 8.08 + Pathria |
+### 1. Clone the repo
 
-### Phase 2: MSc Data-Driven Modeling (Year 2-3)
-| Topic | Focus |
-|-------|-------|
-| ML for Physics | PINN, Gaussian processes |
-| Computational Fluid Dynamics | Navier-Stokes, turbulence |
-| Quantum Computing | Qiskit, VQE |
-| Statistical Inference | Bayesian, MCMC |
+```bash
+git clone https://github.com/yip-lgtm/PhysicsSelfStudy.git
+cd PhysicsSelfStudy
+```
 
-### Phase 3: MSc Physics @ HKUST (Year 3-4)
-**Two concentration tracks:**
-- **Scientific Computing:** Numerical methods, HPC, simulations
-- **Advanced Materials:** Condensed matter, soft matter, materials design
+### 2. Set up Python environment
 
-### Phase 4: MPhil/PhD Prep (Year 4+)
-**Two PhD pathways at HKUST:**
-- **Physics PhD:** Astrophysics, Condensed Matter, Particle Physics, Quantum Info
-- **Nano Science Technology PhD:** Nano materials, quantum devices, biotech
+See [`resources/python_env_setup.md`](resources/python_env_setup.md) for full instructions.
 
-See `ROADMAP.md` for detailed 24+ month plan.
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install numpy scipy matplotlib pandas jupyter sympy
+```
 
----
+### 3. Start with PHYS 2124 — Mathematical Methods I
 
-## 🌍 Open Source — Welcome to Contribute!
+The first Theory Block (Sat 2026-06-13) will cover **Vector Calculus** from this course.
 
-This project is **fully open source** under MIT License. Whether you're a:
+```bash
+cd 01_BSc_Physics/core_courses/PHYS_2124_Math_Methods_I/
+cat README.md
+```
 
-- 🎓 **Student** — Learn alongside, share notes, ask questions
-- 💼 **Practitioner** — Improve simulations, optimize code, add features
-- 🔬 **Researcher** — Cite, extend, collaborate on thesis
-- 👨‍💻 **Developer** — Add new features, fix bugs, write tests
+### 4. Track your progress
 
-### How to Contribute
-
-1. **Fork** this repo
-2. **Improve** any course material, simulation, or notebook
-3. **Submit** a Pull Request with clear description
-4. **Open Issues** for bugs, suggestions, or questions
+See [`LEARNING_TRACKER.md`](LEARNING_TRACKER.md) for the master checklist.
 
 ---
 
-## 📊 Progress Tracking
+## 🎓 Learning Path (Recommended Order)
 
-**Current:** Phase 1 (BSc Foundation) — Month 1, Week 1
-**Started:** 2026-06-07
-**Target BSc completion:** 2028-06-07
-**Target PhD application:** 2030
+### Phase 1: BSc Foundation (~18 months)
 
-See `progress_log.md` for detailed daily/weekly progress.
+1. **PHYS 1111** General Physics I
+2. **PHYS 1114** General Physics II
+3. **PHYS 2124** Mathematical Methods I
+4. **PHYS 3031** Mathematical Methods II
+5. **PHYS 3032** Classical Mechanics
+6. **PHYS 3033** Electricity and Magnetism I
+7. **PHYS 3036** Quantum Mechanics I
+8. **PHYS 4050** Thermodynamics & Statistical Physics
+9. **PHYS 4051** Quantum Mechanics II
+10. **PHYS 3142** Computational Methods
+11. **PHYS 4811** Machine Learning in Physics
+12. **PHYS 4191** Capstone Project
+
+### Phase 2: MSc Data-Driven Modeling (~12 months)
+- Core: MSDM 5001-5005 + 6771 + 6980
+- Electives: MSDM 5051, 5053, 5054, 5055
+
+### Phase 3: MSc Physics @ HKUST (~12 months)
+- Choose: Advanced Materials OR Scientific Computing concentration
+- All required + concentration courses
+- + PHYS 5120 (Computational Energy Materials)
+
+### Phase 4: MPhil/PhD Prep (~6-12 months)
+- See [`04_MPhil_PhD_Prep/`](04_MPhil_PhD_Prep/)
+- Choose: Physics PhD OR Nano Sci & Tech PhD
+- QE prep + thesis research + application
+
+---
+
+## 🤝 Contributing
+
+This is an **open-source project**. Contributions welcome!
+
+- 🐛 **Found a typo or broken link?** Open an issue.
+- 📚 **Know a great resource for a course?** Add it to the course README.
+- 💻 **Built a cool simulation?** Submit to `portfolio_projects/`.
+- 🎓 **Studied a course?** Add your notes/reflections.
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
 
 ---
 
 ## 📜 License
 
-MIT License — See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+
+You are free to:
+- ✅ Use this curriculum commercially
+- ✅ Modify and redistribute
+- ✅ Use in your own teaching
+- ✅ Create derivative works
+
+Just keep the copyright notice.
 
 ---
 
-## 👤 Author
+## 🌟 Acknowledgments
 
-**Saba Yip** | yipsaba@polyu-msc.ai
-**Background:** PolyU MSc Digital Economics (2027) | Self-studying Physics & Data-Driven Modeling | HKUST PhD aspirant
-**Mission:** Build open, rigorous, and accessible physics education for the global community
+- **HKUST Department of Physics** — for publishing open course catalogs
+- **MIT OpenCourseWare** — for free lecture notes and problem sets
+- **Open-source physics community** — for simulation tools
 
 ---
 
-*Built with persistence in Hong Kong | Open for collaboration* 🇭🇰⚛️
+## 📬 Contact
+
+- **Author:** Saba (葉) Yip
+- **Email:** yipsaba@polyu-msc.ai
+- **GitHub:** [@yip-lgtm](https://github.com/yip-lgtm)
+- **LinkedIn:** [linkedin.com/in/yip-lgtm](https://linkedin.com/in/yip-lgtm)
+
+---
+
+## 🚦 Project Status
+
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Phase](https://img.shields.io/badge/Phase-1%20(BSc)-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Commits](https://img.shields.io/badge/Commits-23+-orange)
+
+**Last Updated:** 2026-06-07
+
+---
+
+🇭🇰 Built in Hong Kong · ⚛️ For physics lovers · 🤝 Open to all
+
+*「格物致知」— Investigate things to extend knowledge*
