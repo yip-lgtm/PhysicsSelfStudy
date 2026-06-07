@@ -1,6 +1,6 @@
 # MSDM 5001 — Introduction to Computational and Modeling Tools (HKUST)
 
-> **Phase 2 MSc Core | HKUST MSDM 5001 | Jointly offered by Physics + Math**
+> **Phase 2 MSc Core | HKUST MSDM 5001 | Computational Foundations**
 
 ---
 
@@ -10,50 +10,68 @@
 - **Name:** Introduction to Computational and Modeling Tools
 - **University:** HKUST
 - **Program:** MSc in Data-Driven Modeling
-- **Department:** Physics + Mathematics (joint)
-- **Phase:** 2 (MSc Core)
+- **Phase:** 2 (MSc Required)
 - **Credits:** 3
 
 ---
 
 ## 🎯 Learning Objectives
 
-### 1. **Linux & Shell Scripting**
-- Basics of the Linux operating system
-- Shell scripting (Bash)
-- File system, permissions
-- Command-line tools
+### 1. **Linux Operating System**
+- File system navigation
+- Shell commands (bash)
+- Text editors (vim, nano)
+- File permissions
+- Process management
 
-### 2. **Version Control**
-- Git fundamentals
-- GitHub collaboration
+### 2. **Shell Scripting**
+- Bash scripting basics
+- Variables, loops, conditionals
+- Functions
+- Piping, redirection
+- Cron jobs
+
+### 3. **Programming Fundamentals**
+- Python basics (for this course)
+- Variables, data types
+- Control flow
+- Functions, modules
+- I/O operations
+
+### 4. **Data Handling**
+- File formats (CSV, JSON, HDF5)
+- pandas for data manipulation
+- numpy for numerical computation
+- Basic visualization (matplotlib)
+
+### 5. **Version Control**
+- Git basics
+- GitHub
 - Branching, merging
-- Open-source workflow
-
-### 3. **High Performance Computing (HPC)**
-- CPU, GPU architectures
-- Parallel programming concepts
-- Applications in physics
-- Useful libraries (MPI, OpenMP, CUDA)
-
-### 4. **Quantum Computing (Intro)**
-- Qubits, gates, circuits
-- Basic quantum algorithms
-- Qiskit (Python)
-
-### 5. **Programming Language**
-- **Python** (main language)
-- Jupyter notebooks
+- Collaborative workflows
 
 ---
 
 ## 📖 Resources
 
-- **HKUST MSDM 5001 course materials** (Canvas/Classvault)
-- **Shotts** — The Linux Command Line
-- **Chacon & Straub** — Pro Git
-- **IBM Qiskit Textbook** (free online)
+### Primary
+- **Hinsen** — Python for Computational Science and Engineering (free online)
+- **Software Carpentry** — The Unix Shell, Version Control with Git
+- HKUST MSDM 5001 course materials
+
+### Supplementary
+- **Shotts** — The Linux Command Line (free online)
+- **Chacon & Straub** — Pro Git (free online)
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+## 🎯 Project Ideas
+
+- Shell script for batch file processing
+- Python data pipeline (CSV → analysis → plot)
+- Git workflow simulation (branch/merge/PR)
+- Automated report generation (Jupyter + pandas)
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

@@ -1,6 +1,6 @@
 # MSDM 5055 — Deep Learning for Modeling (HKUST)
 
-> **Phase 2 MSc Elective | HKUST MSDM 5055 | DL Concepts, Tools, Techniques**
+> **Phase 2 MSc Elective | HKUST MSDM 5055 | Deep Learning Concepts + Tools**
 
 ---
 
@@ -20,8 +20,9 @@
 ### 1. **Basic Concepts**
 - Neural networks fundamentals
 - Backpropagation
-- Optimization (SGD, Adam)
-- Regularization (dropout, batch norm)
+- Optimization (SGD, Adam, RMSprop)
+- Regularization (dropout, batch norm, weight decay)
+- Loss functions
 
 ### 2. **Programming Frameworks**
 - **PyTorch** (primary)
@@ -29,26 +30,29 @@
 - HuggingFace Transformers
 - ONNX, deployment
 
-### 3. **Deep Learning Models**
+### 3. **Deep Learning Architectures**
 - **Regression neural network**
 - **Convolutional neural network (CNN)**
 - **Generative adversarial network (GAN)**
 - **Variational autoencoder (VAE)**
 - **Normalizing flow**
-- **Reinforcement learning**
-- **Sequential models** (RNN, LSTM, Transformers)
+- **Reinforcement learning** (DQN, PPO, A3C)
+- **Sequential models** (RNN, LSTM, GRU, Transformers)
 
 ### 4. **Practical Techniques**
 - Data preprocessing
 - Data augmentation
 - Transfer learning
 - Hyperparameter tuning
-- Model interpretability
+- Model interpretability (SHAP, LIME)
+- Distributed training
 
 ### 5. **Real-World Applications**
-- Various datasets
-- Industry case studies
-- Deployment considerations
+- Computer vision
+- NLP
+- Time series
+- Physics simulations (PINN)
+- Materials discovery
 
 ---
 
@@ -57,11 +61,23 @@
 ### Primary
 - **Goodfellow, Bengio, Courville** — Deep Learning
 - **Zhang, Lipton, Li, Smola** — Dive into Deep Learning (d2l.ai, free online)
+- HKUST MSDM 5055 course materials
 
 ### Supplementary
-- **Bishop** — Pattern Recognition and ML
+- **Bishop** — Pattern Recognition and Machine Learning
 - **fast.ai** — Practical Deep Learning (free course)
+- **PyTorch** tutorials
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned (full title + topics)*
+## 🎯 Project Ideas
+
+- Image classifier with CNN (CIFAR-10)
+- Text generation with Transformer
+- GAN for molecule generation
+- PINN for Schrödinger equation
+- Time series forecasting with LSTM
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

@@ -21,24 +21,43 @@
 - Social science networks
 - Economic networks
 - Financial networks
-- Biological networks
-- Technology networks
+- Biological networks (protein interaction, brain)
+- Technology networks (Internet, power grid)
 
 ### 2. **Network Models**
+
+#### Generative Models
 - **Random networks** (Erdős–Rényi)
 - **Small-world networks** (Watts–Strogatz)
 - **Scale-free networks** (Barabási–Albert)
 - **Spatial networks**
 - **Hierarchical networks**
 - **Evolving networks**
-- Computer generation methods
+- Stochastic block models
+- Configuration models
 
-### 3. **Dynamical Processes on Complex Networks**
-- Network search
-- Epidemic spreading
-- Rumor and information spreading
-- Community detection algorithms
-- Applications of network theory
+### 3. **Network Analysis**
+- Degree distribution
+- Clustering coefficient
+- Path length, diameter
+- Centrality measures
+- Community detection
+- Percolation, connectivity
+
+### 4. **Dynamical Processes on Complex Networks**
+- **Network search** (routing)
+- **Epidemic spreading** (SIR, SIS)
+- **Rumor and information spreading**
+- Synchronization
+- Games on networks
+- Network resilience
+
+### 5. **Applications**
+- Epidemiology (COVID spread)
+- Social media analysis
+- Financial contagion
+- Brain networks
+- Transportation
 
 ---
 
@@ -47,8 +66,23 @@
 ### Primary
 - **Newman** — Networks: An Introduction (free online)
 - **Barabási** — Network Science (free online)
-- **HKUST MSDM 5056 course materials**
+- **Easley & Kleinberg** — Networks, Crowds, and Markets
+- HKUST MSDM 5056 course materials
+
+### Supplementary
+- **Albert & Barabási** — Statistical mechanics of complex networks (RMP 2002)
+- **Newman** — The structure and function of complex networks
+- **NetworkX** Python library documentation
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+## 🎯 Project Ideas
+
+- Generate and visualize ER, WS, BA networks
+- Community detection on social network (Louvain)
+- Simulate epidemic on scale-free network
+- Information spread simulation
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

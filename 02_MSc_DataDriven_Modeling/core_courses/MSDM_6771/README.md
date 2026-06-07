@@ -1,55 +1,72 @@
-# MSDM 6771 — Data-Driven Modeling Seminars and Tutorials (HKUST)
+# MSDM 6771 — Data-Driven Modeling Seminars (HKUST)
 
-> **Phase 2 MSc Required | HKUST MSDM 6771 | Industry + Faculty Seminars**
+> **Phase 2 MSc Required | HKUST MSDM 6771 | Research Seminars**
 
 ---
 
 ## 📚 Course Information
 
 - **Code:** MSDM 6771
-- **Name:** Data-Driven Modeling Seminars and Tutorials
+- **Name:** Data-Driven Modeling Seminars
 - **University:** HKUST
 - **Program:** MSc in Data-Driven Modeling
 - **Phase:** 2 (MSc Required)
 - **Credits:** 1
-- **Duration:** 1 year (2 regular terms)
-- **Grading:** PP / P / F (Pass/Fail)
+- **Grading:** Pass / Fail
 
 ---
 
 ## 🎯 Program Overview
 
-**All students in the MSc in Data-Driven Modeling program are required to take this course.** Appropriate seminars and small group tutorials are scheduled to:
-
-- Expose students to a **variety of issues in data science and industry**
-- Enhance students' **communication with industry experts and faculty**
-
----
-
-## 🎯 Learning Objectives
-
-1. **Industry Awareness**
-   - Real-world data science applications
-   - Industry trends
-   - Career opportunities
-
-2. **Research Communication**
-   - Faculty research talks
-   - Academic-industry bridging
-
-3. **Professional Skills**
-   - Networking
-   - Q&A in professional setting
-   - Cross-disciplinary exposure
+**Seminars from invited speakers** exposing students to cutting-edge research and applications in data-driven modeling.
 
 ---
 
 ## 📋 Requirements
 
-- **Attendance:** Required at all seminars + tutorials
-- **For:** MSc in Data-Driven Modeling students only
-- **Duration:** 2 regular terms (full year)
+- **Attendance** at all seminars (or make-up requirements)
+- **Active participation** (Q&A)
+- **Final reflection** report (varies)
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+## 🎯 Typical Seminar Topics
+
+### 1. **Physics-Informed ML**
+- PINN, neural operators
+- Surrogate modeling
+- ML for PDEs
+
+### 2. **Materials Discovery**
+- High-throughput DFT
+- Generative models for materials
+- Crystal property prediction
+
+### 3. **Climate & Earth Sciences**
+- Weather forecasting (GraphCast, Pangu-Weather)
+- Climate downscaling
+- Ocean modeling
+
+### 4. **Biology & Drug Discovery**
+- AlphaFold + variants
+- Generative chemistry
+- Protein design
+
+### 5. **Industry Applications**
+- Quant finance
+- Tech industry research
+- HK local companies
+
+---
+
+## 🎯 Skills Developed
+
+- Research awareness
+- Critical thinking
+- Networking with researchers
+- Q&A in academic setting
+- Note-taking
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

@@ -1,6 +1,6 @@
 # MSDM 5057 — Business Literacy for Data Professionals (HKUST)
 
-> **Phase 2 MSc Elective | HKUST MSDM 5057 | Business Acumen for Data Scientists**
+> **Phase 2 MSc Elective | HKUST MSDM 5057 | Business Acumen for Data Pros**
 
 ---
 
@@ -21,40 +21,68 @@ Build **essential business acumen** to equip students with the attitudes, skills
 
 ### Specialized Modules
 
-1. **Management**
-   - Leadership styles
-   - Team dynamics
-   - Project management
+#### 1. **Management**
+- Leadership styles (transformational, situational)
+- Team dynamics (Tuckman, Belbin)
+- Project management (Agile, Waterfall)
+- Performance management
+- Conflict resolution
 
-2. **Decision Making**
-   - Decision frameworks
-   - Risk analysis
-   - Strategic thinking
+#### 2. **Decision Making**
+- Decision frameworks (rational, intuitive)
+- Risk analysis
+- Strategic thinking
+- Game theory (intro)
+- Behavioral economics
 
-3. **Business Communications**
-   - Executive presentations
-   - Stakeholder management
-   - Persuasion techniques
+#### 3. **Business Communications**
+- Executive presentations
+- Stakeholder management
+- Persuasion techniques
+- Data storytelling
+- Crisis communication
+- Cross-cultural communication
 
-4. **Collaborations**
-   - Cross-functional teamwork
-   - Conflict resolution
-   - Negotiation
+#### 4. **Collaborations**
+- Cross-functional teamwork
+- Negotiation (BATNA, ZOPA)
+- Stakeholder analysis
+- Partnership building
+- Vendor management
 
 ### Learning Format
-- **Group work**
+
+- **Group work** (realistic team scenarios)
 - **Industry expert exposure** (authentic learning experience)
-- Case studies
+- Case studies (Harvard Business School style)
 - Real-world projects
+- Role-playing
+- Guest speakers
 
 ---
 
 ## 📖 Resources
 
+### Primary
 - **Davenport & Harris** — Competing on Analytics
 - **Provost & Fawcett** — Data Science for Business
-- **HKUST MSDM 5057 course materials**
+- HKUST MSDM 5057 course materials
+
+### Supplementary
+- **Kahneman** — Thinking, Fast and Slow (behavioral)
+- **Thaler & Sunstein** — Nudge
+- **Drucker** — The Effective Executive
+- **Fisher & Ury** — Getting to Yes (negotiation)
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+## 🎯 Project Ideas
+
+- Develop a data-driven business case
+- Executive presentation on data initiative
+- Strategic analysis using business frameworks
+- Stakeholder communication plan
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*

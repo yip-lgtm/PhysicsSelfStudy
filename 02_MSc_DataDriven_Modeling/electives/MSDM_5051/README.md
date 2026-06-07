@@ -1,6 +1,6 @@
 # MSDM 5051 — Algorithm and Object-Oriented Programming for Modeling (HKUST)
 
-> **Phase 2 MSc Elective | HKUST MSDM 5051 | Data Structures + OOP**
+> **Phase 2 MSc Elective | HKUST MSDM 5051 | OOP + Algorithms**
 
 ---
 
@@ -17,41 +17,63 @@
 
 ## 🎯 Learning Objectives
 
-### 1. **Data Structures**
-- List
-- Queue
-- Stack
-- Trees, graphs
-- Hash tables
-
-### 2. **Algorithms**
-- Recursion
-- Sorting (bubble, merge, quicksort)
-- Searching (linear, binary)
-- Dynamic programming
-- Graph algorithms
-
-### 3. **Object-Oriented Programming (OOP)**
+### 1. **OOP Fundamentals**
 - Classes, objects
 - Inheritance, polymorphism
 - Encapsulation, abstraction
-- Design patterns
-  - Singleton, Factory, Observer
-  - Strategy, Template
+- Composition vs inheritance
+- Design patterns (factory, observer, etc.)
 
-### 4. **Applied to Modeling**
-- Use these techniques to **handle data**
-- Build reusable modeling libraries
+### 2. **Data Structures**
+- Arrays, lists
+- Stacks, queues
+- Hash tables
+- Trees, graphs
+- Heaps, priority queues
+
+### 3. **Algorithms**
+- **Sorting** (quicksort, mergesort, heapsort)
+- **Searching** (binary search, BFS, DFS)
+- **Dynamic programming**
+- **Greedy algorithms**
+- **Graph algorithms** (Dijkstra, A*, MST)
+- **Divide and conquer**
+
+### 4. **Complexity Analysis**
+- Big-O notation
+- Time complexity
+- Space complexity
+- Best/average/worst case
+
+### 5. **Advanced Topics**
+- C++ for performance
+- Templates
+- Memory management
+- Parallel programming intro
 
 ---
 
 ## 📖 Resources
 
-- **Cormen et al.** — Introduction to Algorithms (CLRS)
+### Primary
+- **Stroustrup** — The C++ Programming Language (4th ed)
+- **Cormen, Leiserson, Rivest, Stein** — Introduction to Algorithms (CLRS)
+- **Sedgewick & Wayne** — Algorithms (4th ed)
+- HKUST MSDM 5051 course materials
+
+### Supplementary
 - **Gamma et al.** — Design Patterns
-- **Sedgewick** — Algorithms (4th ed)
-- **Martin** — Clean Code
+- **Lippman, Lajoie, Moo** — C++ Primer
 
 ---
 
-*Last updated: 2026-06-07 — HKUST catalog aligned*
+## 🎯 Project Ideas
+
+- Implement sorting algorithms with benchmarking
+- Build a graph algorithm library (Dijkstra, A*)
+- OOP design for a physics simulation framework
+- Hash table for fast nearest-neighbor search
+
+---
+
+*Last updated: 2026-06-07 — Comprehensive content added*
