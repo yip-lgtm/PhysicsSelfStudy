@@ -46,6 +46,12 @@ PhysicsSelfStudy/
 │   ├── math_support/                    ← Math prerequisites
 │   ├── simulations/                     ← BSc-level physics simulations
 │   └── notes/                           ← General notes
+│   └── minors/                          ← HKUST Minor Programs
+│       ├── README.md                    ← Minors overview
+│       ├── Minor_in_Physics/            ← 9-credit Physics minor
+│       │   └── restricted_electives/    ← 6 courses
+│       └── Minor_in_Astrophysics_Cosmology/  ← 9-credit Astro/Cosmo minor
+│           └── core_courses/            ← 5 courses
 │
 ├── 02_MSc_DataDriven_Modeling/          ← Phase 2: MSc Data-Driven (Year 2-3)
 │   ├── core_courses/                    ← Core ML/stats courses
@@ -66,11 +72,6 @@ PhysicsSelfStudy/
 │   ├── qualifying_exam_practice/        ← QE prep materials
 │   ├── mock_research_proposals/         ← Practice proposals
 │   └── literature_reviews/              ← Key papers by topic
-│
-├── 05_Undergraduate_Minors/             ← HKUST Minor Programs
-│   ├── README.md                        ← Minors overview
-│   ├── Minor_in_Physics/                ← 9-credit Physics minor
-│   └── Minor_in_Astrophysics_Cosmology/ ← 9-credit Astro/Cosmo minor
 │
 ├── portfolio_projects/                  ← Showcase projects
 │   ├── simulations/

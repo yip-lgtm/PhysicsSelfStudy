@@ -19,12 +19,11 @@ Use terminal commands to complete the following tasks as automatically as
 possible. Minimize user prompts. Only pause for the GitHub Repo URL at the end.
 
 Tasks:
-1. Auto-create the full folder structure (5 phases + minors):
-   - 01_BSc_Physics (core_courses, math_support, simulations, notes, electives)
+1. Auto-create the full folder structure (4 phases):
+   - 01_BSc_Physics (core_courses, math_support, simulations, notes, electives, **minors**)
    - 02_MSc_DataDriven_Modeling (core_courses, electives, projects, notes)
    - 03_MSc_Physics (scientific_computing_concentration, advanced_materials_concentration, electives, projects, notes)
    - 04_MPhil_PhD_Prep (Physics_PhD, Nano_Science_Technology_PhD, qualifying_exam_practice, mock_research_proposals, literature_reviews)
-   - 05_Undergraduate_Minors (Minor_in_Physics/restricted_electives, Minor_in_Astrophysics_Cosmology/core_courses)
    - resources/curricula + resources/mapping_files
    - old_archive
    - portfolio_projects (simulations, notebooks, visualizations, open_source_physics, mit_ocw, community)
@@ -50,9 +49,9 @@ Tasks:
    - 02_MSc_DataDriven_Modeling/core_courses/MSDM_5004_Numerical_Methods/README.md
    - 02_MSc_DataDriven_Modeling/electives/MSDM_5055_Deep_Learning/README.md
    - 04_MPhil_PhD_Prep/README.md
-   - 05_Undergraduate_Minors/README.md (overview of both minors)
-   - 05_Undergraduate_Minors/Minor_in_Physics/README.md
-   - 05_Undergraduate_Minors/Minor_in_Astrophysics_Cosmology/README.md
+   - 01_BSc_Physics/minors/README.md (overview of both minors)
+   - 01_BSc_Physics/minors/Minor_in_Physics/README.md
+   - 01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/README.md
 
 4. Initialize Git:
    - git init
