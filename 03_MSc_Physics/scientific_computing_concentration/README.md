@@ -1,58 +1,40 @@
-# MSc Physics @ HKUST — Scientific Computing Concentration
+# Scientific Computing Concentration
 
-> **Phase 3 | HKUST MSc Physics — Computational Focus**
+> **MSc Physics | HKUST | Concentration Track**
 
 ---
 
 ## 🎯 Concentration Overview
 
 The **Scientific Computing Concentration** focuses on:
-
-- Numerical methods for physics
-- High-performance computing (HPC)
-- Computational fluid dynamics
-- Molecular dynamics
-- Quantum simulations
-- Data-driven physics
+- Computational tools and HPC
+- Numerical methods in physics
+- AI/ML applications in science
+- Large-scale simulations
 
 ---
 
-## 📚 Core Courses (HKUST MSc Physics)
+## 📚 Required Courses (9 credits)
 
-| Course | Title | Credits |
-|--------|-------|---------|
-| PHYS 5110 | Mathematical Methods | 3 |
-| PHYS 5120 | Classical Mechanics | 3 |
-| PHYS 5130 | Electromagnetism | 3 |
-| PHYS 5140 | Quantum Mechanics | 3 |
-| PHYS 5210 | Statistical Mechanics | 3 |
-| PHYS 5310 | Computational Physics | 3 |
-| PHYS 5320 | Numerical Methods | 3 |
+| Code | Title | Credits |
+|------|-------|---------|
+| **MSPY 5230** | Computational and Simulation Tools | 3 |
+| **MSPY 5240** | Computational Methods in Science | 3 |
+| **MSPY 5250** | Applications of Artificial Intelligence in Science | 3 |
 
-**Total:** 24 credits
+**Total:** 9 credits (3 courses)
 
 ---
 
-## 🎯 Concentration-Specific Courses
+## 🎯 Career Paths
 
-| Course | Title | Focus |
-|--------|-------|-------|
-| PHYS 6310 | Advanced Computational Physics | HPC, parallel computing |
-| PHYS 6320 | Numerical Methods in Physics | Advanced numerical methods |
-| PHYS 6330 | Machine Learning for Physics | PINN, GP, neural operators |
-| PHYS 6340 | Quantum Computing | Qiskit, algorithms |
-
----
-
-## 🛠️ Tools
-
-- Python (numpy, scipy, sympy, qutip)
-- MPI, OpenMP
-- CUDA
-- PyTorch, TensorFlow
-- Quantum ESPRESSO
-- LAMMPS
+- **Computational physicist** (research labs)
+- **HPC engineer** (national labs, industry)
+- **Data scientist** (quant finance, tech)
+- **ML engineer for science** (drug discovery, materials)
+- **Research software engineer**
+- **PhD in Computational Physics / ML for Science**
 
 ---
 
-*Last updated: 2026-06-07*
+*Last updated: 2026-06-07 — HKUST catalog aligned (concentration requirements)*

@@ -1,57 +1,40 @@
-# MSc Physics @ HKUST — Advanced Materials Concentration
+# Advanced Materials Physics and Technology Concentration
 
-> **Phase 3 | HKUST MSc Physics — Materials Focus**
+> **MSc Physics | HKUST | Concentration Track**
 
 ---
 
 ## 🎯 Concentration Overview
 
-The **Advanced Materials Concentration** focuses on:
-
-- Condensed matter physics
-- Soft matter
-- Materials design
-- Nanomaterials
-- Functional materials
-- Experimental techniques
+The **Advanced Materials Physics and Technology Concentration** focuses on:
+- Semiconductor devices and processing
+- Physical properties of materials
+- Experimental characterization techniques
+- Modern materials applications (energy, electronics, photonics)
 
 ---
 
-## 📚 Core Courses (HKUST MSc Physics)
+## 📚 Required Courses (9 credits)
 
-| Course | Title | Credits |
-|--------|-------|---------|
-| PHYS 5110 | Mathematical Methods | 3 |
-| PHYS 5120 | Classical Mechanics | 3 |
-| PHYS 5130 | Electromagnetism | 3 |
-| PHYS 5140 | Quantum Mechanics | 3 |
-| PHYS 5210 | Statistical Mechanics | 3 |
-| PHYS 5310 | Computational Physics | 3 |
-| PHYS 5320 | Numerical Methods | 3 |
+| Code | Title | Credits |
+|------|-------|---------|
+| **MSPY 5001** | Semiconductor Devices and Processing | 3 |
+| **MSPY 5210** | Physical Properties of Materials | 3 |
+| **MSPY 5220** | Experimental Techniques for Material Characterization | 3 |
 
-**Total:** 24 credits
+**Total:** 9 credits (3 courses)
 
 ---
 
-## 🎯 Concentration-Specific Courses
+## 🎯 Career Paths
 
-| Course | Title | Focus |
-|--------|-------|-------|
-| PHYS 6410 | Condensed Matter Physics | Crystal structure, phonons |
-| PHYS 6420 | Soft Matter Physics | Polymers, colloids, liquid crystals |
-| PHYS 6430 | Nanomaterials | Synthesis, characterization |
-| PHYS 6440 | Functional Materials | Electronic, magnetic, optical |
-
----
-
-## 🛠️ Tools
-
-- Python (numpy, scipy, ASE)
-- VESTA (crystal visualization)
-- Quantum ESPRESSO (DFT)
-- LAMMPS (MD)
-- OVITO (visualization)
+- **Semiconductor industry** (TSMC, Intel, Samsung)
+- **Materials R&D** (Applied Materials, ASML)
+- **Energy materials** (batteries, solar cells)
+- **Display technology** (LG, Samsung Display)
+- **Failure analysis labs**
+- **PhD in Materials Science / Condensed Matter Physics**
 
 ---
 
-*Last updated: 2026-06-07*
+*Last updated: 2026-06-07 — HKUST catalog aligned (concentration requirements)*
