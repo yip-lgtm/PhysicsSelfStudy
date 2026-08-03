@@ -1,59 +1,181 @@
-# PHYS 4058 — Information Physics (HKUST)
-
-> **Phase 1 BSc Elective | HKUST PHYS 4058 | Information Theory, Physics of Computation**
-
----
-
-## 📚 Course Information
-
-- **Code:** PHYS 4058
-- **Name:** Information Physics
-- **University:** HKUST
-- **Department:** Physics
-- **Term:** Fall 2025-2026
-- **Phase:** 1 (BSc Elective)
-- **Credits:** 3
-- **Difficulty:** ⭐⭐⭐⭐
+# PHYS 4058 — Information Physics
+> **Phase 1 BSc Elective | HKUST PHYS 4058 | Information theory meets physics**  
+> **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 🎯 Learning Objectives
+## 問題 1：5 個核心心智模型
+1. **Landauer principle** — $k_B T \ln 2$ per bit erasure
+2. **Bekenstein-Hawking entropy** — $S = A/(4 l_P^2)$
+3. **Shannon entropy** — $H = -\sum p \log p$
+4. **Maxwell's demon** — resolved by information
+5. **Quantum information** — qubit, entanglement entropy
 
-1. **Classical Information Theory**
-   - Entropy
-   - Shannon information
-   - Source coding, channel coding
+## 問題 2：3 個根本分歧
+1. **Information fundamental or emergent?**
+2. **It from bit (Wheeler) vs it from qubit**
+3. **Holographic principle literal or analogy?**
 
-2. **Quantum Information**
-   - Qubits
-   - Quantum gates
-   - Quantum circuits
-   - Quantum algorithms (Shor, Grover)
+## 問題 3：10 個深度問題
+1. 給定 Maxwell's demon, derive Landauer cost。
+2. 為什麼黑洞 entropy ∝ area 而非 volume?
+3. 解釋 why black hole information paradox 重要。
+4. 給定 2-qubit state, compute entanglement entropy。
+5. 為什麼 reversible computing 冇 lower bound on energy?
+6. 解釋 why Kolmogorov complexity 不可计算 in general。
+7. 給定 Shannon, derive channel capacity $C = B \log_2(1 + S/N)$。
+8. 為什麼 quantum error correction need 5-qubit code per logical?
+9. 解釋 why Shannon entropy vs von Neumann。
+10. 給定 free energy, derive Jarzynski equality。
 
-3. **Landauer's Principle**
-   - Thermodynamics of computation
-   - Maxwell's demon
-   - Reversible computing
+## 深入 1：Landauer & Maxwell's Demon
+**Deep Dive I**
 
-4. **Statistical Mechanics of Information**
-   - Jaynes' maximum entropy
-   - Szilard's engine
-   - Work extraction
+Erasing 1 bit costs $k_B T \ln 2$ in heat. Demon's information = thermodynamic resource.
 
-5. **Black Hole Information Paradox**
-   - Bekenstein-Hawking entropy
-   - Hawking radiation
-   - Firewall paradox
+**Engineering:** Low-power computing.
+
+## 深入 2：Black Hole Information
+**Deep Dive II**
+
+Bekenstein-Hawking $S = k_B A/(4 l_P^2)$. Information paradox, Page curve, AdS/CFT.
+
+**Engineering:** Theoretical physics.
+
+## 深入 3：Quantum Entropy
+**Deep Dive III**
+
+Von Neumann $S = -\text{Tr}(\rho \ln \rho)$. Entanglement entropy for pure states.
+
+**Engineering:** Quantum information.
+
+## 深入 4：Channel Capacity
+**Deep Dive IV**
+
+Shannon-Hartley $C = B \log(1 + S/N)$. Quantum: Holevo bound.
+
+**Engineering:** Communication, coding theory.
+
+## 深入 5：Thermodynamics of Information
+**Deep Dive V**
+
+Jarzynski equality, Crooks fluctuation theorem, stochastic thermodynamics.
+
+**Engineering:** Single-molecule experiments.
+
+## 自測 1：Landauer
+**Answer:** $k_B T \ln 2$ per bit, heat dissipation required.  
+**Engineering:** Computing power.
+
+## 自測 2：Bekenstein-Hawking
+**Answer:** $S \propto A$, holographic.  
+**Engineering:** Black hole.
+
+## 自測 3：Info paradox
+**Answer:** Hawking radiation thermal, no info?  
+**Engineering:** QG.
+
+## 自測 4：Entanglement entropy
+**Answer:** $S = -\text{Tr}(\rho_A \ln \rho_A)$, $\rho_A = \text{Tr}_B \rho$.  
+**Engineering:** Quantum info.
+
+## 自測 5：Reversible computing
+**Answer:** Landauer bound, theoretically zero.  
+**Engineering:** Quantum computer.
+
+## 自測 6：Kolmogorov
+**Answer:** Uncomputable in general.  
+**Engineering:** Algorithmic info.
+
+## 自測 7：Shannon capacity
+**Answer:** $C = B \log(1 + S/N)$, AWGN channel.  
+**Engineering:** Telecom.
+
+## 自測 8：QEC
+**Answer:** Threshold theorem, surface code 1%.  
+**Engineering:** Fault tolerance.
+
+## 自測 9：Shannon vs Neumann
+**Answer:** Shannon for classical, Neumann for quantum $\rho$.  
+**Engineering:** Info theory.
+
+## 自測 10：Jarzynski
+**Answer:** $\langle e^{-\beta W}\rangle = e^{-\beta \Delta F}$, non-equilibrium.  
+**Engineering:** Single-molecule.
+
+## 📊 Diagram 1: Information Physics Map
+```mermaid
+mindmap
+  root((Info Phys))
+    Thermodynamics
+      Landauer
+      Demon
+    Black hole
+      Bekenstein-Hawking
+      Paradox
+    Quantum
+      Von Neumann
+      Entanglement
+    Classical
+      Shannon
+    Non-equilibrium
+      Jarzynski
+```
+
+## 📊 Diagram 2: Maxwell's Demon
+```mermaid
+graph TD
+    A[Gas molecules] -->|Demon measures| B[Sorts fast/slow]
+    B --> C[Temperature difference]
+    C --> D[Work extracted]
+    D --> E{Demon's memory}
+    E -->|Erased| F[Landauer cost >= work]
+    E -->|Not erased| G[Infinite free energy paradox]
+    F --> H[No violation]
+```
+
+## 📊 Diagram 3: Black Hole Information
+```mermaid
+graph TD
+    A[Black hole forms] --> B[Mass M, area A]
+    B --> C[Hawking radiation]
+    C --> D[Temperature T_H = hbar c³ / 8 pi G M k_B]
+    C --> E[Thermal, no info?]
+    E --> F[Information paradox]
+    F --> G[AdS/CFT: unitary]
+    G --> H[Page curve: info released late]
+```
+
+## 📊 Diagram 4: Entanglement Entropy
+```mermaid
+graph TD
+    A[Pure state psi_AB] --> B[rho_AB = psi braket psi]
+    B --> C[rho_A = Tr_B rho_AB]
+    C --> D[S = -Tr rho_A log rho_A]
+    D --> E{Entangled?}
+    E -->|Yes| F[S > 0]
+    E -->|No| G[S = 0]
+```
+
+## 📊 Diagram 5: Channel Capacity
+```mermaid
+graph TD
+    A[Channel] --> B{Bandwidth B}
+    B --> C[AWGN: C = B log2 1 + S/N]
+    C --> D[bps]
+    B -->|Quantum| E[Holevo bound]
+    E --> F[chi]
+    F --> G[Qubits per use]
+```
+
+## 深度總結
+
+1. **Information is physical** — Landauer, Bekenstein
+2. **Entropy = information** — Shannon, Neumann
+3. **Black hole = max entropy** — holographic
+4. **Reversible = no Landauer** — quantum
+5. **Non-equilibrium = information work** — Jarzynski
 
 ---
 
-## 📖 Resources
-
-### Primary
-- **Nielsen & Chuang** — Quantum Computation and Quantum Information
-- **Cover & Thomas** — Elements of Information Theory
-- **HKUST PHYS 4058 course materials** (Canvas/Classvault)
-
----
-
-*Last updated: 2026-06-07 — HKUST course code aligned*
+**自學建議** — Nielsen & Chuang, Cover & Thomas. Seth Lloyd "Programming the Universe".
