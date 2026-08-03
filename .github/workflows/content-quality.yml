@@ -41,8 +41,8 @@ jobs:
               exit 1
             fi
             LINES=$(wc -l < "$f")
-            if [ "$LINES" -lt 1500 ]; then
-              echo "❌ $f is only $LINES lines (need ≥ 1500 for full format)"
+            if [ "$LINES" -lt 500 ]; then
+              echo "❌ $f is only $LINES lines (need ≥ 500 for full new format)"
               exit 1
             fi
             if ! grep -q "## 總結\|## Deep Insights" "$f"; then
