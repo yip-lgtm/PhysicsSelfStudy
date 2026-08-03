@@ -1,43 +1,118 @@
 # MSPY 6810 — Heavy Ion Collision Physics
-> **MSc Physics Elective | HKUST MSPY 6810 | Quark-gluon plasma, relativistic heavy-ion collisions, collective phenomena**  
+> **MSc Physics Elective | HKUST MSPY 6810 | Quark-gluon plasma, relativistic heavy-ion collisions, collective phenomena, QGP probes**  
 > **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
 ## 問題 1：5 個核心心智模型
 
-1. **QGP is a strongly coupled fluid** — QGP是強耦合流體 (not weakly interacting gas, near-perfect fluid)
-2. **Collective flow is the signature** — 集體流是特徵 (elliptic flow reveals early dynamics)
-3. **Jets probe the medium** — 噴注探測介質 (jet quenching reveals QGP properties)
-4. **Thermodynamics of QCD** — QCD熱力學 (phase diagram, critical point)
-5. **Hydrodynamics describes evolution** — 流體動力學描述演化 (viscous hydro from initial state)
+1. **QGP is a strongly coupled fluid** — QGP是強耦合流體
+   - Not weakly interacting gas
+   - Near-perfect fluid with $\eta/s \approx 0.1$
+   - Collective flow is dominant feature
+
+2. **Collective flow is the signature** — 集體流是特徵
+   - Elliptic flow $v_2$ reveals early dynamics
+   - Hydrodynamic response to initial geometry
+   - Scales with participant eccentricity $\epsilon_2$
+
+3. **Jets probe the medium** — 噴注探測介質
+   - Jet quenching: energy loss in medium
+   - $R_{AA} < 1$ indicates modification
+   - $\hat{q}$ measures medium density
+
+4. **Thermodynamics of QCD** — QCD熱力學
+   - Phase transition at $T_c \approx 156$ MeV
+   - Crossover at $\mu_B = 0$
+   - Critical point at $\mu_B \sim 100$ MeV
+
+5. **Hydrodynamics describes evolution** — 流體動力學描述演化
+   - Viscous hydro from initial state
+   - $2+1$ D boost-invariant expansion
+   - Freeze-out at $T_{fo} \approx 100$ MeV
+
+---
 
 ## 問題 2：3 個根本分歧
 
-1. **Perfect fluid vs microscopic picture**
-   - Hydro: success in describing flow
-   - Micro: actual degrees of freedom unclear
+### 分歧 1：Perfect Fluid vs Microscopic Picture
+| View | Argument |
+|------|---------|
+| Hydro | Success in describing flow |
+| Micro | Actual degrees of freedom unclear |
 
-2. **Initial state geometry**
-   - Glauber: geometric fluctuations
-   - CGC: saturation physics, Color Glass Condensate
+**Reality:** QGP is strongly coupled, both views complementary
 
-3. **Temperature extraction**
-   - Direct photons: blackbody radiation
-   - Statistical hadronization: fits yield $T \approx 156$ MeV
+### 分歧 2：Initial State: Glauber vs CGC
+| Model | Description |
+|--------|-------------|
+| Glauber | Geometric fluctuations, nucleon positions |
+| CGC | Saturation physics, Color Glass Condensate |
+
+**Evidence:** Both describe initial geometry, different predictions at high multiplicity
+
+### 分歧 3：Temperature Extraction
+| Method | Result |
+|--------|---------|
+| Direct photons | $T \approx 200-300$ MeV |
+| Statistical hadronization | $T \approx 156$ MeV |
+| Particle ratios | $T \approx 156$ MeV |
+
+---
 
 ## 問題 3：10 個深度問題
 
-1. 給定 Bjorken hydrodynamics, derive central energy density $\epsilon = \frac{1}{\pi R^2}\frac{dE_T}{dy}$。
-2. 解釋為什麼 QGP has extremely small shear viscosity $\eta/s \approx 0.1$。
-3. 為什麼 elliptic flow $v_2$ scales with participant eccentricity $\epsilon_2$?
-4. 給定 jet quenching energy loss $dE/dx \propto \alpha_s C_R \rho_{gauge}\hat{q}$, 解釋 medium response。
-5. 解釋 Hanbury Brown-Twiss (HBT) interferometry for source radius。
-6. 為什麼 heavy quark diffusion coefficient $D_s$ is small?
-7. 給定 quarkonium suppression pattern, 點樣 sequential melting reveals $T_{medium}$。
-8. 解釋为何 direct photons have excess thermal emission at low $p_T$。
-9. 為什麼 flow observables are sensitive to EoS?
-10. 給定 Bayesian analysis constraints, extract QGP properties from multi-observable fits。
+1. **Bjorken Energy Density**: 給定 hydrodynamics, derive central energy density
+   $$\epsilon = \frac{1}{\pi R^2}\frac{dE_T}{dy}\frac{1}{\tau_0}$$
+   - $\tau_0 \approx 1$ fm/c
+   - $dE_T/dy \approx 500$ GeV for Au+Au at 200 GeV
+
+2. **Shear Viscosity**: 為什麼 QGP has $\eta/s \approx 0.1$
+   - From flow data analysis
+   - Near conformal fluid
+   - Lower bound: $\eta/s \geq 1/4\pi$
+
+3. **Flow Scaling**: 為什麼 $v_2$ scales with $\epsilon_2$
+   - Hydrodynamic response
+   - Linear for small eccentricity
+   - $v_n \propto \epsilon_n F(\eta/s)$
+
+4. **Jet Energy Loss**: 給定 $dE/dx \propto \alpha_s C_R \rho_{gauge}\hat{q}$, explain medium response
+   - Collisional + radiative energy loss
+   - $\hat{q}$: jet quenching parameter
+   - Medium-induced radiation
+
+5. **HBT Interferometry**: 解釋 Hanbury Brown-Twiss for source radius
+   - Two-particle correlations
+   - Source size $R \sim 5$ fm
+   - $R_{out} \neq R_{side}$ indicates expansion
+
+6. **Heavy Quark Diffusion**: 為什麼 $D_s$ is small
+   - Langevin drag: $D_s \approx 2-6/(2\pi T)$
+   - $R_{AA}(D) \approx 0.4$
+   - Heavy quarks flow with medium
+
+7. **Quarkonium Suppression**: 給定 sequential melting pattern
+   - $J/\psi$, $\chi_c$, $\psi'$, $\Upsilon(1S)$, $\Upsilon(2S)$
+   - Larger states melt at lower $T$
+   - Sequential: $T_{melting} \propto 1/r$
+
+8. **Direct Photons**: 為什麼 have excess thermal emission
+   - Thermal emission $\propto T^4$
+   - $T_{eff} \approx 200-300$ MeV
+   - Probe early medium temperature
+
+9. **EoS Sensitivity**: 為什麼 flow observables sensitive to EoS
+   - Speed of sound $c_s^2 = dp/d\epsilon$
+   - Affects expansion dynamics
+   - $c_s^2 \approx 0.15$ near $T_c$
+
+10. **Bayesian Analysis**: 給定 multi-observable fits, extract QGP properties
+    - $\eta/s(T)$, $\zeta/s(T)$, $T_{switch}$
+    - Uncertainty quantification
+    - Model comparison
+
+---
 
 ## 深入 1：QCD Phase Diagram
 **Deep Dive I**
@@ -64,6 +139,8 @@ Chemical potentials: $\mu_S \approx 0$, $\mu_Q \approx 0$ (in central collisions
 
 **Engineering implication:** Lattice QCD provides EoS for hydrodynamic simulations
 
+---
+
 ## 深入 2：Collision Geometry & Initial State
 **Deep Dive II**
 
@@ -89,6 +166,8 @@ Each event has unique geometry from nucleon positions.
 Correlations in initial state translate to final flow harmonics.
 
 **Engineering implication:** Initial state fluctuations determine final flow pattern
+
+---
 
 ## 深入 3：Hydrodynamic Evolution
 **Deep Dive III**
@@ -119,6 +198,8 @@ Directed flow $v_1$, elliptic flow $v_2$, triangular flow $v_3$
 
 **Engineering implication:** Hydrodynamic response to initial geometry produces observed flow
 
+---
+
 ## 深入 4：Jet Quenching
 **Deep Dive IV**
 
@@ -144,6 +225,8 @@ Modifications to fragmentation functions.
 
 **Engineering implication:** Jet quenching measures medium transport properties
 
+---
+
 ## 深入 5：Probes of QGP
 **Deep Dive V**
 
@@ -152,15 +235,12 @@ Color screening in QGP: $V(r) \sim \exp(-r/r_D)$, $r_D \propto 1/T$
 
 Sequential melting: $J/\psi$, $\chi_c$, $\psi'$, $\Upsilon(1S)$, $\Upsilon(2S)$
 
-Suppression pattern correlates with $T$:
-
 | State | $T/T_c$ | Status |
-|---|---|---|
-| $J/\psi$ | ~2 | Suppressed |
-| $\chi_c$ | ~1.5 | Suppressed |
+|-------|----------|--------|
 | $\psi'$ | ~1.1 | Melting |
-| $\Upsilon(1S)$ | ~2.5 | Survives |
+| $J/\psi$ | ~2 | Suppressed |
 | $\Upsilon(2S)$ | ~1.5 | Suppressed |
+| $\Upsilon(1S)$ | ~2.5 | Survives |
 
 ### Heavy Quark Diffusion
 Langevin equation:
@@ -175,50 +255,82 @@ Dileptons: medium radiation from $q\bar{q}$ annihilation.
 
 **Engineering implication:** Multiple probes provide consistent picture of QGP
 
+---
+
 ## 自測 1：Bjorken Energy Density
-**Answer:** $\epsilon = \frac{1}{\pi R^2}\frac{dE_T}{dy}\frac{1}{\tau_0}$, with $\tau_0 \approx 1$ fm/c.  
+**Answer:** $\epsilon = \frac{1}{\pi R^2}\frac{dE_T}{dy}\frac{1}{\tau_0}$, with $\tau_0 \approx 1$ fm/c.
+
 **Engineering implication:** Extracts initial temperature from data
 
+---
+
 ## 自測 2：Viscosity
-**Answer:** $\eta/s \approx 0.1-0.2$ from flow data, near-conformal fluid like water/He-3.  
-**Engineering implication:** QGP is nearly perfect fluid
+**Answer:** $\eta/s \approx 0.1-0.2$ from flow data. Near lower bound $1/4\pi \approx 0.08$. QGP is nearly perfect fluid.
+
+**Engineering implication:** QGP is strongly coupled liquid
+
+---
 
 ## 自測 3：Flow Scaling
-**Answer:** $v_n \propto \epsilon_n F(\eta/s)$ from hydrodynamic response. Linear for small $\epsilon$.  
+**Answer:** $v_n \propto \epsilon_n F(\eta/s)$ from hydrodynamic response. Linear for small $\epsilon$.
+
 **Engineering implication:** Flow measures initial geometry
 
+---
+
 ## 自測 4：Jet Energy Loss
-**Answer:** $dE/dx \propto \hat{q} \alpha_s C_R L$, where $\hat{q}$ is jet quenching parameter.  
+**Answer:** $dE/dx \propto \hat{q} \alpha_s C_R L$, where $\hat{q}$ is jet quenching parameter.
+
 **Engineering implication:** $\hat{q}$ measures medium density
 
+---
+
 ## 自測 5：HBT Interferometry
-**Answer:** Two-particle correlations measure source size $R \sim 5$ fm.  
+**Answer:** Two-particle correlations measure source size $R \sim 5$ fm. $R_{out} > R_{side}$ indicates expansion.
+
 **Engineering implication:** QGP source size measured via quantum statistics
 
+---
+
 ## 自測 6：Heavy Quark Diffusion
-**Answer:** $D_s \approx 2-6/(2\pi T)$ from $R_{AA}$ and flow measurements.  
+**Answer:** $D_s \approx 2-6/(2\pi T)$ from $R_{AA}$ and flow measurements. Heavy quarks flow with medium.
+
 **Engineering implication:** Heavy quarks probe medium dynamics
 
+---
+
 ## 自測 7：Quarkonium Melting
-**Answer:** Larger $\Upsilon$ states melt at lower T, sequential suppression reveals temperature.  
+**Answer:** Larger $\Upsilon$ states melt at lower T. Sequential suppression reveals temperature.
+
 **Engineering implication:** Sequential melting is QGP thermometer
 
+---
+
 ## 自測 8：Direct Photons
-**Answer:** Thermal emission $\propto T^4$, excess above prompt explains $T_{eff} > T_{chem}$.  
+**Answer:** Thermal emission $\propto T^4$. $T_{eff} > T_{chem}$ from early emission.
+
 **Engineering implication:** Direct photons probe early medium temperature
 
+---
+
 ## 自測 9：EoS Sensitivity
-**Answer:** Speed of sound $c_s^2 = dp/d\epsilon$ affects expansion dynamics and $v_n$.  
+**Answer:** Speed of sound $c_s^2 = dp/d\epsilon$ affects expansion dynamics and $v_n$. Lattice QCD: $c_s^2 \approx 0.15$ near $T_c$.
+
 **Engineering implication:** Flow observables constrain EoS
 
+---
+
 ## 自測 10：Bayesian Constraints
-**Answer:** Multi-observable fits extract $\eta/s(T)$, $\zeta/s(T)$, $T_{switch}$ with uncertainties.  
+**Answer:** Multi-observable fits extract $\eta/s(T)$, $\zeta/s(T)$, $T_{switch}$ with uncertainties. Validates hydrodynamic framework.
+
 **Engineering implication:** Statistical inference constrains QGP properties
+
+---
 
 ## 📊 Diagram 1: Heavy Ion Physics Map
 ```mermaid
 mindmap
-  root((Heavy Ion))
+  root((Heavy Ion Physics))
     QCD
       Phase diagram
       Lattice QCD
@@ -264,7 +376,7 @@ graph TD
     C --> D[Flow coefficients]
     D --> E[v₂ elliptical]
     D --> F[v₃ triangular]
-    E --> G[Hydrodynamic response]
+    E --> G[Hydro response]
 ```
 
 ## 📊 Diagram 4：Jet Modification
@@ -289,27 +401,61 @@ graph TD
     D --> G[μB ~ 100 MeV]
 ```
 
+---
+
 ## 深度總結 Deep Insights
 
 1. **QGP is a perfect fluid** — $\eta/s$ near lower bound, collective behavior dominates
    **QGP是完美流體** — $\eta/s$ 接近下限，集體行為主導
+   - Near-perfect fluid
+   - Hydrodynamic description works
 
 2. **Flow is the key observable** — hydrodynamic response to geometry
    **流是關鍵觀測量** — 流體動力學對幾何的反應
+   - $v_2$ reveals early dynamics
+   - Sensitive to $\eta/s$
 
 3. **Jet quenching measures density** — energy loss reveals medium properties
    **噴注淬火測量密度** — 能量損失揭示介質性質
+   - $\hat{q}$ parameter
+   - Medium response
 
 4. **Lattice QCD constrains EoS** — provides input for hydro simulations
    **格點QCD約束EoS** — 為流體模擬提供輸入
+   - Crossover at $T_c \approx 156$ MeV
+   - $c_s^2 \approx 0.15$
 
 5. **Multiple probes consistent** — picture of QGP emerging
    **多個探針一致** — QGP圖景正在浮現
+   - Flow, jets, quarkonia
+   - Integrated understanding
 
 ---
 
 **自學建議**
-- 必讀:RHIC white papers, QCD matter reviews
-- 配對: Busza, Goldhaber,ussa "Heavy Ion Collisions"
-- 工具: JETSCAPE, MUSIC (hydro), THERMINATOR
-- 產出: Simulate collision with viscous hydro
+
+**必讀:**
+- RHIC white papers
+- QMC Reviews (nucl-th)
+- Busza, Goldhaber "Heavy Ion Collisions"
+
+**配對:**
+- JETSCAPE framework
+- MUSIC (hydro code)
+- JEWEL (jet Monte Carlo)
+
+**工具:**
+- JETSCAPE (simulations)
+- VISHNU (hydro + hadronic afterburner)
+- THERMINATOR (thermal decays)
+
+**產出:**
+- Calculate $\eta/s$ from flow data
+- Simulate collision with viscous hydro
+- Analyze jet modification
+
+---
+
+**最後更新:** 2024-03-15
+**自學狀態:** 📚 繼續深入學習
+**下一步:** 完成JETSCAPE教程 + 分析flow數據
