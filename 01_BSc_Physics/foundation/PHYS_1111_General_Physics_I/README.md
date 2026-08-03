@@ -1,74 +1,197 @@
-# PHYS 1111 — General Physics I (HKUST)
-
-> **Phase 1 BSc Foundation | HKUST PHYS 1111 | Calc-based Physics I**
-
----
-
-## 📚 Course Information
-
-- **Code:** PHYS 1111
-- **Name:** General Physics I
-- **University:** HKUST
-- **Program:** BSc Physics
-- **Phase:** 1 (BSc Foundation)
-- **Credits:** 3
+# PHYS 1111 — General Physics I (Mechanics)
+> **Phase 1 BSc Foundation | HKUST PHYS 1111 | Classical mechanics, calculus-based**  
+> **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 🎯 Learning Objectives
+## 問題 1：5 個核心心智模型
 
-A **calculus-based** introduction to mechanics and waves for science and engineering students.
-
-### 1. **Mechanics**
-- Vectors, kinematics
-- Newton's laws
-- Work, energy, power
-- Conservation laws
-- Momentum, collisions
-- Rotational motion
-- Gravity (Kepler, Newton)
-- Oscillations (SHM, damped, driven)
-
-### 2. **Waves**
-- Wave motion
-- Sound waves
-- Superposition, interference
-- Standing waves, resonance
-
-### 3. **Thermodynamics (intro)**
-- Temperature, heat
-- Kinetic theory of gases
-- First, second law
-
-### 4. **Mathematical Tools**
-- Calculus (differentiation, integration)
-- Vectors
-- Series
-- Differential equations (intro)
+1. **Newton's 2nd law** — $\vec F = m\vec a$, central to all mechanics
+2. **Conservation laws** — energy, momentum, angular momentum
+3. **Work-energy theorem** — $W = \Delta K$
+4. **Oscillations & waves** — periodic motion, superposition
+5. **Central force & orbits** — Kepler from Newton
 
 ---
 
-## 📖 Resources
-
-### Primary
-- **Halliday, Resnick, Walker** — Fundamentals of Physics (12th ed)
-- **Young & Freedman** — University Physics with Modern Physics (15th ed)
-- **Tipler & Mosca** — Physics for Scientists and Engineers
-- HKUST PHYS 1111 course materials
-
-### Supplementary
-- **Kleppner & Kolenkow** — An Introduction to Mechanics
-- **MIT OCW 8.01** — Physics I: Classical Mechanics (free online)
+## 問題 2：3 個根本分歧
+1. **Newtonian vs Lagrangian** — forces vs energy
+2. **Inertial vs non-inertial frames** — fictitious forces
+3. **Determinism vs chaos** — Laplace vs sensitive dependence
 
 ---
 
-## 🎯 Project Ideas
-
-- Air track experiments (collisions, oscillations)
-- Measure g with pendulum
-- Build a seismograph model
-- Computer simulation of projectile motion
+## 問題 3：10 個深度問題
+1. 給定 projectile, derive range $R = v^2 \sin 2\theta / g$。
+2. 為什麼 friction force $\leq \mu N$, not $= \mu N$ always?
+3. 解釋為什麼 CM frame 簡化 2-body problem。
+4. 給定 rigid body, derive moment of inertia $I = \int r^2 dm$。
+5. 為什麼 harmonic oscillator $T = 2\pi\sqrt{m/k}$ 對 small angles?
+6. 解釋為什麼 wave speed $v = \sqrt{T/\mu}$ for string, $\sqrt{B/\rho}$ for sound。
+7. 給定 Doppler effect, derive $f' = f(c\pm v_o)/(c\mp v_s)$。
+8. 為什麼 adiabatic process $PV^\gamma = $ const?
+9. 給定 Carnot, derive $\eta = 1 - T_c/T_h$。
+10. 解釋 why entropy $S = k_B \ln \Omega$ 永遠 increase (2nd law)。
 
 ---
 
-*Last updated: 2026-06-07 — Comprehensive content added*
+## 深入 1：Kinematics
+**Deep Dive I**
+
+$\vec v = d\vec r/dt$, $\vec a = d\vec v/dt$. 1D, 2D, 3D motion. Projectile, circular.
+
+**Engineering:** Vehicle dynamics, robotics.
+
+## 深入 2：Newton's Laws & Forces
+**Deep Dive II**
+
+Free-body diagrams. Gravity, normal, friction, spring, tension. Incline, pulley, Atwood.
+
+**Engineering:** Structural, mechanical.
+
+## 深入 3：Work, Energy, Power
+**Deep Dive III**
+
+$W = \int \vec F \cdot d\vec r$, $K = \frac{1}{2}mv^2$, conservative forces, $U$.
+
+**Engineering:** Energy, power systems.
+
+## 深入 4：Momentum & Collisions
+**Deep Dive IV**
+
+$\vec p = m\vec v$, conserved in closed system. Elastic vs inelastic. CM, reduced mass.
+
+**Engineering:** Vehicle, particle physics.
+
+## 深入 5：Rotation & Oscillation
+**Deep Dive V**
+
+Angular quantities. $\tau = I\alpha$, $L = I\omega$. SHM, pendulum, waves.
+
+**Engineering:** Engines, clocks, acoustics.
+
+---
+
+## 自測 1：Projectile range
+**Answer:** $R = v_0^2 \sin 2\theta_0 / g$ at $45°$ max.  
+**Engineering:** Ballistics, sports.
+
+## 自測 2：Friction
+**Answer:** Static $f_s \leq \mu_s N$, kinetic $f_k = \mu_k N$.  
+**Engineering:** Brakes, walking.
+
+## 自測 3：CM frame
+**Answer:** $\vec R = (m_1 \vec r_1 + m_2 \vec r_2)/(m_1+m_2)$, $\vec P = M\vec v_{CM}$.  
+**Engineering:** Orbital, particle.
+
+## 自測 4：Moment of inertia
+**Answer:** $I = \int r^2 \rho \, dV$, parallel axis $I = I_{cm} + Md^2$.  
+**Engineering:** Flywheel, beam.
+
+## 自測 5：Pendulum
+**Answer:** $T = 2\pi\sqrt{L/g}$ small angle.  
+**Engineering:** Clock, seismometer.
+
+## 自測 6：Wave on string
+**Answer:** $v = \sqrt{T/\mu}$, $T$ tension, $\mu$ linear density.  
+**Engineering:** Musical instrument, cable.
+
+## 自測 7：Doppler
+**Answer:** $f' = f(c+v_o)/(c-v_s)$, sign convention.  
+**Engineering:** Radar, ultrasound.
+
+## 自測 8：Adiabatic
+**Answer:** $PV^\gamma = $ const, $\gamma = C_P/C_V$.  
+**Engineering:** Engine cycle.
+
+## 自測 9：Carnot
+**Answer:** $\eta = 1 - T_c/T_h$ reversible.  
+**Engineering:** Engine design.
+
+## 自測 10：Entropy
+**Answer:** $S = k_B \ln \Omega$, 2nd law from counting.  
+**Engineering:** Heat engine limit.
+
+---
+
+## 📊 Diagram 1: Mechanics Map
+```mermaid
+mindmap
+  root((Gen Physics I))
+    Kinematics
+      1D 2D 3D
+      Projectile
+    Forces
+      Newton
+      Friction
+    Energy
+      KE PE
+      Work
+    Momentum
+      Collision
+      CM
+    Rotation
+      Torque
+      Angular momentum
+```
+
+## 📊 Diagram 2: Free-Body Diagram
+```mermaid
+graph TD
+    A[Object] -->|Weight mg| B[Down]
+    A -->|Normal N| C[Up]
+    A -->|Applied F| D[Direction]
+    A -->|Friction f| E[Opposite motion]
+    B --> F[Sum to zero or ma]
+    C --> F
+    D --> F
+    E --> F
+```
+
+## 📊 Diagram 3: Energy Conservation
+```mermaid
+graph TD
+    A[Initial state] -->|KE + PE| B[Total E]
+    B -->|Work done| C[Final state]
+    C -->|KE + PE| D[Same total]
+    D -->|E_i + W = E_f| E[Energy conserved]
+```
+
+## 📊 Diagram 4: Collision Types
+```mermaid
+graph TD
+    A[Collision] --> B[Elastic]
+    A --> C[Inelastic]
+    B --> D[KE + p conserved]
+    C --> E[p conserved, KE lost]
+    C --> F[Perfectly inelastic: stick]
+    D --> G[e = 1]
+    E --> H[e = 0]
+    F --> I[e = 0, max KE loss]
+```
+
+## 📊 Diagram 5: SHM & Waves
+```mermaid
+graph TD
+    A[SHM] --> B[omega = sqrt k/m]
+    B --> C[x t = A cos omega t + phi]
+    C --> D[Energy: E = 1/2 kA²]
+    A --> E[Waves]
+    E --> F[Transverse: string]
+    E --> G[Longitudinal: sound]
+    E --> H[Superposition]
+```
+
+---
+
+## 深度總結 Deep Insights
+
+1. **Newton's laws are universal** — at human scales
+2. **Energy is the conserved quantity** — work-energy theorem central
+3. **Momentum in collisions** — simpler than force analysis
+4. **SHM ubiquitous** — atoms, bridges, AC
+5. **Waves transport energy** — not matter
+
+---
+
+**自學建議** — Young & Freedman "University Physics". MIT OCW 8.01.
