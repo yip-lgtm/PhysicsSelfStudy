@@ -1,321 +1,373 @@
-# MSDM — Computational Tools
-> **HKUST MSDM_5001 | intermediate, requires prior physics + calculus**  
+# MSDM 5001 — Computational Tools for Data-Driven Physics
+> **MSc Data-Driven Modeling Core | HKUST MSDM 5001 | Python ecosystem, Linux, version control, data handling**  
 > **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 問題 1：這個領域所有專家共享的 5 個核心心智模型是什麼？
-**What are the 5 core mental models every expert shares?**
+## 問題 1：5 個核心心智模型
 
-1. **Conservation laws govern dynamics** — 守恆定律主導動力學 (energy, momentum, charge)
-2. **Symmetry is the deepest principle** — 對稱係最深刻嘅原理 (Noether's theorem)
-3. **Discretization approximates continuity** — 離散近似連續 (FD, FEM, spectral)
-4. **Mathematics is the language** — 數學係物理嘅語言 (calculus, linear algebra, group theory)
-5. **Experiment tests theory** — 實驗檢驗理論 (design, measurement, error analysis)
+1. **Python is the lingua franca of physics computing** — Python是物理計算的通用語 (NumPy, SciPy, Matplotlib ecosystem)
+2. **Git enables reproducible research** — Git實現可重現研究 (version control, collaboration, backup)
+3. **Linux provides HPC environment** — Linux提供高性能計算環境 (clusters, SLURM, shell scripting)
+4. **Data structures determine algorithm efficiency** — 數據結構決定算法效率 (arrays, trees, hashes)
+5. **Testing prevents silent failures** — 測試防止靜默失敗 (unit tests, continuous integration)
 
-## 問題 2：這個領域的專家在哪 3 個地方存在根本分歧？各方最強的論點是什麼？
+## 問題 2：3 個根本分歧
 
-1. **Reductionist vs holistic** — 還原論 vs 整體論
-   - Reductionist: 從基本粒子向上建構。  
-   - Holistic: 涌現現象唔可從部分預測。
+1. **Jupyter vs script-based development**
+   - Jupyter: interactive exploration, visualization, reproducibility issues
+   - Scripts: production code, version control, testing easier
 
-2. **Classical vs quantum** — 古典 vs 量子
-   - Classical: 確定性、局部。  
-   - Quantum: 概率性、非局部。
+2. **Virtual environments: conda vs venv vs poetry**
+   - Conda: package management for C libraries too
+   - Venv: built-in, simple
+   - Poetry: modern, reproducible builds
 
-3. **Pure vs applied** — 純粹 vs 應用
-   - Pure: 知識為本。  
-   - Applied: 解決問題。
+3. **Floating point: double vs single precision**
+   - Double: safe default for physics, 15 significant digits
+   - Single: 2x memory, faster on GPU, sufficient for some ML
 
-## 問題 3：生成 10 個能區分深度理解與死背知識的問題
-**Generate 10 questions that distinguish deep understanding from memorization**
+## 問題 3：10 個深度問題
 
-1. 為什麼呢個領域嘅 Python 概念 fundamental?
+1. 給定 $N$ elements, 分析 NumPy broadcasting 的時間複雜度。
+2. 解釋為什麼 Python lists 比 NumPy arrays 慢 100x for numerical operations。
+3. 為什麼 JIT compilation (Numba) 能加速 Python loop 100x?
+4. 給定 Git workflow, 設計 branching strategy for research project。
+5. 解釋為什麼 floating point comparison 需要 tolerance。
+6. 為什麼 profiling 係 optimization 的第一步?
+7. 給定 large dataset, 點樣選擇 data format (HDF5, Parquet, CSV)?
+8. 解釋多進程 vs 多線程在 Python 的限制。
+9. 為什麼 type hints improve code quality?
+10. 給定 experiment data, 點樣 implement reproducible pipeline?
 
-2. 解釋 Linux 嘅物理意義。
-
-3. 給定一個典型問題, 點樣 apply 呢個領域嘅 核心方程?
-
-4. 為什麼 Data handling 在呢度重要?
-
-5. 解釋 Python 嘅 limitations。
-
-6. 點解 experimental evidence support 呢個 theory?
-
-7. 為什麼 historical development 帶我哋去 呢個 formulation?
-
-8. 給定 measured data, 點樣 extract 物理 insights?
-
-9. 解釋 對稱 喺 呢個領域嘅 role。
-
-10. 點解 呢個領域 connect 到其他 physics subfields?
-
-## 深入 1：Foundations: Python
+## 深入 1：NumPy Essentials
 **Deep Dive I**
 
-### Bilingual concept table for foundations: python
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
-```mermaid
-graph TD
-    A[Input: foundations: python] --> B{Analysis}
-    B --> C[Output]
+### Array Operations
+NumPy核心是ndarray:
+```python
+import numpy as np
+a = np.array([1.0, 2.0, 3.0], dtype=np.float64)
+b = np.linspace(0, 2*np.pi, 100)
+c = np.zeros((100, 100), dtype=np.complex128)
 ```
 
-## 深入 2：Mathematical framework: equations, derivations
-**Deep Dive J**
+Broadcasting rules:
+- Shapes match or one is 1
+- Output shape = element-wise maximum
 
-### Bilingual concept table for mathematical framework: equations, derivations
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
-```mermaid
-graph TD
-    A[Input: mathematical framework: equations, derivations] --> B{Analysis}
-    B --> C[Output]
+### Vectorized Operations
+Element-wise operations:
+```python
+x = np.linspace(-5, 5, 1000)
+y = np.sin(x) * np.exp(-x**2/2)  # Vectorized!
 ```
 
-## 深入 3：Experimental/computational methods
-**Deep Dive K**
-
-### Bilingual concept table for experimental/computational methods
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
-```mermaid
-graph TD
-    A[Input: experimental/computational methods] --> B{Analysis}
-    B --> C[Output]
+vs loops:
+```python
+y = np.empty_like(x)
+for i, xi in enumerate(x):
+    y[i] = np.sin(xi) * np.exp(-xi**2/2)  # 100x slower
 ```
 
-## 深入 4：Applications and engineering
-**Deep Dive L**
-
-### Bilingual concept table for applications and engineering
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
-```mermaid
-graph TD
-    A[Input: applications and engineering] --> B{Analysis}
-    B --> C[Output]
+### Linear Algebra
+```python
+A = np.random.rand(1000, 1000)
+w, v = np.linalg.eigh(A)  # Eigenvalues
+U, s, Vh = np.linalg.svd(A)  # SVD
+x = np.linalg.solve(A, b)  # Linear system
 ```
 
-## 深入 5：Connections to other fields and open problems
-**Deep Dive M**
+**Engineering implication:** Vectorization is key to performance
 
-### Bilingual concept table for connections to other fields and open problems
+## 深入 2：Scientific Python Stack
+**Deep Dive II**
 
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+### SciPy
+Optimization:
+```python
+from scipy.optimize import minimize, curve_fit
 
-### Key derivation / formula
+def model(x, a, b, c):
+    return a * np.exp(-b * x) + c
 
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
-```mermaid
-graph TD
-    A[Input: connections to other fields and open problems] --> B{Analysis}
-    B --> C[Output]
+popt, pcov = curve_fit(model, xdata, ydata, p0=[1, 1, 0])
 ```
 
-## 自測 1：Derive Python for typical case.
-**Self-Test 1**
+Integration:
+```python
+from scipy.integrate import quad, solve_ivp
 
-**Answer / 解答:**
-Detailed answer for self-test 1, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 2：為什麼 Linux fundamental to field?
-**Self-Test 2**
-
-**Answer / 解答:**
-Detailed answer for self-test 2, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 3：Apply Python to a real problem.
-**Self-Test 3**
-
-**Answer / 解答:**
-Detailed answer for self-test 3, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 4：解釋 difference between two competing approaches.
-**Self-Test 4**
-
-**Answer / 解答:**
-Detailed answer for self-test 4, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 5：Estimate order of magnitude for given physical setup.
-**Self-Test 5**
-
-**Answer / 解答:**
-Detailed answer for self-test 5, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 6：Identify limitations of Data handling.
-**Self-Test 6**
-
-**Answer / 解答:**
-Detailed answer for self-test 6, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 7：Derive scaling law for limit case.
-**Self-Test 7**
-
-**Answer / 解答:**
-Detailed answer for self-test 7, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 8：Connect to Linux.
-**Self-Test 8**
-
-**Answer / 解答:**
-Detailed answer for self-test 8, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 9：Critique an experiment in the field.
-**Self-Test 9**
-
-**Answer / 解答:**
-Detailed answer for self-test 9, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 10：Design measurement for Python.
-**Self-Test 10**
-
-**Answer / 解答:**
-Detailed answer for self-test 10, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 📊 Diagram 1: Computational Tools Concept Map 1
-```mermaid
-graph TD
-    A[Computational Tools] --> B{Subtopic 1}
-    B --> C[Detail 1.1]
-    B --> D[Detail 1.2]
+result, error = quad(lambda x: np.exp(-x**2), -np.inf, np.inf)
+# result = sqrt(pi)
 ```
 
-## 📊 Diagram 2: Computational Tools Concept Map 2
-```mermaid
-graph TD
-    A[Computational Tools] --> B{Subtopic 2}
-    B --> C[Detail 2.1]
-    B --> D[Detail 2.2]
+### Matplotlib
+Publication-quality figures:
+```python
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(6, 4))
+ax.plot(x, y, 'o-', linewidth=2, markersize=4)
+ax.set_xlabel(r'$x$', fontsize=12)
+ax.set_ylabel(r'$f(x)$', fontsize=12)
+ax.legend(fontsize=10)
+plt.tight_layout()
 ```
 
-## 📊 Diagram 3: Computational Tools Concept Map 3
-```mermaid
-graph TD
-    A[Computational Tools] --> B{Subtopic 3}
-    B --> C[Detail 3.1]
-    B --> D[Detail 3.2]
+### Pandas for Tabular Data
+```python
+import pandas as pd
+df = pd.read_csv('experiment.csv')
+df_filtered = df[df['temperature'] > 100]
+df_grouped = df.groupby('condition').mean()
 ```
 
-## 📊 Diagram 4: Computational Tools Concept Map 4
-```mermaid
-graph TD
-    A[Computational Tools] --> B{Subtopic 4}
-    B --> C[Detail 4.1]
-    B --> D[Detail 4.2]
+**Engineering implication:** Scientific Python enables rapid development
+
+## 深入 3：Version Control & Reproducibility
+**Deep Dive III**
+
+### Git Workflow
+```bash
+git init
+git add README.md src/*.py
+git commit -m "Initial commit"
+git branch feature/new-analysis
+git checkout feature/new-analysis
+git merge main
 ```
 
-## 📊 Diagram 5: Computational Tools Concept Map 5
-```mermaid
-graph TD
-    A[Computational Tools] --> B{Subtopic 5}
-    B --> C[Detail 5.1]
-    B --> D[Detail 5.2]
+### Research Project Structure
+```
+project/
+├── README.md
+├── requirements.txt
+├── setup.py
+├── src/
+│   └── project/
+│       ├── __init__.py
+│       ├── analysis.py
+│       └── utils.py
+├── tests/
+│   └── test_analysis.py
+├── data/
+│   ├── raw/
+│   └── processed/
+└── notebooks/
+    └── exploration.ipynb
 ```
 
-## 深度總結 Deep Insights Summary
+### Reproducibility Checklist
+- [ ] Version control all code
+- [ ] Freeze dependencies (requirements.txt, environment.yml)
+- [ ] Document data sources
+- [ ] Record computational environment (Docker, Singularity)
+- [ ] Make data accessible (Zenodo, figshare)
 
-1. **Core principle** — 核心原理: summarize the field's essence.
-   **核心原理:** 呢個領域嘅 fundamental 規律。
+**Engineering implication:** Git enables collaboration and backup
 
-2. **Mathematical foundation** — 數學基礎: the formal language.
-   **數學基礎:** 形式化嘅 工具。
+## 深入 4：Performance Optimization
+**Deep Dive IV**
 
-3. **Experimental evidence** — 實驗證據: how theory meets reality.
-   **實驗證據:** 點樣 test 同 validate。
+### Profiling
+```python
+import cProfile
+cProfile.run('main()', 'profile.stats')
 
-4. **Modern applications** — 現代應用: current state of art.
-   **現代應用:** 而家點樣應用。
+# or line-by-line
+%prun main()
+```
 
-5. **Open questions** — 開放問題: frontiers of the field.
-   **開放問題:** 未來發展方向。
+### JIT Compilation with Numba
+```python
+from numba import jit
+
+@jit(nopython=True)
+def compute_pi(n):
+    total = 0.0
+    for i in range(n):
+        total += 4.0 / (2*i + 1) * (-1)**i
+    return total
+# 100x faster than pure Python
+```
+
+### Memory Management
+```python
+# Use views, not copies
+a = np.zeros((1000, 1000))
+b = a[::2, ::2]  # View, no copy
+
+# Preallocate
+result = np.empty_like(data)
+```
+
+### GPU Acceleration
+```python
+import cupy as cp  # NumPy-compatible GPU library
+
+a_gpu = cp.array(a)
+b_gpu = cp.dot(a_gpu, b_gpu)  # Runs on GPU
+```
+
+**Engineering implication:** Profiling before optimization is essential
+
+## 深入 5：Data Handling & Formats
+**Deep Dive V**
+
+### HDF5 for Large Arrays
+```python
+import h5py
+
+with h5py.File('simulation.h5', 'w') as f:
+    f.create_dataset('positions', data=positions, compression='gzip')
+    f.create_dataset('energy', data=energy)
+    f.attrs['temperature'] = 300.0
+
+with h5py.File('simulation.h5', 'r') as f:
+    data = f['positions'][:]
+```
+
+### Parquet for Tabular Data
+```python
+import pyarrow.parquet as pq
+
+pq.write_table(table, 'data.parquet')
+table = pq.read_table('data.parquet')
+```
+
+### Memory-Mapped Arrays
+```python
+# For arrays larger than RAM
+data = np.memmap('largefile.dat', dtype=np.float32, mode='r', 
+                 shape=(10000, 10000, 100))
+```
+
+**Engineering implication:** Choose format based on data size and access pattern
+
+## 自測 1：Broadcasting Complexity
+**Answer:** Broadcast creates output array in $O(N)$ time; no extra memory for 1-dim expansion.  
+**Engineering implication:** Broadcasting is efficient
+
+## 自測 2：Python vs NumPy
+**Answer:** Python lists store objects with overhead; NumPy arrays contiguous memory, no type checking.  
+**Engineering implication:** Use NumPy for numerical work
+
+## 自測 3：Numba Speedup
+**Answer:** Numba compiles to machine code, eliminates interpreter overhead. Loop fusion, SIMD.  
+**Engineering implication:** JIT transforms Python to compiled speed
+
+## 自測 4：Git Branching
+**Answer:** Feature branches for new work, main for stable, merge when done. Rebase for clean history.  
+**Engineering implication:** Branching enables parallel work
+
+## 自測 5：Floating Point Tolerance
+**Answer:** Due to rounding, `a == b` often fails; use `np.isclose(a, b, rtol=1e-9)`.  
+**Engineering implication:** Floating point equality is subtle
+
+## 自測 6：Profiling First
+**Answer:** Optimization without profiling is guesswork; find actual bottleneck before optimizing.  
+**Engineering implication:** Profile-driven optimization is efficient
+
+## 自測 7：Data Format Choice
+**Answer:** CSV: small, human-readable; HDF5: large, structured; Parquet: columnar, compressed.  
+**Engineering implication:** Format affects I/O speed significantly
+
+## 自測 8：Python Threading Limits
+**Answer:** GIL prevents true parallelism in threads for CPU-bound tasks; use multiprocessing or async.  
+**Engineering implication:** GIL limits CPU parallelism in Python
+
+## 自測 9：Type Hints
+**Answer:** Catch errors early, IDE autocompletion, documentation, refactoring safety.  
+**Engineering implication:** Type hints improve code quality
+
+## 自測 10：Reproducible Pipeline
+**Answer:** Script everything, log parameters, version control, automated testing, containerization.  
+**Engineering implication:** Reproducibility enables science
+
+## 📊 Diagram 1: Python Ecosystem Map
+```mermaid
+mindmap
+  root((Python Physics))
+    Core
+      NumPy arrays
+      Vectorization
+      Broadcasting
+    Science
+      SciPy
+      Matplotlib
+      Pandas
+    HPC
+      Numba
+      Cupy
+      Dask
+    Workflow
+      Jupyter
+      Git
+      Testing
+```
+
+## 📊 Diagram 2：NumPy Array Memory
+```mermaid
+graph TD
+    A[Array] --> B[Contiguous Memory]
+    B --> C[Homogeneous dtype]
+    C --> D[Shape tuple]
+    D --> E[Stride information]
+```
+
+## 📊 Diagram 3: Git Workflow
+```mermaid
+graph TD
+    A[Main] --> B[Feature branch]
+    B --> C[Development]
+    C --> D[Pull request]
+    D --> A
+    D --> E[Code review]
+    E --> A
+```
+
+## 📊 Diagram 4: Profiling Workflow
+```mermaid
+graph TD
+    A[Code] --> B[Profile]
+    B --> C[Identify bottleneck]
+    C --> D[Optimize]
+    D --> E[Test]
+    E -->|Correct| F[Done]
+    E -->|Wrong| C
+```
+
+## 📊 Diagram 5: Data Pipeline
+```mermaid
+graph LR
+    A[Raw Data] --> B[Process]
+    B --> C[Validate]
+    C --> D[Analyze]
+    D --> E[Visualize]
+    C -.->|Fail| F[Error]
+```
+
+## 深度總結 Deep Insights
+
+1. **NumPy is foundation** — array operations enable vectorized physics computing
+   **NumPy是基礎** — 數組操作實現向量化物理計算
+
+2. **Git is non-negotiable** — version control is essential for research
+   **Git是不可協商的** — 版本控制對研究至關重要
+
+3. **Profile before optimize** — guesswork wastes time; measure first
+   **優化前先 profiling** — 猜測浪費時間；先測量
+
+4. **Reproducibility is science** — document everything, automate pipeline
+   **可重現性是科學** — 記錄一切，自動化流程
+
+5. **Choose right tools** — format, library, algorithm all matter
+   **選擇正確工具** — 格式、庫、算法都很重要
 
 ---
 
-**自學建議**  
-- 必讀: standard textbook for this area.  
-- 配對: MIT OCW or HKUST recordings.  
-- 工具: Python (NumPy, SciPy, Matplotlib).  
-- 產出: complete a project applying core concepts to a real problem.
+**自學建議**
+- 必讀: "Python for Data Analysis" (McKinney), NumPy documentation
+- 配對: SciPy lecture notes, Python packaging guide
+- 工具: VS Code, Jupyter Lab, GitHub, Docker
+- 產出: Complete project with Git workflow, tests, documentation

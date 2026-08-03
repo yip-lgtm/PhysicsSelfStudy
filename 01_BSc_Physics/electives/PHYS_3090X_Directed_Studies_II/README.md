@@ -1,321 +1,314 @@
-# PHYS — Directed Studies II
-> **HKUST PHYS_3090X_Directed_Studies_II | advanced, requires full undergrad physics + math maturity**  
+# PHYS 3090X — Directed Studies II (Advanced Research)
+> **Phase 2 BSc Elective | HKUST PHYS 3090X | Advanced research methodology & independent investigation**  
 > **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 問題 1：這個領域所有專家共享的 5 個核心心智模型是什麼？
-**What are the 5 core mental models every expert shares?**
+## 問題 1：5 個核心心智模型
 
-1. **Conservation laws govern dynamics** — 守恆定律主導動力學 (energy, momentum, charge)
-2. **Symmetry is the deepest principle** — 對稱係最深刻嘅原理 (Noether's theorem)
-3. **Approximations enable progress** — 近似方法推動進展 (perturbation, variational, numerical)
-4. **Mathematics is the language** — 數學係物理嘅語言 (calculus, linear algebra, group theory)
-5. **Experiment tests theory** — 實驗檢驗理論 (design, measurement, error analysis)
+1. **Independent research is open-ended** — 獨立研究係無固定答案的 (no answer key, iterative hypothesis-testing)
+2. **Critical literature synthesis** — 批判性文獻整合 (identify gaps, synthesize conflicting results)
+3. **Methodology selection matters** — 方法論選擇決定研究品質 (theory vs experiment vs computation)
+4. **Peer review validates knowledge** — 同儕審查驗證知識 (quality control, reproducibility)
+5. **Communication drives impact** — 溝通決定影響力 (papers, talks, collaborations)
 
-## 問題 2：這個領域的專家在哪 3 個地方存在根本分歧？各方最強的論點是什麼？
+## 問題 2：3 個根本分歧
 
-1. **Reductionist vs holistic** — 還原論 vs 整體論
-   - Reductionist: 從基本粒子向上建構。  
-   - Holistic: 涌現現象唔可從部分預測。
+1. **Reproducibility crisis: preregistration vs exploratory**
+   - Preregistration: 先定假設再收集數據，防止p-hacking
+   - Exploratory: 開放式探索發現意外結論
+   - Nature 2016 reproducibility survey顯示>50%無法重現
 
-2. **Classical vs quantum** — 古典 vs 量子
-   - Classical: 確定性、局部。  
-   - Quantum: 概率性、非局部。
+2. **Open science: closed vs open data**
+   - Closed: 保護競爭優勢，商業機密
+   - Open: 加速知識進步，code sharing, data sharing
+   - arXiv, GitHub, figshare 改變生態
 
-3. **Pure vs applied** — 純粹 vs 應用
-   - Pure: 知識為本。  
-   - Applied: 解決問題。
+3. **Interdisciplinary: depth vs breadth**
+   - Depth: 精通單一領域，phd level
+   - Breadth: 跨領域合作，big problems need teams
 
-## 問題 3：生成 10 個能區分深度理解與死背知識的問題
-**Generate 10 questions that distinguish deep understanding from memorization**
+## 問題 3：10 個深度問題
 
-1. 為什麼呢個領域嘅 Research 概念 fundamental?
+1. 給定 research problem, 點樣 identify if it's a "good" question?
+2. 解釋為什麼 negative results 也係有价值嘅 contribution。
+3. 給定 conflicting papers, 點樣 resolve 矛盾?
+4. 為什麼 research ethics 唔只係 paperwork?
+5. 給定 preliminary data, 點樣 decide next steps?
+6. 解釋 點樣 write abstract that "sells" your work。
+7. 為什麼 6-month timeline 對 research project 唔够?
+8. 給定 grant proposal, 點樣 justify methodology?
+9. 解釋 "statistical power" 為什麼影響 study design。
+10. 為什麼 career in research 需要 "耐心的耐心"?
 
-2. 解釋 Advanced methods 嘅物理意義。
-
-3. 給定一個典型問題, 點樣 apply 呢個領域嘅 核心方程?
-
-4. 為什麼 Publication 在呢度重要?
-
-5. 解釋 Research 嘅 limitations。
-
-6. 點解 experimental evidence support 呢個 theory?
-
-7. 為什麼 historical development 帶我哋去 呢個 formulation?
-
-8. 給定 measured data, 點樣 extract 物理 insights?
-
-9. 解釋 對稱 喺 呢個領域嘅 role。
-
-10. 點解 呢個領域 connect 到其他 physics subfields?
-
-## 深入 1：Foundations: Research
+## 深入 1：Research Question Design
 **Deep Dive I**
 
-### Bilingual concept table for foundations: research
+### Scientific Questions Hierarchy
+- **Descriptive**: 描述現象 (What happened?)
+- **Correlational**: 尋找關聯 (What correlates?)
+- **Causal**: 因果關係 (Why does X cause Y?)
 
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+### Good Research Question Criteria (FINER)
+- **F**easible: 可行嗎?
+- **I**nteresting: 有趣嗎?
+- **N**ovel: 創新嗎?
+- **E**thical: 倫理上允許?
+- **R**elevant: 有意義嗎?
 
-### Key derivation / formula
+### Example: Stellar Evolution
+**Question**: "What determines the initial-final mass relation for white dwarfs?"
+- Feasible: 可用 Gaia data + models
+- Interesting: 影響 stellar populations
+- Novel: 新 telescopes 新數據
+- Ethical: 無問題
+- Relevant: 影響 cosmological models
 
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+**Engineering implication:** 設計 research proposal 时，FINER criteria 帮助筛选问题
 
-### Decision flow / engineering application
+## 深入 2：Advanced Methodology
+**Deep Dive II**
 
+### Theory Development
+$$H_0: \text{null hypothesis} \quad H_a: \text{alternative hypothesis}$$
+
+### Experimental Design
+- **Control group**: 對照組
+- **Randomization**: 隨機化消除偏差
+- **Blinding**: 盲法減少主觀誤差
+
+### Computational Methods
+- **Numerical simulation**: Monte Carlo, molecular dynamics
+- **Statistical analysis**: Bayesian vs frequentist
+- **Machine learning**: pattern recognition in large datasets
+
+### Bayesian Framework
+$$P(\theta | D) = \frac{P(D | \theta) P(\theta)}{P(D)}$$
+
+- **Prior** $P(\theta)$: 先驗知識
+- **Likelihood** $P(D|\theta)$: 數據給出的證據
+- **Posterior** $P(\theta|D)$: 更新後的信念
+
+**Engineering implication:** 選擇正確的 methodology 决定能否回答 research question
+
+## 深入 3：Scientific Writing
+**Deep Dive III**
+
+### Paper Structure (IMRAD)
+- **Introduction**: 問題背景、研究動機
+- **Methods**: 實驗/理論詳細描述
+- **Results**: 數據展示
+- **And**: Discussion + References
+
+### Abstract Formula
+$$[Background] + [Gap] + [Method] + [Key\ Result] + [Impact]$$
+
+### Example: Stellar Astrophysics Paper
+> **Context**: Stellar evolution models predict WD masses...  
+> **Gap**: 但 observed masses systematically exceed predictions...  
+> **Method**: We analyze 10,000 WDs from Gaia DR3...  
+> **Result**: Initial-final mass relation revised: $M_f = 0.109M_i + 0.394 M_\odot$...  
+> **Impact**: Affects SN Ia rate predictions...
+
+**Engineering implication:** Clear writing = clear thinking = better science
+
+## 深入 4：Research Communication
+**Deep Dive IV**
+
+### Effective Presentations
+| Slide Type | Purpose | Time |
+|---|---|---|
+| Title | Hook + topic | 30s |
+| Background | Why care? | 2min |
+| Methods | How? | 3min |
+| Results | What? | 5min |
+| Impact | So what? | 2min |
+
+### The "Elevator Pitch"
+$$30\ seconds = 75\ words = 1\ message$$
+
+### Visualization Principles
+- **One message per figure**: 每圖一信息
+- **Color = meaning**: 顏色編碼有意義
+- **High contrast**: 高對比度易讀
+
+**Engineering implication:** Communication skills distinguish successful scientists
+
+## 深入 5：Research Ethics & Integrity
+**Deep Dive V**
+
+### Core Principles
+1. **Honesty**: 數據真實，不造假
+2. **Openness**: 共享數據代碼
+3. **Fairness**: 公平對待同行
+4. **Accountability**: 對結果負責
+
+### Common Violations
+- **Fabrication**: 捏造數據
+- **Falsification**: 篡改數據
+- **Plagiarism**: 抄襲他人工作
+
+### Institutional Framework
+- IRB (Institutional Review Board)
+- IACUC (Animal Care Committee)
+- Data management plans
+
+**Engineering implication:** Ethical research = sustainable career
+
+## 自測 1：Research Question Quality
+**Answer:** Apply FINER criteria: Feasible, Interesting, Novel, Ethical, Relevant.  
+**Engineering implication:** 避免研究無價值的問題
+
+## 自測 2：Negative Results Value
+**Answer:** Prevents others from repeating, informs theory revision, builds knowledge base.  
+**Engineering implication:** "Failed" experiments 也係 valuable science
+
+## 自測 3：Resolving Conflicts
+**Answer:** Check methodology differences, sample sizes, statistical power, replication attempts.  
+**Engineering implication:** Meta-analysis, systematic reviews
+
+## 自測 4：Research Ethics
+**Answer:** Beyond paperwork: protects subjects, ensures integrity, builds trust, enables reproducibility.  
+**Engineering implication:** Ethics 不是 obstacle，是 foundation
+
+## 自測 5：Next Steps Decision
+**Answer:** Statistical significance + effect size + theoretical implications.  
+**Engineering implication:** Data analysis drives research direction
+
+## 自測 6：Abstract Writing
+**Answer:** 250 words max: context (2句) + gap (1句) + method (2句) + result (2句) + impact (1句).  
+**Engineering implication:** Abstract determines paper fate
+
+## 自測 7：Timeline Reality
+**Answer:** Research has high variance: pilot (3mo) + main (6mo) + analysis (3mo) + writeup (3mo) = 15mo typical.  
+**Engineering implication:** Realistic planning prevents burnout
+
+## 自測 8：Grant Justification
+**Answer:** Methodology must match question: theoretical → analytic; experimental → controls; computational → validation.  
+**Engineering implication:** Peer review evaluates methods
+
+## 自測 9：Statistical Power
+**Answer:** Power = $1 - \beta$ = probability detecting true effect. Higher power needs larger sample or larger effect.  
+**Engineering implication:** Underpowered studies waste resources
+
+## 自測 10：Patience in Research
+**Answer:** Typical timeline: PhD (4-6yr) → Postdoc (3-5yr) → Faculty (1-3yr startup) = decade to independence.  
+**Engineering implication:** Career planning requires long-term view
+
+## 📊 Diagram 1: Research Process Map
 ```mermaid
-graph TD
-    A[Input: foundations: research] --> B{Analysis}
-    B --> C[Output]
+mindmap
+  root((Research))
+    Question
+      FINER
+      Gap identification
+    Method
+      Theory
+      Experiment
+      Computation
+    Data
+      Collection
+      Analysis
+      Validation
+    Communication
+      Writing
+      Presentation
+      Collaboration
+    Impact
+      Publication
+      Citation
+      Application
 ```
 
-## 深入 2：Mathematical framework: equations, derivations
-**Deep Dive J**
-
-### Bilingual concept table for mathematical framework: equations, derivations
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
+## 📊 Diagram 2: Scientific Method Cycle
 ```mermaid
 graph TD
-    A[Input: mathematical framework: equations, derivations] --> B{Analysis}
-    B --> C[Output]
+    A[Observation] --> B[Question]
+    B --> C[Hypothesis]
+    C --> D[Prediction]
+    D --> E[Experiment/Test]
+    E --> F[Analysis]
+    F --> G{Confirm?}
+    G -->|Yes| H[Theory Refinement]
+    G -->|No| I[Hypothesis Revision]
+    H --> B
+    I --> B
+    H --> J[Publication]
+    J --> A
 ```
 
-## 深入 3：Experimental/computational methods
-**Deep Dive K**
-
-### Bilingual concept table for experimental/computational methods
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
+## 📊 Diagram 3: Paper Structure
 ```mermaid
 graph TD
-    A[Input: experimental/computational methods] --> B{Analysis}
-    B --> C[Output]
+    A[Paper] --> B[Abstract]
+    A --> C[Introduction]
+    A --> D[Methods]
+    A --> E[Results]
+    A --> F[Discussion]
+    A --> G[References]
+    B --> H[250 words]
+    C --> I[Background + Gap + Question]
+    D --> J[Detailed + Reproducible]
+    E --> K[Tables + Figures]
+    F --> L[Interpretation + Limitations]
 ```
 
-## 深入 4：Applications and engineering
-**Deep Dive L**
-
-### Bilingual concept table for applications and engineering
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
+## 📊 Diagram 4: Statistical Power
 ```mermaid
 graph TD
-    A[Input: applications and engineering] --> B{Analysis}
-    B --> C[Output]
+    A[Sample Size] --> B[Effect Size]
+    A --> C[Significance Level α]
+    B --> D[Statistical Power 1-β]
+    C --> D
+    D --> E{Power ≥ 0.8?}
+    E -->|Yes| F[Adequate Study]
+    E -->|No| G[Underpowered Study]
+    F --> H[Publishable Results]
+    G --> I[Increase n or effect]
 ```
 
-## 深入 5：Connections to other fields and open problems
-**Deep Dive M**
-
-### Bilingual concept table for connections to other fields and open problems
-
-| English | 中英對照 | Physical meaning | 物理意義 |
-|---|---|---|---|
-| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
-| Core concept 2 | 核心概念 2 | Application | 應用 |
-| Core concept 3 | 核心概念 3 | Limitation | 限制 |
-
-### Key derivation / formula
-
-$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
-
-### Decision flow / engineering application
-
+## 📊 Diagram 5: Research Timeline
 ```mermaid
-graph TD
-    A[Input: connections to other fields and open problems] --> B{Analysis}
-    B --> C[Output]
+gantt
+    title 15-Month Research Project
+    section Planning
+    Lit review :a1, 2025-01-01, 60d
+    Question formulation :a2, after a1, 30d
+    section Method
+    Pilot study :b1, 2025-04-01, 60d
+    Protocol refinement :b2, after b1, 30d
+    section Data
+    Main collection :c1, 2025-07-01, 120d
+    Quality control :c2, after c1, 30d
+    section Analysis
+    Statistical analysis :d1, 2025-11-01, 60d
+    Interpretation :d2, after d1, 30d
+    section Writeup
+    Draft :e1, 2026-01-01, 90d
+    Revision :e2, after e1, 45d
 ```
 
-## 自測 1：Derive Research for typical case.
-**Self-Test 1**
+## 深度總結 Deep Insights
 
-**Answer / 解答:**
-Detailed answer for self-test 1, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
+1. **Good questions drive good science** — FINER criteria help filter
+   **好問題決定好科學** — 選擇有意義的問題
 
-**Engineering implication:** Application to real-world scenario.
+2. **Methods must match questions** — theory/experiment/computation have different strengths
+   **方法必須匹配問題** — 不同方法有不同的適用場景
 
-## 自測 2：為什麼 Advanced methods fundamental to field?
-**Self-Test 2**
+3. **Communication determines impact** — writing and speaking skills are non-negotiable
+   **溝通決定影響力** — 寫作和演講能力必不可少
 
-**Answer / 解答:**
-Detailed answer for self-test 2, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
+4. **Ethics is foundation, not obstacle** — integrity enables trust and reproducibility
+   **倫理是基礎，不是障礙** — 誠信是科學的基石
 
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 3：Apply Research to a real problem.
-**Self-Test 3**
-
-**Answer / 解答:**
-Detailed answer for self-test 3, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 4：解釋 difference between two competing approaches.
-**Self-Test 4**
-
-**Answer / 解答:**
-Detailed answer for self-test 4, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 5：Estimate order of magnitude for given physical setup.
-**Self-Test 5**
-
-**Answer / 解答:**
-Detailed answer for self-test 5, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 6：Identify limitations of Publication.
-**Self-Test 6**
-
-**Answer / 解答:**
-Detailed answer for self-test 6, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 7：Derive scaling law for limit case.
-**Self-Test 7**
-
-**Answer / 解答:**
-Detailed answer for self-test 7, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 8：Connect to Advanced methods.
-**Self-Test 8**
-
-**Answer / 解答:**
-Detailed answer for self-test 8, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 9：Critique an experiment in the field.
-**Self-Test 9**
-
-**Answer / 解答:**
-Detailed answer for self-test 9, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 自測 10：Design measurement for Research.
-**Self-Test 10**
-
-**Answer / 解答:**
-Detailed answer for self-test 10, including derivation, intuition, and engineering implication.
-Bilingual explanation connects to broader physics context.
-
-**Engineering implication:** Application to real-world scenario.
-
-## 📊 Diagram 1: Directed Studies II Concept Map 1
-```mermaid
-graph TD
-    A[Directed Studies II] --> B{Subtopic 1}
-    B --> C[Detail 1.1]
-    B --> D[Detail 1.2]
-```
-
-## 📊 Diagram 2: Directed Studies II Concept Map 2
-```mermaid
-graph TD
-    A[Directed Studies II] --> B{Subtopic 2}
-    B --> C[Detail 2.1]
-    B --> D[Detail 2.2]
-```
-
-## 📊 Diagram 3: Directed Studies II Concept Map 3
-```mermaid
-graph TD
-    A[Directed Studies II] --> B{Subtopic 3}
-    B --> C[Detail 3.1]
-    B --> D[Detail 3.2]
-```
-
-## 📊 Diagram 4: Directed Studies II Concept Map 4
-```mermaid
-graph TD
-    A[Directed Studies II] --> B{Subtopic 4}
-    B --> C[Detail 4.1]
-    B --> D[Detail 4.2]
-```
-
-## 📊 Diagram 5: Directed Studies II Concept Map 5
-```mermaid
-graph TD
-    A[Directed Studies II] --> B{Subtopic 5}
-    B --> C[Detail 5.1]
-    B --> D[Detail 5.2]
-```
-
-## 深度總結 Deep Insights Summary
-
-1. **Core principle** — 核心原理: summarize the field's essence.
-   **核心原理:** 呢個領域嘅 fundamental 規律。
-
-2. **Mathematical foundation** — 數學基礎: the formal language.
-   **數學基礎:** 形式化嘅 工具。
-
-3. **Experimental evidence** — 實驗證據: how theory meets reality.
-   **實驗證據:** 點樣 test 同 validate。
-
-4. **Modern applications** — 現代應用: current state of art.
-   **現代應用:** 而家點樣應用。
-
-5. **Open questions** — 開放問題: frontiers of the field.
-   **開放問題:** 未來發展方向。
+5. **Patience is essential** — decade-scale timeline to independence
+   **耐心是必需的** — 需要十年尺度的時間投入
 
 ---
 
-**自學建議**  
-- 必讀: standard textbook for this area.  
-- 配對: MIT OCW or HKUST recordings.  
-- 工具: Python (NumPy, SciPy, Matplotlib).  
-- 產出: complete a project applying core concepts to a real problem.
+**自學建議**
+- 必讀: "Advice to a Young Scientist" (Medawar)
+- 配對: Nature Career Guide, grad school survival guides
+- 工具: Zotero, Git, Overleaf, Python/R
+- 產出: 完成原創性 research proposal (10 pages)
