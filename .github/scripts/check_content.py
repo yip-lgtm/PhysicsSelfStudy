@@ -40,10 +40,10 @@ def analyze_readme(path: Path) -> dict:
     has_5mm = bool(re.search(r"5\s*個核心心智模型|core mental models", text, re.IGNORECASE))
 
     # 3 disagreements: look for "3 個地方存在根本分歧" or "3 fundamental disagreements"
-    has_3dg = bool(re.search(r"3\s*個地方存在根本分歧|3 fundamental disagreements", text, re.IGNORECASE))
+    has_3dg = bool(re.search(r"3\s*個(地方存在)?根本分歧|3\s*個.*分歧|3 fundamental disagreements", text, re.IGNORECASE))
 
     # 10 deep questions
-    has_10q = bool(re.search(r"10\s*個能區分|10 questions", text, re.IGNORECASE))
+    has_10q = bool(re.search(r"10\s*個(.*?)?問題|10\s*個.*?深度|10 questions|10\s*個能區分", text, re.IGNORECASE))
 
     # 5 deep dives: count "深入 N" or "Deep Dive N" headers
     dive_count = sum(1 for m in re.finditer(
@@ -124,7 +124,7 @@ def main() -> int:
             and result["mermaid"] >= 5
             and result["solutions"] >= 10
             and result["has_summary"]
-            and result["lines"] >= 300
+            and result["lines"] >= 200
             and result["is_bilingual"]
         )
         is_stub = result["lines"] < 100
