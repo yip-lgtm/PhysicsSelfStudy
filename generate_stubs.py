@@ -88,6 +88,33 @@ COURSE_DATA = {
     "PHYS_5310_Statistical_Mechanics_I": ("Statistical Mechanics I", "統計力學 I", ["Ensembles", "Phase transitions", "Critical"], "advanced"),
     "PHYS_5520_Quantum_Field_Theory": ("Quantum Field Theory", "量子場論", ["QFT", "Path integral", "Renormalization"], "advanced"),
     "PHYS_5820_Diffraction_Imaging_Materials": ("Diffraction and Imaging of Materials", "材料衍射同成像", ["XRD", "TEM", "Spectroscopy"], "advanced"),
+    # Math support
+    "MATH_2351_Intro_Differential_Equations": ("Intro to Differential Equations", "微分方程入門", ["ODEs", "First-order", "Second-order"], "intermediate"),
+    "MATH_2352_Differential_Equations": ("Differential Equations", "微分方程", ["Linear systems", "Laplace", "Series"], "intermediate"),
+    # Minor in Astrophysics cross-listed
+    "PHYS_2124_Math_Methods": ("Mathematical Methods (cross-listed)", "數學方法 (跨清單)", ["PDEs", "Series", "Transforms"], "intermediate"),
+    "PHYS_3036_QM_I": ("Quantum Mechanics I (cross-listed)", "量子力學 I (跨清單)", ["Schrödinger", "Hydrogen", "Formalism"], "advanced"),
+    "PHYS_3071_Stellar_Astrophysics_minor": ("Stellar Astrophysics (cross-listed)", "恆星天體物理 (跨清單)", ["HR", "Evolution", "Remnants"], "advanced"),
+    "PHYS_4055_Particle_Physics_and_Universe_minor": ("Particle Physics and Universe (cross-listed)", "粒子物理同宇宙 (跨清單)", ["SM", "Cosmology", "BSM"], "advanced"),
+    "PHYS_4071_Big_Bang_Cosmology_minor": ("Big Bang Cosmology (cross-listed)", "大爆炸宇宙學 (跨清單)", ["FLRW", "CMB", "Inflation"], "advanced"),
+    # Minor in Physics cross-listed
+    "PHYS_3032_Classical_Mechanics_minor": ("Classical Mechanics (cross-listed)", "經典力學 (跨清單)", ["Newton", "Lagrangian", "Central force"], "intermediate"),
+    "PHYS_3033_EM_I_minor": ("Electricity and Magnetism I (cross-listed)", "電磁學 I (跨清單)", ["Electrostatics", "Magnetostatics", "Maxwell"], "intermediate"),
+    "PHYS_3036_QM_I_minor": ("Quantum Mechanics I (cross-listed)", "量子力學 I (跨清單)", ["Schrödinger", "Hydrogen", "Formalism"], "advanced"),
+    "PHYS_3037_Honors_QM_I_minor": ("Honors QM I (cross-listed)", "榮譽量子力學 I (跨清單)", ["Formalism", "Mixed states"], "advanced"),
+    "PHYS_3053_Honors_EM_I_minor": ("Honors E&M I (cross-listed)", "榮譽電磁學 I (跨清單)", ["BVP", "Multipole"], "advanced"),
+    "PHYS_4050_Thermo_StatMech_minor": ("Thermodynamics (cross-listed)", "熱力學 (跨清單)", ["Laws", "Entropy", "Ensembles"], "advanced"),
+    # PhD program requirements
+    "PDEV_6800_GTA_Training": ("GTA Training", "教學助理培訓", ["Teaching", "Communication", "Pedagogy"], "intro"),
+    "PDEV_6770_Professional_Development_RPg": ("Professional Development for RPg", "研究深造生專業發展", ["Career", "Skills", "Networking"], "intro"),
+    "PHYS_6771_Professional_Development_Physics": ("Professional Development in Physics", "物理專業發展", ["Academic", "Industry", "Career"], "intro"),
+    "LANG_5000_Foundation_Listening_Speaking": ("Foundation Listening and Speaking", "英語聽講基礎", ["English", "Communication", "Academic"], "intro"),
+    "LANG_5005_Communicating_Research_English": ("Communicating Research in English", "學術英語傳意", ["Writing", "Presentation", "Academic"], "intro"),
+    "PHYS_6990_MPhil_Thesis_Research": ("MPhil Thesis Research", "碩士論文研究", ["Original research", "Thesis", "Defense"], "advanced"),
+    "PHYS_7990_Doctoral_Thesis_Research": ("Doctoral Thesis Research", "博士論文研究", ["Original contribution", "Thesis", "Defense"], "advanced"),
+    "NANO_6990_MPhil_Thesis_Research": ("MPhil Thesis Research (Nano)", "碩士論文研究 (納米)", ["Nano research", "Thesis", "Defense"], "advanced"),
+    "NANO_7990_Doctoral_Thesis_Research": ("Doctoral Thesis Research (Nano)", "博士論文研究 (納米)", ["Nano research", "Thesis", "Defense"], "advanced"),
+    "PhD_Qualifying_Examination": ("PhD Qualifying Examination", "博士資格考試", ["Breadth", "Depth", "Research"], "advanced"),
 }
 
 
