@@ -1,137 +1,191 @@
-# Nano Science and Technology PhD @ HKUST — Application & Program Prep
-
-> **Phase 4 | HKUST MPhil/PhD in Nano Science and Technology — full program preparation**
-
----
-
-## 🎯 Program Overview
-
-- **Programs:** MPhil (2 years) + PhD (4 years) in Nano Science and Technology
-- **University:** HKUST
-- **Cross-disciplinary:** Physics + Chemistry + Engineering + Biology
-- **Minimum credits:** MPhil 12 / PhD 15
-- **Funding:** HK$18,940/month (PhD Fellowship, likely)
+# Nano Science & Technology MPhil/PhD Program
+> **Phase 4 PhD Prep | HKUST Nano Sci & Tech | MPhil/PhD path**  
+> **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 📋 Program Requirements (8 items, all complete now)
+## 問題 1：5 個核心心智模型
 
-### 1. **Minimum Credit Requirement**
-- **MPhil:** 12 credits
-- **PhD:** 15 credits
+1. **Nanoscale = new physics** — quantum, surface, confinement
+2. **Characterization is key** — STM, TEM, XRD, spectroscopy
+3. **Synthesis = control** — CVD, MBE, ALD, wet chemistry
+4. **Devices from materials** — transistors, sensors, energy
+5. **Interdisciplinary = essential** — physics + chem + bio + eng
 
-### 2. **Credit Transfer (PhD only)**
-- PhD students entering with **relevant master's or equivalent degree** may be granted credit transfer of up to **6 credits**
-- Based on background in related subject areas
-- Subject to prior approval from PG Coordinator
-- Must complete at least **3 credits of NANO courses**
-- Course selection must be agreed by:
-  - Thesis supervisor
-  - Approved by Thesis Supervision Committee
+## 問題 2：3 個根本分歧
 
-### 3. **Required Courses**
-- **MPhil:** 12 credits of postgraduate courses, including at least **4 credits of NANO** courses
-- **PhD:** 15 credits of postgraduate courses, including at least **4 credits of NANO** courses
-- **Full-time students:** Complete coursework in first **4 regular terms**
+1. **Top-down vs bottom-up** — lithography vs self-assembly
+2. **Pure nanoscience vs nanoengineering** — discovery vs application
+3. **Materials focus vs device focus** — properties vs function
 
-### 4. **Graduate Teaching Assistant Training**
-- **PDEV 6800** (0 credits) — All full-time RPg required
-  - 10-hour mandatory training by Center for Education Innovation (CEI)
-  - 3 GTA competencies: (1) facilitate teaching, (2) meaningful feedback, (3) design active learning
-  - MPhil: 1 × 30-min session in 1 term
-  - PhD: 1 × 30-min session in 2 different terms
-  - Graded PP/P/F
+## 問題 3：10 個深度問題
+1. 為什麼 100 nm scale 是 magic?
+2. 給定 CNT, derive band structure from graphene。
+3. 為什麼 surface area/volume 對 nanoparticles 重要?
+4. 給定 quantum dot, derive confinement energy。
+5. 解釋 why AFM 可以 image at atomic scale。
+6. 給定 2D material, 為什麼可以 exfoliate?
+7. 為什麼 MOSFET 對 scaling 達 limits?
+8. 解釋 why ALD 比 CVD 適合 high-aspect-ratio。
+9. 給定 nanomedicine, 點樣 design targeted drug delivery?
+10. 為什麼 graphene 2010 Nobel 重要?
 
-### 5. **Professional Development**
-- **PDEV 6770** (1 credit, doesn't count) — Professional Development for RPg
-  - 3 hours mandatory on Professional Conduct
-  - 12 hours workshops (5 themes: Communication, Research, Entrepreneurship, Self-Mgmt, Career)
-  - Graded PP/P/F
-- **PHYS 6771** (1 credit, doesn't count) — Professional Development in Physics
-  - Discipline-specific: ethics, teaching, research mgmt, career, entrepreneurship
-  - Graded PP/P/F
-  - Note: Despite "Nano Sci" program, the course code is **PHYS 6771** (cross-listed)
-  - Exemption: HKUST MPhil grads who completed PHYS 6770, PHYS 6000, or equivalent
+## 深入 1：Synthesis
+**Deep Dive I**
 
-### 6. **English Language Requirement**
-- **LANG 5000** (1 credit, doesn't count) — Foundation in Listening & Speaking
-  - ELPA Speaking Test before first term
-  - Required if ELPA < Level 4
-  - Graded P/F
-- **LANG 5005** (1 credit, doesn't count) — Communicating Research in English
-  - Recommended in first year
-  - Graded P/F
-  - Exemption possible for HKUST MPhil grads
+CVD, MBE, ALD, sol-gel, hydrothermal. Atomic precision vs throughput.
 
-### 7. **PhD Qualifying Examination**
-- Specified by **Qualifying Examination Committee of the NANO postgraduate program**
-- Pass required for PhD candidacy
-- Likely within first 2 years (standard)
+**Engineering:** Materials science.
 
-### 8. **Thesis Research**
-- **NANO 6990** (MPhil Thesis Research, 0 credits) — Faculty supervised
-  - MPhil: 1. Register + 2. Defense
-- **NANO 7990** (Doctoral Thesis Research, 0 credits) — Original independent research
-  - PhD: 1. Register after QE + 2. Defense
-- Graded Pass/Fail
+## 深入 2：Characterization
+**Deep Dive II**
 
----
+Electron microscopy (SEM, TEM), scanning probe (STM, AFM), spectroscopy (XPS, Raman).
 
-## 📁 Program Requirements Folder Structure
+**Engineering:** Materials ID.
 
+## 深入 3：Nanoscale Properties
+**Deep Dive III**
+
+Quantum confinement, surface plasmon, mechanical, electronic, magnetic.
+
+**Engineering:** Materials design.
+
+## 深入 4：Nanoelectronic Devices
+**Deep Dive IV**
+
+Transistors (FinFET, GAA), sensors, memory (ReRAM, MRAM), interconnects.
+
+**Engineering:** Semiconductor.
+
+## 深入 5：Energy & Bio Applications
+**Deep Dive V**
+
+Solar cells, batteries, catalysis, drug delivery, imaging, theranostics.
+
+**Engineering:** Energy + medicine.
+
+## 自測 1：100 nm magic
+**Answer:** Optical lithography limit, classical-to-quantum transition.  
+**Engineering:** Semiconductor.
+
+## 自測 2：CNT band
+**Answer:** Cutting + rolling graphene, metallic or semiconducting.  
+**Engineering:** CNT electronics.
+
+## 自測 3：Surface area
+**Answer:** $A/V \propto 1/r$, dominates nanoparticle behavior.  
+**Engineering:** Catalysis.
+
+## 自測 4：QD confinement
+**Answer:** $E \propto 1/R^2$, tunable emission.  
+**Engineering:** QLED, bio-imaging.
+
+## 自測 5：AFM atomic
+**Answer:** Tip-sample force, ~nN, atomic resolution.  
+**Engineering:** Imaging.
+
+## 自測 6：2D exfoliation
+**Answer:** Weak van der Waals, scotch tape or chemical.  
+**Engineering:** 2D materials.
+
+## 自測 7：MOSFET limits
+**Answer:** Short-channel effects, leakage, quantum tunneling.  
+**Engineering:** Semiconductor.
+
+## 自測 8：ALD vs CVD
+**Answer:** ALD self-limiting, conformal, atomic precision.  
+**Engineering:** Thin films.
+
+## 自測 9：Drug delivery
+**Answer:** Targeted nanoparticles, controlled release, theranostics.  
+**Engineering:** Nanomedicine.
+
+## 自測 10：Graphene Nobel
+**Answer:** Geim, Novoselov 2010, 2D materials revolution.  
+**Engineering:** 2D electronics.
+
+## 📊 Diagram 1: Nano Sci Map
+```mermaid
+mindmap
+  root((Nano Sci))
+    Synthesis
+      CVD ALD MBE
+    Char
+      EM SPM
+    Properties
+      Quantum
+    Devices
+      Transistor
+    Apps
+      Energy Bio
 ```
-Nano_Science_Technology_PhD/
-├── README.md                        ← This file (overview)
-├── program_requirements/            ← All 8 mandatory items
-│   ├── PDEV_6800_GTA_Training/
-│   ├── PDEV_6770_Professional_Development_RPg/
-│   ├── PHYS_6771_Professional_Development_Physics/  ← Note: PHYS not NANO prefix
-│   ├── LANG_5000_Foundation_Listening_Speaking/
-│   ├── LANG_5005_Communicating_Research_English/
-│   ├── PhD_Qualifying_Examination/
-│   ├── NANO_6990_MPhil_Thesis_Research/
-│   └── NANO_7990_Doctoral_Thesis_Research/
-├── research_statement/              ← To be developed
-├── cv/                              ← To be developed
-├── recommendation_letters/          ← To be developed
-└── contact_professors/              ← To be developed
+
+## 📊 Diagram 2: Length Scale Map
+```mermaid
+graph TD
+    A[Å: atoms] --> B[nm: molecules]
+    B --> C[10nm: proteins]
+    C --> D[100nm: viruses]
+    D --> E[um: cells]
+    A --> F[Q: quantum]
+    B --> F
+    C --> F
+    D --> G[Classical]
+    E --> G
 ```
 
+## 📊 Diagram 3: Synthesis Methods
+```mermaid
+graph TD
+    A[Synthesis] --> B[Top-down]
+    A --> C[Bottom-up]
+    B --> D[Lithography]
+    B --> E[Etching]
+    C --> F[CVD]
+    C --> G[ALD]
+    C --> H[Self-assembly]
+    D --> I[Resolution ~10nm]
+    F --> J[Atomic layer control]
+    H --> K[Thermodynamic equilibrium]
+```
+
+## 📊 Diagram 4: Characterization Tools
+```mermaid
+graph TD
+    A[Char] --> B[Microscopy]
+    A --> C[Spectroscopy]
+    A --> D[Diffraction]
+    B --> E[SEM 1nm]
+    B --> F[TEM 0.1nm]
+    B --> G[AFM atomic]
+    C --> H[XPS, Raman]
+    C --> I[PL, absorption]
+    D --> J[XRD phase ID]
+    D --> K[Electron diffraction]
+```
+
+## 📊 Diagram 5: Nano Applications
+```mermaid
+graph TD
+    A[Nano apps] --> B[Electronics]
+    A --> C[Energy]
+    A --> D[Medicine]
+    A --> E[Catalysis]
+    B --> F[FinFET, GAA]
+    C --> G[Solar, battery]
+    D --> H[Drug delivery, imaging]
+    E --> I[Pt nanoparticle catalysts]
+```
+
+## 深度總結
+
+1. **Nanoscale = new physics** — quantum, surface
+2. **Characterization drives discovery** — see atoms
+3. **Synthesis = atomic control** — precision engineering
+4. **Interdisciplinary essential** — physics + chem + bio
+5. **Applications diverse** — energy, medicine, electronics
+
 ---
 
-## 🎯 Preparation Timeline
-
-### Phase 1: Strong Foundation (BSc)
-- Physics, Chemistry, Materials Science
-- Math: Linear Algebra, ODE, PDE, Numerical Methods
-- Lab skills (synthesis, characterization)
-
-### Phase 2: Cross-Disciplinary MSc
-- MSc Data-Driven Modeling (computational)
-- OR MSc Physics (Advanced Materials concentration)
-- Build 1-2 research projects
-
-### Phase 3: MSc Physics @ HKUST (Adv Materials)
-- 3 required courses: MSPY 5001/5210/5220
-- Cross-listed electives (MSDM 5054/5055)
-- 1-2 publications
-
-### Phase 4: PhD Application
-- Contact potential supervisors (Sep-Dec)
-- Prepare research statement (Oct-Nov)
-- Request recommendation letters (Nov)
-- Submit applications (Dec)
-- Interviews (Jan-Feb)
-- Decision (Mar-Apr)
-
----
-
-## 🔗 Resources
-
-- HKUST Nano Sci & Tech: https://nanoscience.hkust.edu.hk/
-- HKUST PG Admissions: https://pg.ust.hk/
-- PhD positions: https://academicjobsonline.org/
-
----
-
-*Last updated: 2026-06-07 — Complete catalog aligned (8 program requirements, QE, both thesis research)*
+**自學建議** — "Introduction to Nanotechnology" by Poole. Nanowerk news.

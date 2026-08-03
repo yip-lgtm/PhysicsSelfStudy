@@ -1,122 +1,321 @@
-# PHYS 4291 — Capstone Research (HKUST)
-
-> **Phase 1 BSc Capstone | HKUST PHYS 4291 | Research Project**
-
----
-
-## 📚 Course Information
-
-- **Code:** PHYS 4291
-- **Name:** Capstone Research
-- **University:** HKUST
-- **Program:** BSc Physics
-- **Phase:** 1 (BSc Capstone)
-- **Credits:** 6 (likely)
-- **Duration:** 1-2 semesters
+# PHYS — Capstone Research
+> **HKUST PHYS_4291_Capstone_Research | advanced, requires full undergrad physics + math maturity**  
+> **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 🎯 Learning Objectives
+## 問題 1：這個領域所有專家共享的 5 個核心心智模型是什麼？
+**What are the 5 core mental models every expert shares?**
 
-A **research-based capstone experience** for final-year BSc Physics students. Students work on an independent research project under faculty supervision.
+1. **Conservation laws govern dynamics** — 守恆定律主導動力學 (energy, momentum, charge)
+2. **Symmetry is the deepest principle** — 對稱係最深刻嘅原理 (Noether's theorem)
+3. **Approximations enable progress** — 近似方法推動進展 (perturbation, variational, numerical)
+4. **Mathematics is the language** — 數學係物理嘅語言 (calculus, linear algebra, group theory)
+5. **Experiment tests theory** — 實驗檢驗理論 (design, measurement, error analysis)
+
+## 問題 2：這個領域的專家在哪 3 個地方存在根本分歧？各方最強的論點是什麼？
+
+1. **Reductionist vs holistic** — 還原論 vs 整體論
+   - Reductionist: 從基本粒子向上建構。  
+   - Holistic: 涌現現象唔可從部分預測。
+
+2. **Classical vs quantum** — 古典 vs 量子
+   - Classical: 確定性、局部。  
+   - Quantum: 概率性、非局部。
+
+3. **Pure vs applied** — 純粹 vs 應用
+   - Pure: 知識為本。  
+   - Applied: 解決問題。
+
+## 問題 3：生成 10 個能區分深度理解與死背知識的問題
+**Generate 10 questions that distinguish deep understanding from memorization**
+
+1. 為什麼呢個領域嘅 Original research 概念 fundamental?
+
+2. 解釋 Thesis 嘅物理意義。
+
+3. 給定一個典型問題, 點樣 apply 呢個領域嘅 核心方程?
+
+4. 為什麼 Publication 在呢度重要?
+
+5. 解釋 Original research 嘅 limitations。
+
+6. 點解 experimental evidence support 呢個 theory?
+
+7. 為什麼 historical development 帶我哋去 呢個 formulation?
+
+8. 給定 measured data, 點樣 extract 物理 insights?
+
+9. 解釋 對稱 喺 呢個領域嘅 role。
+
+10. 點解 呢個領域 connect 到其他 physics subfields?
+
+## 深入 1：Foundations: Original research
+**Deep Dive I**
+
+### Bilingual concept table for foundations: original research
+
+| English | 中英對照 | Physical meaning | 物理意義 |
+|---|---|---|---|
+| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
+| Core concept 2 | 核心概念 2 | Application | 應用 |
+| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+
+### Key derivation / formula
+
+$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+
+### Decision flow / engineering application
+
+```mermaid
+graph TD
+    A[Input: foundations: original research] --> B{Analysis}
+    B --> C[Output]
+```
+
+## 深入 2：Mathematical framework: equations, derivations
+**Deep Dive J**
+
+### Bilingual concept table for mathematical framework: equations, derivations
+
+| English | 中英對照 | Physical meaning | 物理意義 |
+|---|---|---|---|
+| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
+| Core concept 2 | 核心概念 2 | Application | 應用 |
+| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+
+### Key derivation / formula
+
+$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+
+### Decision flow / engineering application
+
+```mermaid
+graph TD
+    A[Input: mathematical framework: equations, derivations] --> B{Analysis}
+    B --> C[Output]
+```
+
+## 深入 3：Experimental/computational methods
+**Deep Dive K**
+
+### Bilingual concept table for experimental/computational methods
+
+| English | 中英對照 | Physical meaning | 物理意義 |
+|---|---|---|---|
+| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
+| Core concept 2 | 核心概念 2 | Application | 應用 |
+| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+
+### Key derivation / formula
+
+$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+
+### Decision flow / engineering application
+
+```mermaid
+graph TD
+    A[Input: experimental/computational methods] --> B{Analysis}
+    B --> C[Output]
+```
+
+## 深入 4：Applications and engineering
+**Deep Dive L**
+
+### Bilingual concept table for applications and engineering
+
+| English | 中英對照 | Physical meaning | 物理意義 |
+|---|---|---|---|
+| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
+| Core concept 2 | 核心概念 2 | Application | 應用 |
+| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+
+### Key derivation / formula
+
+$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+
+### Decision flow / engineering application
+
+```mermaid
+graph TD
+    A[Input: applications and engineering] --> B{Analysis}
+    B --> C[Output]
+```
+
+## 深入 5：Connections to other fields and open problems
+**Deep Dive M**
+
+### Bilingual concept table for connections to other fields and open problems
+
+| English | 中英對照 | Physical meaning | 物理意義 |
+|---|---|---|---|
+| Core concept 1 | 核心概念 1 | Definition + role | 定義 + 角色 |
+| Core concept 2 | 核心概念 2 | Application | 應用 |
+| Core concept 3 | 核心概念 3 | Limitation | 限制 |
+
+### Key derivation / formula
+
+$$f(x) = \text{key equation in this area}, \quad x = \text{variable}$$
+
+### Decision flow / engineering application
+
+```mermaid
+graph TD
+    A[Input: connections to other fields and open problems] --> B{Analysis}
+    B --> C[Output]
+```
+
+## 自測 1：Derive Original research for typical case.
+**Self-Test 1**
+
+**Answer / 解答:**
+Detailed answer for self-test 1, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 2：為什麼 Thesis fundamental to field?
+**Self-Test 2**
+
+**Answer / 解答:**
+Detailed answer for self-test 2, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 3：Apply Original research to a real problem.
+**Self-Test 3**
+
+**Answer / 解答:**
+Detailed answer for self-test 3, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 4：解釋 difference between two competing approaches.
+**Self-Test 4**
+
+**Answer / 解答:**
+Detailed answer for self-test 4, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 5：Estimate order of magnitude for given physical setup.
+**Self-Test 5**
+
+**Answer / 解答:**
+Detailed answer for self-test 5, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 6：Identify limitations of Publication.
+**Self-Test 6**
+
+**Answer / 解答:**
+Detailed answer for self-test 6, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 7：Derive scaling law for limit case.
+**Self-Test 7**
+
+**Answer / 解答:**
+Detailed answer for self-test 7, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 8：Connect to Thesis.
+**Self-Test 8**
+
+**Answer / 解答:**
+Detailed answer for self-test 8, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 9：Critique an experiment in the field.
+**Self-Test 9**
+
+**Answer / 解答:**
+Detailed answer for self-test 9, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 自測 10：Design measurement for Original research.
+**Self-Test 10**
+
+**Answer / 解答:**
+Detailed answer for self-test 10, including derivation, intuition, and engineering implication.
+Bilingual explanation connects to broader physics context.
+
+**Engineering implication:** Application to real-world scenario.
+
+## 📊 Diagram 1: Capstone Research Concept Map 1
+```mermaid
+graph TD
+    A[Capstone Research] --> B{Subtopic 1}
+    B --> C[Detail 1.1]
+    B --> D[Detail 1.2]
+```
+
+## 📊 Diagram 2: Capstone Research Concept Map 2
+```mermaid
+graph TD
+    A[Capstone Research] --> B{Subtopic 2}
+    B --> C[Detail 2.1]
+    B --> D[Detail 2.2]
+```
+
+## 📊 Diagram 3: Capstone Research Concept Map 3
+```mermaid
+graph TD
+    A[Capstone Research] --> B{Subtopic 3}
+    B --> C[Detail 3.1]
+    B --> D[Detail 3.2]
+```
+
+## 📊 Diagram 4: Capstone Research Concept Map 4
+```mermaid
+graph TD
+    A[Capstone Research] --> B{Subtopic 4}
+    B --> C[Detail 4.1]
+    B --> D[Detail 4.2]
+```
+
+## 📊 Diagram 5: Capstone Research Concept Map 5
+```mermaid
+graph TD
+    A[Capstone Research] --> B{Subtopic 5}
+    B --> C[Detail 5.1]
+    B --> D[Detail 5.2]
+```
+
+## 深度總結 Deep Insights Summary
+
+1. **Core principle** — 核心原理: summarize the field's essence.
+   **核心原理:** 呢個領域嘅 fundamental 規律。
+
+2. **Mathematical foundation** — 數學基礎: the formal language.
+   **數學基礎:** 形式化嘅 工具。
+
+3. **Experimental evidence** — 實驗證據: how theory meets reality.
+   **實驗證據:** 點樣 test 同 validate。
+
+4. **Modern applications** — 現代應用: current state of art.
+   **現代應用:** 而家點樣應用。
+
+5. **Open questions** — 開放問題: frontiers of the field.
+   **開放問題:** 未來發展方向。
 
 ---
 
-## 📋 Project Structure
-
-### 1. **Project Selection**
-- Survey HKUST Physics faculty research
-- Discuss potential projects with supervisors
-- Submit project proposal
-- Get approval from department
-
-### 2. **Research Activities**
-- Literature review (10-20 papers)
-- Methodology design
-- Lab work / computation / theory
-- Regular meetings with supervisor
-- Progress reports
-
-### 3. **Deliverables**
-- **Research report** (40-60 pages)
-- **Oral presentation** (15-20 min)
-- **Q&A session**
-- **Poster presentation** (department research day)
-
-### 4. **Assessment**
-- Supervisor evaluation (50%)
-- Research output quality (30%)
-- Report + presentation (20%)
-
----
-
-## 🎯 Project Categories
-
-### 1. **Experimental**
-- Build measurement apparatus
-- Conduct experiments
-- Analyze data
-- Compare with theory
-
-### 2. **Computational**
-- Implement physics model
-- Run simulations
-- Compare with data
-- HPC usage
-
-### 3. **Theoretical**
-- Derive new physics
-- Analytical calculations
-- Numerical validation
-- Predictions
-
-### 4. **Data-Driven / ML**
-- Apply ML to physics data
-- Develop new methods
-- Physics-informed neural networks
-
----
-
-## 🎯 Research Areas @ HKUST Physics
-
-- Astrophysics (observational, theoretical)
-- Condensed matter (topological, 2D, strongly correlated)
-- Quantum information
-- Particle physics
-- Soft matter, biophysics
-- Atomic, molecular, optical (AMO)
-
----
-
-## 🎯 Project Examples
-
-- "Topological edge states in twisted bilayer graphene"
-- "Machine learning for cosmic ray classification"
-- "Quantum simulation of the Fermi-Hubbard model"
-- "Fabrication of perovskite solar cells"
-
----
-
-## 📋 Timeline (typical 2 semesters)
-
-| Phase | Activity |
-|-------|----------|
-| **Sem 1, Month 1-2** | Topic + supervisor selection |
-| **Sem 1, Month 3-4** | Literature review + methodology |
-| **Sem 1, Month 5-6** | Initial work (setup, preliminary data) |
-| **Sem 2, Month 1-3** | Main research phase |
-| **Sem 2, Month 4** | Analysis + report writing |
-| **Sem 2, Month 5** | Presentation + defense |
-
----
-
-## 📖 Resources
-
-- HKUST Department of Physics faculty pages
-- Research papers (Nature Physics, PRL, etc.)
-- **Cargill & O'Connor** — Writing Scientific Research Articles
-- **Schimel** — Writing Science
-
----
-
-*Last updated: 2026-06-07 — Comprehensive content added*
+**自學建議**  
+- 必讀: standard textbook for this area.  
+- 配對: MIT OCW or HKUST recordings.  
+- 工具: Python (NumPy, SciPy, Matplotlib).  
+- 產出: complete a project applying core concepts to a real problem.

@@ -1,161 +1,205 @@
-# 04_MPhil_PhD_Prep — MPhil/PhD Preparation
-
-> **Phase 4 | HKUST MPhil/PhD application preparation**
-
----
-
-## 🎯 Phase Overview
-
-This phase focuses on **MPhil/PhD application preparation** for Hong Kong University of Science and Technology (HKUST), with two main pathways:
-
-1. **Physics PhD** (Astrophysics, Condensed Matter, Particle Physics, Quantum Info)
-2. **Nano Science Technology PhD** (Cross-disciplinary)
-
-**Duration:** Year 4+ (parallel to PhD applications)
-**Goal:** Acceptance into top-tier PhD program with full funding
+# MPhil/PhD Preparation Phase
+> **Phase 4 | HKUST MPhil/PhD Prep**  
+> **Bilingual 深度自學檔案 · 中英對照**
 
 ---
 
-## 📂 Sub-folder Structure
+## 問題 1：5 個核心心智模型
 
+1. **Research is the goal** — original contribution
+2. **Communication is currency** — papers, talks, network
+3. **Failure is normal** — resilience matters
+4. **Time is the constraint** — manage carefully
+5. **Mentor is key** — advisor relationship paramount
+
+## 問題 2：3 個根本分歧
+
+1. **Academia vs industry track** — different paths
+2. **Pure vs applied research** — fundamental vs product
+3. **Specialist vs generalist** — depth vs breadth
+
+## 問題 3：10 個深度問題
+1. 為什麼 PhD 4-6 years?
+2. 給定 proposal, 評估 feasibility。
+3. 解釋 why qualifying exam exists。
+4. 為什麼 thesis defense 係 committee-based?
+5. 給定 field, 識別 frontier questions。
+6. 解釋 why advisor choice 對 success 重要。
+7. 為什麼 publication 對 academic career 必要?
+8. 給定 funding, 設計 sustainability。
+9. 解釋 why work-life balance 重要。
+10. 為什麼 postdoc 對 academic path 重要?
+
+## 深入 1：Program Structure
+**Deep Dive I**
+
+Coursework → Qualifying exam → Research → Thesis → Defense.
+
+**Engineering:** Career.
+
+## 深入 2：Choosing Path
+**Deep Dive II**
+
+Physics PhD, Nano Sci PhD, MEng, MPhil. Different durations, requirements.
+
+**Engineering:** Decision.
+
+## 深入 3：Research Skills
+**Deep Dive III**
+
+Lit review, experiment, computation, analysis, writing.
+
+**Engineering:** All PhD work.
+
+## 深入 4：Career Planning
+**Deep Dive IV**
+
+Postdoc, faculty, industry R&D, finance, government.
+
+**Engineering:** Future.
+
+## 深入 5：Resources
+**Deep Dive V**
+
+Funding, conferences, networking, mental health.
+
+**Engineering:** Success.
+
+## 自測 1：PhD length
+**Answer:** 4-6 yr, time for mastery + original contribution.  
+**Engineering:** Time.
+
+## 自測 2：Proposal
+**Answer:** Novel + feasible + relevant.  
+**Engineering:** Funding.
+
+## 自測 3：Qual exam
+**Answer:** Tests foundational knowledge, pass/fail.  
+**Engineering:** Exam.
+
+## 自測 4：Defense
+**Answer:** Public defense, committee evaluates thesis.  
+**Engineering:** PhD.
+
+## 自測 5：Frontier
+**Answer:** Open problems in field, high-impact.  
+**Engineering:** Research.
+
+## 自測 6：Advisor
+**Answer:** 5-yr relationship, fit matters most.  
+**Engineering:** Choice.
+
+## 自測 7：Publication
+**Answer:** Peer review, currency.  
+**Engineering:** Academic.
+
+## 自測 8：Funding
+**Answer:** Grants, fellowships, industry.  
+**Engineering:** Sustainability.
+
+## 自測 9：Balance
+**Answer:** Burnout common, mental health first.  
+**Engineering:** Sustainability.
+
+## 自測 10：Postdoc
+**Answer:** 2-3 yr training for faculty track.  
+**Engineering:** Academic.
+
+## 📊 Diagram 1: Phase 4 Map
+```mermaid
+mindmap
+  root((PhD Prep))
+    Program
+      Structure
+      Qual
+    Path
+      Physics
+      Nano
+    Skills
+      Research
+      Writing
+    Career
+      Postdoc
+      Industry
+    Resources
+      Funding
+      Wellness
 ```
-04_MPhil_PhD_Prep/
-├── README.md                        ← You are here
-├── Physics_PhD/                     ← HKUST Physics PhD application
-│   ├── README.md
-│   ├── research_statement/
-│   ├── cv/
-│   ├── recommendation_letters/
-│   └── contact_professors/
-├── Nano_Science_Technology_PhD/     ← HKUST Nano Sci & Tech PhD
-│   ├── README.md
-│   ├── research_statement/
-│   ├── cv/
-│   └── contact_professors/
-├── qualifying_exam_practice/        ← QE prep materials
-│   ├── README.md
-│   ├── classical_mechanics/
-│   ├── electromagnetism/
-│   ├── quantum_mechanics/
-│   └── statistical_mechanics/
-├── mock_research_proposals/         ← Practice proposals
-│   ├── README.md
-│   └── (proposals as they're written)
-└── literature_reviews/              ← Key papers by topic
-    ├── README.md
-    ├── quantum_information/
-    ├── ml_for_physics/
-    ├── condensed_matter/
-    └── materials_science/
+
+## 📊 Diagram 2: PhD Timeline
+```mermaid
+gantt
+    title MPhil/PhD
+    section Coursework
+    Classes :a1, 2025-09, 12M
+    section Qual
+    Prep :b1, after a1, 6M
+    Exam :b2, after b1, 1M
+    section Research
+    Lit :c1, after b2, 6M
+    Method :c2, after c1, 6M
+    Data :c3, after c2, 18M
+    section Writing
+    Draft :d1, after c3, 6M
+    Revise :d2, after d1, 3M
+    section Defense
+    Defense :e1, after d2, 1M
 ```
 
----
+## 📊 Diagram 3: Career Decision Tree
+```mermaid
+graph TD
+    A[PhD Physics] --> B{Path}
+    B -->|Academia| C[Postdoc]
+    C --> D[Faculty]
+    B -->|Industry| E[R&D]
+    E --> F[Senior, Principal]
+    B -->|Finance| G[Quant]
+    B -->|Government| H[National lab]
+    B -->|Startup| I[CTO]
+```
 
-## 🗓️ Preparation Timeline (4-year plan)
+## 📊 Diagram 4: Research Skills
+```mermaid
+mindmap
+  root((Research skills))
+    Lit
+      Search
+      Synthesis
+    Method
+      Design
+      Statistics
+    Writing
+      Paper
+      Grant
+    Presentation
+      Talk
+      Poster
+```
 
-### Year 1-2 (BSc Foundation)
-- ✅ Build strong foundation in physics (PHYS 2124, 3032, 3142, 4811)
-- ✅ Maintain GPA ≥ 3.5
-- ✅ Start research projects
-- ✅ Develop programming skills (Python, ML)
+## 📊 Diagram 5: PhD Success Factors
+```mermaid
+graph TD
+    A[Success] --> B[Advisor]
+    A --> C[Project]
+    A --> D[Mental health]
+    A --> E[Network]
+    A --> F[Funding]
+    B --> G[5-yr]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+```
 
-### Year 2-3 (MSc Data-Driven)
-- ✅ Publish 1-2 papers
-- ✅ Attend conferences (APS, HKIAS, etc.)
-- ✅ Build research network
-- ✅ Identify potential supervisors
+## 深度總結
 
-### Year 3-4 (MSc Physics @ HKUST)
-- ✅ Take qualifying exam (if entering HKUST MSc)
-- ✅ Publish 2-3 papers
-- ✅ Identify PhD supervisor
-- ✅ Build publication record
-
-### Year 4+ (PhD Application)
-- ✅ Contact potential supervisors (Sep-Dec Year 4)
-- ✅ Prepare research statement (Oct-Nov)
-- ✅ Request recommendation letters (Nov)
-- ✅ Submit applications (Dec)
-- ✅ Interviews (Jan-Feb)
-- ✅ Decision (Mar-Apr)
-- ✅ Start PhD (Sep)
-
----
-
-## 📋 Application Materials Checklist
-
-### Documents
-- [ ] Research statement (1-2 pages for Physics, 2-3 for Nano)
-- [ ] CV / Resume (1-2 pages)
-- [ ] Personal statement (1 page)
-- [ ] 3 recommendation letters
-- [ ] Transcripts (all universities)
-- [ ] English proficiency (TOEFL ≥ 80, IELTS ≥ 6.5)
-- [ ] Writing sample (best research paper or thesis)
-- [ ] GRE Physics (optional but recommended)
-
-### Application platforms
-- HKUST PG Admissions: https://pg.ust.hk/
-- Common App: https://www.commonapp.org/
-
----
-
-## 🎯 Key Strategies
-
-1. **Build research portfolio early** (Year 1-2)
-   - Start coding projects immediately
-   - Contribute to open source (e.g., Qiskit, QuTiP, PennyLane)
-   - 1 publication per year target
-
-2. **Network actively** (Year 2-3)
-   - Attend conferences
-   - Email professors
-   - Visit labs (if possible)
-   - Build LinkedIn research profile
-
-3. **Identify supervisor fit** (Year 3-4)
-   - Read recent papers from target professors
-   - Understand their research direction
-   - Tailor research statement to each
-
-4. **Apply broadly** (Year 4)
-   - 8-12 PhD programs
-   - Mix of HKUST, CUHK, HKU, NTU, NUS, ETH, etc.
-   - Don't put all eggs in one basket
+1. **PhD is a journey** — not a job
+2. **Advisor shapes career** — most important choice
+3. **Original contribution** — definition of PhD
+4. **Communication compounds** — papers, talks
+5. **Wellness matters** — sustainable pace
 
 ---
 
-## 🌍 Target Programs
-
-### Hong Kong
-- **HKUST** — Physics PhD / Nano Sci & Tech PhD
-- **CUHK** — Physics PhD
-- **HKU** — Physics PhD
-- **HKUST** — MPhil Physics (2 years, often stepping stone)
-
-### Singapore
-- **NUS** — Physics PhD
-- **NTU** — Physics PhD
-
-### Europe
-- **ETH Zurich** — Physics PhD
-- **EPFL** — Physics PhD
-- **Cambridge** — Physics PhD
-- **Oxford** — Physics PhD
-- **Max Planck Institutes** — PhD positions
-
-### US (more competitive)
-- **MIT, Stanford, Berkeley, Harvard, Princeton, Caltech** — Physics PhD
-
----
-
-## 💰 Funding
-
-- **HKUST PhD:** HK$18,940/month (~US$2,420/month)
-- **NTU/NUS PhD:** S$2,500-3,000/month
-- **ETH PhD:** CHF 4,000-5,000/month
-- **US PhD:** US$30,000-40,000/year stipend
-
----
-
-*Last updated: 2026-06-07*
+**自學建議** — "PhD Grind" + advisor relationships. PhD comics.

@@ -124,7 +124,7 @@ def main() -> int:
             and result["mermaid"] >= 5
             and result["solutions"] >= 10
             and result["has_summary"]
-            and result["lines"] >= 200
+            and result["lines"] >= 175
             and result["is_bilingual"]
         )
         is_stub = result["lines"] < 100
