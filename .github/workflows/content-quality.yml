@@ -1,0 +1,58 @@
+name: Content Quality Check
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  content-quality:
+    name: Validate course content format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run content quality checker
+        run: |
+          python3 .github/scripts/check_content.py
+
+  critical-courses:
+    name: Check critical course files exist
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify critical course files
+        run: |
+          set -e
+          # Top 5 BSc core courses must be in the full new format
+          for f in \
+            01_BSc_Physics/core_courses/PHYS_2124_Math_Methods_I/README.md \
+            01_BSc_Physics/core_courses/PHYS_3032_Classical_Mechanics/README.md \
+            01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md \
+            01_BSc_Physics/core_courses/PHYS_3033_Electricity_and_Magnetism_I/README.md \
+            01_BSc_Physics/core_courses/PHYS_4050_Thermodynamics_Statistical_Physics/README.md
+          do
+            if [ ! -f "$f" ]; then
+              echo "❌ Missing: $f"
+              exit 1
+            fi
+            LINES=$(wc -l < "$f")
+            if [ "$LINES" -lt 1500 ]; then
+              echo "❌ $f is only $LINES lines (need ≥ 1500 for full format)"
+              exit 1
+            fi
+            if ! grep -q "## 總結\|## Deep Insights" "$f"; then
+              echo "❌ $f missing ## 總結 or ## Deep Insights summary"
+              exit 1
+            fi
+            MERMAIDS=$(grep -c '```mermaid' "$f")
+            if [ "$MERMAIDS" -lt 5 ]; then
+              echo "❌ $f has only $MERMAIDS mermaid diagrams (need ≥ 5)"
+              exit 1
+            fi
+            echo "✅ $f ($LINES lines, $MERMAIDS diagrams)"
+          done
