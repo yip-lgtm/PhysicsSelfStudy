@@ -258,3 +258,30 @@ Just keep the copyright notice.
 🇭🇰 Built in Hong Kong · ⚛️ For physics lovers · 🤝 Open to all
 
 *「格物致知」— Investigate things to extend knowledge*
+
+## 問題 3: 10 個問題 for navigating this folder
+
+1. 呢個 folder 包含啲乜嘢?
+2. 點樣 navigate 內部嘅 course files?
+3. 邊個 course 適合我嘅 background?
+4. 邊啲 course 有 lab components?
+5. Course 嘅 prerequisites 係乜?
+6. 點解 follow 標準 5MM/3DG/10Q format?
+7. 點樣 contribute 新 course?
+8. 邊啲 resources 跨 folders?
+9. 點樣 integrate 埋 portfolio projects?
+10. 點樣 track 進度?
+
+## 問題 2: 3 個根本分歧 for folder organization
+
+1. **Linear vs spiral** — 線性 vs 螺旋式 learning
+2. **Breadth vs depth first** — 廣度 vs 深度優先
+3. **Standard vs customized** — 標準 vs 個人化
+
+## 深度總結 Deep Insights Summary
+
+1. **Folder purpose** — purpose of this folder
+2. **Course structure** — how courses are organized
+3. **Self-study path** — recommended sequence
+4. **Connections** — links to other folders
+5. **Updates** — how to contribute
