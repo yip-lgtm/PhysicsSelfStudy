@@ -74,10 +74,10 @@ PhysicsSelfStudy/
 ├── weekly_reflections/              ← Weekly study reflections
 ├── old_archive/                     ← Archived old structure
 │
-├── .github/                         ← GitHub templates
-│   ├── ISSUE_TEMPLATE/              ← Issue templates
-│   └── workflows/                   ← CI/CD workflows
+├── _agents/                         ← Multi-Agent Pipeline
+├── _pipeline/                       ← Pipeline orchestrator
 │
+├── .github/                         ← GitHub templates
 ├── README.md                        ← You are here
 ├── STRUCTURE.md                     ← Full directory tree
 ├── ROADMAP.md                       ← 4-phase roadmap
@@ -87,7 +87,6 @@ PhysicsSelfStudy/
 ├── CHANGELOG.md                     ← Project history
 ├── FAQ.md                           ← Common questions
 ├── SETUP.md                         ← Setup instructions
-├── SETUP_AUTOMATION_PROMPT.md       ← Automation template
 ├── LICENSE                          ← MIT License
 └── .gitignore                       ← Git ignore rules
 ```
@@ -115,6 +114,130 @@ PhysicsSelfStudy/
 | **Total** | **Course folders** | **84** | ✅ 100% aligned |
 
 **Every course has a comprehensive README** with description, learning objectives, topics, MIT OCW / textbook resources, and project ideas.
+
+---
+
+## 📂 Course Format — Deep Study Format (5MM / 3DG / 10Q / 5DD / 10SL / 5MR)
+
+每一個 course file 都係用 **Deep Study Format** 寫成，呢個格式由 **袁騰飛老師嘅教學風格啟發** — 用紮實嘅研究材料 + 嚴密嘅邏輯結構，取代一般嘅 template 填空。
+
+### 🧱 結構組成
+
+| 元素 | 數量 | 內容 | 範例 (PHYS 3036 QM I) |
+|---|---|---|---|
+| **5MM** | 5 | 核心心智模型 (Mental Models) — 方程式 + 真實數字 + 學者 | Schrödinger eq: $i\hbar\partial_t\psi = \hat{H}\psi$ (Schrödinger 1926) |
+| **3DG** | 3 | 根本分歧 (Divergent views) — A/B 兩方 + 引用 | Copenhagen (Bohr 1928) vs Many-worlds (Everett 1957) |
+| **10Q** | 10 | 深度問題 (Questions) — 由淺入深 | "Why is $\psi$ complex?" |
+| **5DD** | 5 | 深度 dive (中英對照) — 兩個 paragraph 講核心概念 | Hilbert space 嘅 geometric meaning |
+| **10SL** | 10 | Solutions — 完整 worked example + Python code | Numerov 用嚟解 bound state |
+| **5MR** | 5 | Mermaid 圖 — energy levels / potentials / state machine | `mermaid graph TD` |
+
+### 🎯 核心原則
+
+1. **真實研究材料 (No template)** — 唔用 placeholder、唔用 "[TBD]"、唔用 "Lorem ipsum"。每個方程式、每個數字、每個學者都要查過 web。
+2. **中英對照 (Bilingual)** — DD 段落、技術名詞都英中並列，方便香港雙語環境。
+3. **學者真名 + 出版年份** — 例：Newton 1687, Lagrange 1788, Hamilton 1834, Maxwell 1865, Schrödinger 1926, Dirac 1928, Feynman 1948 — 唔寫 "someone famous"。
+4. **Python code 可運行** — 每個 solution 都有 `python3` executable code，唔係 pseudocode。
+5. **Mermaid diagram 必須 render** — 唔寫爛 syntax，要直接喺 GitHub 渲染得到。
+
+### 🧪 Verification (per course)
+
+```bash
+# 1. Check file size
+wc -l 01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md
+
+# 2. Count scholars + years
+grep -E "(Newton|Schrödinger|Dirac|Feynman|Bohr|Heisenberg)\s+[0-9]{4}" 01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md | wc -l
+
+# 3. Validate Mermaid
+grep -c '```mermaid' 01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md  # should be 5
+
+# 4. Check no placeholder
+grep -E "\[TBD\]|待補充|Lorem|placeholder" 01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md  # should be empty
+```
+
+---
+
+## 🛠️ Multi-Agent Course Generation Pipeline
+
+所有 course content 經過 **5-Agent Pipeline** 嚴格審核：
+
+```
+┌─────────────────────────────────────────┐
+│  1. Researcher                          │
+│     查 HKUST Catalog / MIT OCW / arXiv  │
+│     品質門檻: 必須有 primary source     │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│  2. Data Extractor                      │
+│     提取 objectives/prereq/themes/LO    │
+│     品質門檻: 無推測, verifiable        │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│  3. Engineer (袁騰飛式 Producer)        │
+│     5MM + 3DG + 10Q + 5DD + 10SL       │
+│     品質門檻: Specific, 禁通用廢話      │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│  4. Diagram                             │
+│     5 個 Mermaid 圖                     │
+│     品質門檻: 對應本課程, 禁模板圖      │
+└──────────────┬──────────────────────────┘
+               │
+               ▼
+┌─────────────────────────────────────────┐
+│  5. Professor Supervisor (Quality Gate) │
+│     APPROVED / REVISE / REJECT          │
+│     品質門檻: 不通過不推送              │
+└─────────────────────────────────────────┘
+```
+
+### Agent 目錄
+
+- [`_agents/researcher/`](./_agents/researcher/) — 查 primary sources (HKUST, MIT OCW, arXiv)
+- [`_agents/data_extractor/`](./_agents/data_extractor/) — 提取 course objectives/themes
+- [`_agents/engineer/`](./_agents/engineer/) — Deep Study Format producer
+- [`_agents/diagram/`](./_agents/diagram/) — 5 Mermaid diagrams
+- [`_agents/professor_supervisor/`](./_agents/professor_supervisor/) — Quality gate reviewer
+
+### Pipeline Orchestrator
+
+```bash
+# Review all courses
+python3 _agents/professor_supervisor/review.py --all
+
+# Review single course
+python3 _agents/professor_supervisor/review.py --course 01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md
+
+# Full pipeline (per course)
+python3 _pipeline/run_pipeline.py --course PHYS_3036
+```
+
+### Quality Gates (10 gates, 100 points)
+
+| Gate | Check | 拒絕 if |
+|---|---|---|
+| **G1 Length** | `wc -l` | < 300 lines |
+| **G2 Format** | Deep Study Format sections | Missing 5MM, 3DG, 10Q, 5DD, 10SL |
+| **G3 Citations** | Real scholars + year | < 3 named scholars |
+| **G4 Specificity** | Numbers + equations | < 3 equations |
+| **G5 Bilingual** | 中英對照 | EN-only section |
+| **G6 No Placeholder** | `[TBD]`, `待補充` | Any placeholder |
+| **G7 Mermaid** | 5 diagrams | < 5 |
+| **G8 Solutions** | 10 detailed | < 10 numbered |
+| **G9 Deep Dives** | 5 specific | Generic placeholder |
+| **G10 No Template** | No T0/T1/T2 | `T0 — Core` style |
+
+**Decision:**
+- ✅ **APPROVED** ≥ 85
+- ⚠️ **REVISE** 70-84
+- ❌ **REJECT** < 70 (auto-quarantine, no push)
 
 ---
 
@@ -153,8 +276,6 @@ pip install numpy scipy matplotlib pandas jupyter sympy
 ```
 
 ### 3. Start with PHYS 2124 — Mathematical Methods I
-
-The first Theory Block (Sat 2026-06-13) will cover **Vector Calculus** from this course.
 
 ```bash
 cd 01_BSc_Physics/core_courses/PHYS_2124_Math_Methods_I/
@@ -231,6 +352,7 @@ Just keep the copyright notice.
 
 - **HKUST Department of Physics** — for publishing open course catalogs
 - **MIT OpenCourseWare** — for free lecture notes and problem sets
+- **袁騰飛老師** — 教學風格啟發 (Deep Study Format)
 - **Open-source physics community** — for simulation tools
 
 ---
@@ -249,39 +371,12 @@ Just keep the copyright notice.
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Phase](https://img.shields.io/badge/Phase-1%20(BSc)-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
-![Commits](https://img.shields.io/badge/Commits-23+-orange)
+![Pipeline](https://img.shields.io/badge/Pipeline-Multi--Agent-orange)
 
-**Last Updated:** 2026-06-07
+**Last Updated:** 2026-08
 
 ---
 
 🇭🇰 Built in Hong Kong · ⚛️ For physics lovers · 🤝 Open to all
 
 *「格物致知」— Investigate things to extend knowledge*
-
-## 問題 3: 10 個問題 for navigating this folder
-
-1. 呢個 folder 包含啲乜嘢?
-2. 點樣 navigate 內部嘅 course files?
-3. 邊個 course 適合我嘅 background?
-4. 邊啲 course 有 lab components?
-5. Course 嘅 prerequisites 係乜?
-6. 點解 follow 標準 5MM/3DG/10Q format?
-7. 點樣 contribute 新 course?
-8. 邊啲 resources 跨 folders?
-9. 點樣 integrate 埋 portfolio projects?
-10. 點樣 track 進度?
-
-## 問題 2: 3 個根本分歧 for folder organization
-
-1. **Linear vs spiral** — 線性 vs 螺旋式 learning
-2. **Breadth vs depth first** — 廣度 vs 深度優先
-3. **Standard vs customized** — 標準 vs 個人化
-
-## 深度總結 Deep Insights Summary
-
-1. **Folder purpose** — purpose of this folder
-2. **Course structure** — how courses are organized
-3. **Self-study path** — recommended sequence
-4. **Connections** — links to other folders
-5. **Updates** — how to contribute
