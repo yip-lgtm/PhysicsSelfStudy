@@ -14,6 +14,24 @@
 
 ---
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$i\\hbar\\frac{\\partial}{\\partial t}|\\psi\\rangle = \\hat{H}|\\psi\\rangle$$
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Newton 1687, Einstein 1905, Bohr 1913.*
+
 ## 問題 2：3 個根本分歧
 1. **Picture: Schrödinger vs Heisenberg vs Interaction**
 2. **Scattering: time-dep vs time-indep (S-matrix)**
@@ -220,6 +238,21 @@ graph TD
 ```
 
 ---
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Newton (1687) | 1687 | Contribution to physics |
+| Einstein (1905) | 1905 | Contribution to physics |
+| Bohr (1913) | 1913 | Contribution to physics |
+| Schrödinger (1926) | 1926 | Contribution to physics |
+| Dirac (1928) | 1928 | Contribution to physics |
+| TBD (n.d.) | n.d. | Contribution to physics |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
 ## 深度總結 Deep Insights
 

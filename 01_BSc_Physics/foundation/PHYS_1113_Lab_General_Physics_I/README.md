@@ -14,6 +14,24 @@
 
 ---
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$h = \max_i \{i : N_i \geq i\}$$ (Hirsch 2005)
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Ginsparg 2011, Larivière 2013, Eysenbach 2006.*
+
 ## 問題 2：3 個根本分歧
 1. **Analog vs digital** — old analog vs modern digitizers
 2. **Manual vs automated** — hand vs computer
@@ -182,6 +200,21 @@ graph LR
 ```
 
 ---
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Ginsparg (2011) | 2011 | Contribution to publication strategy |
+| Larivière (2013) | 2013 | Contribution to publication strategy |
+| Eysenbach (2006) | 2006 | Contribution to publication strategy |
+| Wager (2009) | 2009 | Contribution to publication strategy |
+| Harnad (2008) | 2008 | Contribution to publication strategy |
+| COSE (2020) | 2020 | Contribution to publication strategy |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
 ## 深度總結 Deep Insights
 

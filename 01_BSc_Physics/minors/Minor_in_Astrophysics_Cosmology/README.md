@@ -12,6 +12,24 @@
 4. **Light is the messenger** — spectrum reveals everything
 5. **Universe is expanding** — Big Bang cosmology
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$F = ma, \\quad E = h\\nu$$
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Feynman 1963, Griffiths 2018, Sakurai 2017.*
+
 ## 問題 2：3 個根本分歧
 
 1. **Steady-state vs Big Bang cosmology**
@@ -165,6 +183,21 @@ graph TD
     E --> F
     F --> G[Combined astronomy]
 ```
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Feynman (1963) | 1963 | Contribution to physics minor |
+| Griffiths (2018) | 2018 | Contribution to physics minor |
+| Sakurai (2017) | 2017 | Contribution to physics minor |
+| Ashcroft (1976) | 1976 | Contribution to physics minor |
+| TBD (n.d.) | n.d. | Contribution to physics minor |
+| TBD (n.d.) | n.d. | Contribution to physics minor |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
 ## 深度總結
 

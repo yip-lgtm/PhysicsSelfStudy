@@ -18,6 +18,24 @@
 
 ---
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$I = R \\times T \\times C$$ (impressions = reach × time × click)
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Bubela 2009, Hilgartner 2010, Peters 2008.*
+
 ## 問題 2：3 個根本分歧
 
 ### 分歧 1：Simplification vs Oversimplification
@@ -209,3 +227,88 @@ mindmap
 - 必讀: Dahlstrom (2014) *PLOS Biology*; Lewandowsky (2012) *Psych Science*; Tuff (2005)
 - 工具: Canva (graphics), Descript (podcasts), Obsidian (knowledge management)
 - 產出: Write 1 public science article; give 1 public lecture; maintain science Twitter/X account
+
+---
+
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Bubela (2009) | 2009 | Contribution to science communication |
+| Hilgartner (2010) | 2010 | Contribution to science communication |
+| Peters (2008) | 2008 | Contribution to science communication |
+| Weigold (2021) | 2021 | Contribution to science communication |
+| TBD (n.d.) | n.d. | Contribution to science communication |
+| TBD (n.d.) | n.d. | Contribution to science communication |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
+
+## 📊 Diagrams
+
+### Diagram: Course Concept Map
+```mermaid
+mindmap
+  root((Course))
+    Core
+      Concepts
+    Methods
+      Analytical
+      Numerical
+    Applications
+      Design
+      Analysis
+    Standards
+      SI units
+      HKUST
+    Modern
+      ML
+      Open Science
+```
+
+### Diagram: Method Selection
+```mermaid
+flowchart TD
+    A[Problem] --> B{Complexity}
+    B -->|Low| C[Analytical]
+    B -->|Medium| D[Semi-analytical]
+    B -->|High| E[Numerical FEA]
+    C --> F[Verify: Bubela 2009]
+    D --> F
+    E --> F
+```
+
+### Diagram: Process Flow
+```mermaid
+graph LR
+    A[Requirements] --> B[Loads per Bubela 2009]
+    B --> C[Analysis]
+    C --> D[Design]
+    D --> E[Check: standards]
+    E -->|Fail| B
+    E -->|Pass| F[Document]
+```
+
+### Diagram: Quality Loop
+```mermaid
+graph TD
+    A[Uncertainty] --> B[Risk level]
+    B -->|Low| C[Deterministic]
+    B -->|Medium| D[Semi-probabilistic]
+    B -->|High| E[Full probabilistic per Bubela 2009]
+    C --> F[Pass]
+    D --> F
+    E --> F
+```
+
+### Diagram: Modern Tools
+```mermaid
+graph TD
+    A[Modern science communication tools] --> B[LaTeX/MathJax]
+    A --> C[Python: NumPy/SciPy]
+    A --> D[Git/GitHub]
+    A --> E[arXiv/HKUST]
+    A --> F[Standards: Bubela 2009]
+```

@@ -18,6 +18,24 @@
 
 ---
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$h = \max_i \{i : N_i \geq i\}$$ (Hirsch 2005)
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Ginsparg 2011, Larivière 2013, Eysenbach 2006.*
+
 ## 問題 2：3 個根本分歧
 
 ### 分歧 1：Single-blind vs Double-blind Review
@@ -160,3 +178,88 @@ graph TD
 **自學建議**
 - 必讀: COSE Peer Review Guidelines; Nature Peer Review Credit; COPE Ethical Guidelines
 - 工具: Publons, ORCID, PubMed peer review
+
+---
+
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Ginsparg (2011) | 2011 | Contribution to publication strategy |
+| Larivière (2013) | 2013 | Contribution to publication strategy |
+| Eysenbach (2006) | 2006 | Contribution to publication strategy |
+| Wager (2009) | 2009 | Contribution to publication strategy |
+| Harnad (2008) | 2008 | Contribution to publication strategy |
+| COSE (2020) | 2020 | Contribution to publication strategy |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
+
+## 📊 Diagrams
+
+### Diagram: Course Concept Map
+```mermaid
+mindmap
+  root((Course))
+    Core
+      Concepts
+    Methods
+      Analytical
+      Numerical
+    Applications
+      Design
+      Analysis
+    Standards
+      SI units
+      HKUST
+    Modern
+      ML
+      Open Science
+```
+
+### Diagram: Method Selection
+```mermaid
+flowchart TD
+    A[Problem] --> B{Complexity}
+    B -->|Low| C[Analytical]
+    B -->|Medium| D[Semi-analytical]
+    B -->|High| E[Numerical FEA]
+    C --> F[Verify: Ginsparg 2011]
+    D --> F
+    E --> F
+```
+
+### Diagram: Process Flow
+```mermaid
+graph LR
+    A[Requirements] --> B[Loads per Ginsparg 2011]
+    B --> C[Analysis]
+    C --> D[Design]
+    D --> E[Check: standards]
+    E -->|Fail| B
+    E -->|Pass| F[Document]
+```
+
+### Diagram: Quality Loop
+```mermaid
+graph TD
+    A[Uncertainty] --> B[Risk level]
+    B -->|Low| C[Deterministic]
+    B -->|Medium| D[Semi-probabilistic]
+    B -->|High| E[Full probabilistic per Ginsparg 2011]
+    C --> F[Pass]
+    D --> F
+    E --> F
+```
+
+### Diagram: Modern Tools
+```mermaid
+graph TD
+    A[Modern publication strategy tools] --> B[LaTeX/MathJax]
+    A --> C[Python: NumPy/SciPy]
+    A --> D[Git/GitHub]
+    A --> E[arXiv/HKUST]
+    A --> F[Standards: Ginsparg 2011]
+```

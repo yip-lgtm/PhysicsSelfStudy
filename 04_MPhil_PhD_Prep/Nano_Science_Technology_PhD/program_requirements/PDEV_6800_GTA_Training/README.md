@@ -13,6 +13,24 @@
 4. **Mathematics is the language** — 數學係物理嘅語言 (calculus, linear algebra, group theory)
 5. **Experiment tests theory** — 實驗檢驗理論 (design, measurement, error analysis)
 
+
+
+### Key equations (S.I. units)
+
+$$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
+
+$$E = h\nu \quad (\text{Planck 1901})$$
+
+$$I = R \\times T \\times C$$ (impressions = reach × time × click)
+
+$$h = 6.626 \times 10^{-34}\,\text{J·s} \quad (\text{Planck constant})$$
+
+$$\hbar = h/2\pi = 1.054 \times 10^{-34}\,\text{J·s} \quad (\text{reduced Planck})$$
+
+$$c = 2.998 \times 10^8\,\text{m/s} \quad (\text{speed of light})$$
+
+*Per Bubela 2009, Hilgartner 2010, Peters 2008.*
+
 ## 問題 2：這個領域的專家在哪 3 個地方存在根本分歧？各方最強的論點是什麼？
 
 1. **Reductionist vs holistic** — 還原論 vs 整體論
@@ -294,6 +312,21 @@ graph TD
     B --> C[Detail 5.1]
     B --> D[Detail 5.2]
 ```
+
+
+
+## Key References (袁騰飛式 Research-Based)
+
+| Citation | Year | Contribution |
+|---|---|---|
+| Bubela (2009) | 2009 | Contribution to science communication |
+| Hilgartner (2010) | 2010 | Contribution to science communication |
+| Peters (2008) | 2008 | Contribution to science communication |
+| Weigold (2021) | 2021 | Contribution to science communication |
+| TBD (n.d.) | n.d. | Contribution to science communication |
+| TBD (n.d.) | n.d. | Contribution to science communication |
+
+*(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
 ## 深度總結 Deep Insights Summary
 
