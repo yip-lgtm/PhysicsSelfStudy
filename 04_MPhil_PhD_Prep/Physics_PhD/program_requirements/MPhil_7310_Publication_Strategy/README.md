@@ -19,7 +19,6 @@
 ---
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -315,8 +314,6 @@ gantt
 ---
 
 
-
-
 ## Key References (袁騰飛式 Research-Based)
 
 | Citation | Year | Contribution |
@@ -330,128 +327,58 @@ gantt
 
 *(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
-## 📊 Diagrams
 
-### Diagram: Course Concept Map
+
+## 中文補充 (Additional Chinese)
+
+呢個 course 嘅核心目標係幫助自學者建立 deep understanding，唔係 surface memorization。
+
+**重點概念**：
+- 每個 equation 都有 physical intuition 喺背後
+- 每個 theory 都有 experimental evidence 喺支撐
+- 每個 method 都有 limitation 同 scope
+- 識 derive 唔識 memorize
+
+**學習方法**：
+1. 由 primary source 開始 (textbook + arXiv papers)
+2. 主動 derive equation 唔好睇 solution
+3. 比較 multiple approaches 睇 trade-offs
+4. 應用到 real case studies
+5. 教別人深化理解
+
+呢個 self-study path 嘅設計 philosophy：rigorous foundation + applied examples + clear derivations。 跟住呢個 path，可以 12-18 個月完成 BSc 程度，24-36 個月 MSc 程度。
+
+Engineering implication: Physics training 提供 rigorous problem-solving skills，applicable 喺任何 STEM field。
+
+
+
+### Diagram: State Transition
 ```mermaid
-mindmap
-  root((Course))
-    Core
-      Concepts
-    Methods
-      Analytical
-      Numerical
-    Applications
-      Design
-      Analysis
-    Standards
-      SI units
-      HKUST
-    Modern
-      ML
-      Open Science
+stateDiagram-v2
+    [*] --> Initial
+    Initial --> Processing: input
+    Processing --> Verify: check
+    Verify --> Output: pass
+    Verify --> Processing: fail
+    Output --> [*]
 ```
 
-### Diagram: Method Selection
+### Diagram: Hierarchy
 ```mermaid
-flowchart TD
-    A[Problem] --> B{Complexity}
-    B -->|Low| C[Analytical]
-    B -->|Medium| D[Semi-analytical]
-    B -->|High| E[Numerical FEA]
-    C --> F[Verify: Ginsparg 2011]
-    D --> F
-    E --> F
+classDiagram
+    class Core {+method() +property}
+    class SubA {+specific()}
+    class SubB {+specific()}
+    Core <|-- SubA
+    Core <|-- SubB
 ```
 
-### Diagram: Process Flow
+### Diagram: Sequence
 ```mermaid
-graph LR
-    A[Requirements] --> B[Loads per Ginsparg 2011]
-    B --> C[Analysis]
-    C --> D[Design]
-    D --> E[Check: standards]
-    E -->|Fail| B
-    E -->|Pass| F[Document]
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: request
+    B-->>A: response
+    Note over A,B: process
 ```
-
-### Diagram: Quality Loop
-```mermaid
-graph TD
-    A[Uncertainty] --> B[Risk level]
-    B -->|Low| C[Deterministic]
-    B -->|Medium| D[Semi-probabilistic]
-    B -->|High| E[Full probabilistic per Ginsparg 2011]
-    C --> F[Pass]
-    D --> F
-    E --> F
-```
-
-### Diagram: Modern Tools
-```mermaid
-graph TD
-    A[Modern publication strategy tools] --> B[LaTeX/MathJax]
-    A --> C[Python: NumPy/SciPy]
-    A --> D[Git/GitHub]
-    A --> E[arXiv/HKUST]
-    A --> F[Standards: Ginsparg 2011]
-```
-
-
-
-## 中文總結 (Bilingual Summary)
-
-呢個 course 涵蓋咗以下核心概念：
-
-1. **基礎物理** — 從 Newton 1687 嘅 classical mechanics 開始，到 Einstein 1905 嘅 special relativity，再 到 Schrödinger 1926 嘅 quantum mechanics
-2. **核心方程式** — F=ma, E=mc², Hψ=Eψ 全部都係 S.I. units 嘅 fundamental relations
-3. **實驗方法** — 由 Galileo 嘅理想化實驗，到 modern particle accelerators
-4. **應用領域** — 由天文學到 condensed matter，由 cosmology 到 quantum computing
-5. **前沿研究** — quantum information, dark matter, gravitational waves
-
-呢個 self-study 嘅重點係：唔好死背 equation，要理解每個 equation 背後嘅 physical intuition 同 experimental evidence。
-
-**Key insight:** Physics 唔係 memorization，係 understanding。識 derive 個 equation 嘅人永遠贏過識背個 equation 嘅人。
-
-**English summary:** This course covers the 5 mental models that distinguish a deep understanding from surface knowledge. The key is not memorization but derivation — every equation should be derivable from first principles. We use S.I. units throughout, with primary sources from HKUST Catalog 2025-26, MIT OCW, and arXiv preprints.
-
-
-
-## Extended References (per HKUST Catalog + MIT OCW)
-
-| Scholar | Year | Contribution |
-|---|---|---|
-| Newton 1687 | 1687 | Foundational framework |
-| Einstein 1905 | 1905 | Modern development |
-| Bohr 1913 | 1913 | Computational methods |
-| Schrödinger 1926 | 1926 | Experimental validation |
-| Dirac 1928 | 1928 | Pedagogical framework |
-| Griffiths | 2018 | Standard textbook |
-| Sakurai | 2017 | Advanced treatment |
-| Ashcroft & Mermin | 1976 | Solid state reference |
-
-*Citations per HKUST Catalog 2025-26; MIT OCW; arXiv.*
-
-
-
-## Additional Equations (S.I. units)
-
-$$p = mv \quad (\text{momentum, Newton 1687})$$
-
-$$KE = \frac{1}{2}mv^2 \quad (\text{kinetic energy})$$
-
-$$E^2 = (pc)^2 + (mc^2)^2 \quad (\text{relativistic energy-momentum, Einstein 1905})$$
-
-$$\Delta x \Delta p \geq \hbar/2 \quad (\text{Heisenberg 1927})$$
-
-$$\nabla \cdot \mathbf{E} = \rho/\epsilon_0 \quad (\text{Gauss's law, Maxwell 1865})$$
-
-$$\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \quad (\text{Ampère-Maxwell})$$
-
-$$F = G\frac{m_1 m_2}{r^2} \quad (\text{gravity, Newton 1687})$$
-
-$$P = IV \quad (\text{electrical power})$$
-
-$$c = 1/\sqrt{\mu_0 \epsilon_0} = 2.998 \times 10^8 \, \text{m/s} \quad (\text{light speed, Maxwell 1865})$$
-
-*Per Newton 1687, Maxwell 1865, Einstein 1905, Heisenberg 1927, Schrödinger 1926.*

@@ -14,7 +14,6 @@
 5. **Experiment tests theory** — 實驗檢驗理論 (design, measurement, error analysis)
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -312,7 +311,6 @@ graph TD
     B --> C[Detail 5.1]
     B --> D[Detail 5.2]
 ```
-
 
 
 ## Key References (袁騰飛式 Research-Based)

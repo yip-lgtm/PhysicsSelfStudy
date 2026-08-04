@@ -13,7 +13,6 @@
 5. **Interdisciplinary = essential** — physics + chem + bio + eng
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -195,7 +194,6 @@ graph TD
     D --> H[Drug delivery, imaging]
     E --> I[Pt nanoparticle catalysts]
 ```
-
 
 
 ## Key References (袁騰飛式 Research-Based)

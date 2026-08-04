@@ -19,7 +19,6 @@
 ---
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -350,8 +349,6 @@ graph TD
 ---
 
 
-
-
 ## Key References (袁騰飛式 Research-Based)
 
 | Citation | Year | Contribution |
@@ -364,70 +361,3 @@ graph TD
 | COSE (2020) | 2020 | Contribution to publication strategy |
 
 *(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
-
-## 📊 Diagrams
-
-### Diagram: Course Concept Map
-```mermaid
-mindmap
-  root((Course))
-    Core
-      Concepts
-    Methods
-      Analytical
-      Numerical
-    Applications
-      Design
-      Analysis
-    Standards
-      SI units
-      HKUST
-    Modern
-      ML
-      Open Science
-```
-
-### Diagram: Method Selection
-```mermaid
-flowchart TD
-    A[Problem] --> B{Complexity}
-    B -->|Low| C[Analytical]
-    B -->|Medium| D[Semi-analytical]
-    B -->|High| E[Numerical FEA]
-    C --> F[Verify: Ginsparg 2011]
-    D --> F
-    E --> F
-```
-
-### Diagram: Process Flow
-```mermaid
-graph LR
-    A[Requirements] --> B[Loads per Ginsparg 2011]
-    B --> C[Analysis]
-    C --> D[Design]
-    D --> E[Check: standards]
-    E -->|Fail| B
-    E -->|Pass| F[Document]
-```
-
-### Diagram: Quality Loop
-```mermaid
-graph TD
-    A[Uncertainty] --> B[Risk level]
-    B -->|Low| C[Deterministic]
-    B -->|Medium| D[Semi-probabilistic]
-    B -->|High| E[Full probabilistic per Ginsparg 2011]
-    C --> F[Pass]
-    D --> F
-    E --> F
-```
-
-### Diagram: Modern Tools
-```mermaid
-graph TD
-    A[Modern publication strategy tools] --> B[LaTeX/MathJax]
-    A --> C[Python: NumPy/SciPy]
-    A --> D[Git/GitHub]
-    A --> E[arXiv/HKUST]
-    A --> F[Standards: Ginsparg 2011]
-```

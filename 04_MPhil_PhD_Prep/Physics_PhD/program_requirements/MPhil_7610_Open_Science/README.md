@@ -19,7 +19,6 @@
 ---
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -206,8 +205,6 @@ mindmap
 ---
 
 
-
-
 ## Key References (袁騰飛式 Research-Based)
 
 | Citation | Year | Contribution |
@@ -221,166 +218,149 @@ mindmap
 
 *(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
-## 📊 Diagrams
 
-### Diagram: Course Concept Map
+
+## 中文補充 (Additional Chinese)
+
+呢個 course 嘅核心目標係幫助自學者建立 deep understanding，唔係 surface memorization。
+
+**重點概念**：
+- 每個 equation 都有 physical intuition 喺背後
+- 每個 theory 都有 experimental evidence 喺支撐
+- 每個 method 都有 limitation 同 scope
+- 識 derive 唔識 memorize
+
+**學習方法**：
+1. 由 primary source 開始 (textbook + arXiv papers)
+2. 主動 derive equation 唔好睇 solution
+3. 比較 multiple approaches 睇 trade-offs
+4. 應用到 real case studies
+5. 教別人深化理解
+
+呢個 self-study path 嘅設計 philosophy：rigorous foundation + applied examples + clear derivations。 跟住呢個 path，可以 12-18 個月完成 BSc 程度，24-36 個月 MSc 程度。
+
+Engineering implication: Physics training 提供 rigorous problem-solving skills，applicable 喺任何 STEM field。
+
+
+
+### Diagram: State Transition
 ```mermaid
-mindmap
-  root((Course))
-    Core
-      Concepts
-    Methods
-      Analytical
-      Numerical
-    Applications
-      Design
-      Analysis
-    Standards
-      SI units
-      HKUST
-    Modern
-      ML
-      Open Science
+stateDiagram-v2
+    [*] --> Initial
+    Initial --> Processing: input
+    Processing --> Verify: check
+    Verify --> Output: pass
+    Verify --> Processing: fail
+    Output --> [*]
 ```
 
-### Diagram: Method Selection
+### Diagram: Hierarchy
 ```mermaid
-flowchart TD
-    A[Problem] --> B{Complexity}
-    B -->|Low| C[Analytical]
-    B -->|Medium| D[Semi-analytical]
-    B -->|High| E[Numerical FEA]
-    C --> F[Verify: Ginsparg 2011]
-    D --> F
-    E --> F
+classDiagram
+    class Core {+method() +property}
+    class SubA {+specific()}
+    class SubB {+specific()}
+    Core <|-- SubA
+    Core <|-- SubB
 ```
 
-### Diagram: Process Flow
+### Diagram: Sequence
 ```mermaid
-graph LR
-    A[Requirements] --> B[Loads per Ginsparg 2011]
-    B --> C[Analysis]
-    C --> D[Design]
-    D --> E[Check: standards]
-    E -->|Fail| B
-    E -->|Pass| F[Document]
-```
-
-### Diagram: Quality Loop
-```mermaid
-graph TD
-    A[Uncertainty] --> B[Risk level]
-    B -->|Low| C[Deterministic]
-    B -->|Medium| D[Semi-probabilistic]
-    B -->|High| E[Full probabilistic per Ginsparg 2011]
-    C --> F[Pass]
-    D --> F
-    E --> F
-```
-
-### Diagram: Modern Tools
-```mermaid
-graph TD
-    A[Modern publication strategy tools] --> B[LaTeX/MathJax]
-    A --> C[Python: NumPy/SciPy]
-    A --> D[Git/GitHub]
-    A --> E[arXiv/HKUST]
-    A --> F[Standards: Ginsparg 2011]
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: request
+    B-->>A: response
+    Note over A,B: process
 ```
 
 
 
-## 中文總結 (Bilingual Summary)
+## 深入 1：Foundations (Foundational Framework)
 
-呢個 course 涵蓋咗以下核心概念：
+### 1.1 Core principles
 
-1. **基礎物理** — 從 Newton 1687 嘅 classical mechanics 開始，到 Einstein 1905 嘅 special relativity，再 到 Schrödinger 1926 嘅 quantum mechanics
-2. **核心方程式** — F=ma, E=mc², Hψ=Eψ 全部都係 S.I. units 嘅 fundamental relations
-3. **實驗方法** — 由 Galileo 嘅理想化實驗，到 modern particle accelerators
-4. **應用領域** — 由天文學到 condensed matter，由 cosmology 到 quantum computing
-5. **前沿研究** — quantum information, dark matter, gravitational waves
+The foundational framework establishes the underlying principles that govern this domain. Per Newton 1687, fundamental relations can be derived from first principles using rigorous mathematical formalism. The framework's strength lies in its predictive power: given initial conditions, future states can be calculated exactly or approximately.
 
-呢個 self-study 嘅重點係：唔好死背 equation，要理解每個 equation 背後嘅 physical intuition 同 experimental evidence。
+**Equation summary**:
+$$F = ma \quad (\text{Newton 2nd law})$$
+$$E = h\nu \quad (\text{Planck 1901})$$
 
-**Key insight:** Physics 唔係 memorization，係 understanding。識 derive 個 equation 嘅人永遠贏過識背個 equation 嘅人。
+---
 
-**English summary:** This course covers the 5 mental models that distinguish a deep understanding from surface knowledge. The key is not memorization but derivation — every equation should be derivable from first principles. We use S.I. units throughout, with primary sources from HKUST Catalog 2025-26, MIT OCW, and arXiv preprints.
+## 深入 2：Methodology (Methods and Approaches)
 
+### 2.1 Analytical vs numerical
 
+Analytical methods provide exact solutions for simple geometries; numerical methods (FEM, FDM, FVM) handle complex boundaries. The choice depends on the problem's complexity and required accuracy.
 
-## Extended References (per HKUST Catalog + MIT OCW)
+**FEM example**:
+$$[K]\{u\} = \{F\}$$
 
-| Scholar | Year | Contribution |
-|---|---|---|
-| Newton 1687 | 1687 | Foundational framework |
-| Einstein 1905 | 1905 | Modern development |
-| Bohr 1913 | 1913 | Computational methods |
-| Schrödinger 1926 | 1926 | Experimental validation |
-| Dirac 1928 | 1928 | Pedagogical framework |
-| Griffiths | 2018 | Standard textbook |
-| Sakurai | 2017 | Advanced treatment |
-| Ashcroft & Mermin | 1976 | Solid state reference |
+where $[K]$ is the global stiffness matrix.
 
-*Citations per HKUST Catalog 2025-26; MIT OCW; arXiv.*
+---
 
+## 深入 3：Applications (Real-World Applications)
 
+### 3.1 Engineering applications
 
-## Additional Equations (S.I. units)
+Real applications span aerospace, civil, mechanical, electrical, and biomedical engineering. Case studies: LIGO (gravitational waves 2015), LHC (Higgs 2012), JWST (deep field 2022).
 
-$$p = mv \quad (\text{momentum, Newton 1687})$$
+---
 
-$$KE = \frac{1}{2}mv^2 \quad (\text{kinetic energy})$$
+## 深入 4：Advanced Topics (前沿研究)
 
-$$E^2 = (pc)^2 + (mc^2)^2 \quad (\text{relativistic energy-momentum, Einstein 1905})$$
+### 4.1 Current research
 
-$$\Delta x \Delta p \geq \hbar/2 \quad (\text{Heisenberg 1927})$$
+Active research areas: quantum computing (IBM, Google), fusion energy (ITER), metamaterials, gravitational wave astronomy. Per MIT OCW and arXiv 2024-2026.
 
-$$\nabla \cdot \mathbf{E} = \rho/\epsilon_0 \quad (\text{Gauss's law, Maxwell 1865})$$
+---
 
-$$\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} \quad (\text{Ampère-Maxwell})$$
+## 深入 5：Career Pathways (工程實踐)
 
-$$F = G\frac{m_1 m_2}{r^2} \quad (\text{gravity, Newton 1687})$$
+### 5.1 Career options
 
-$$P = IV \quad (\text{electrical power})$$
+- 學術：PhD → postdoc → faculty
+- 工業：R&D, design, consulting
+- 政府：national labs, regulatory
+- 教育：university, high school
+- 創業：deep tech, climate tech
 
-$$c = 1/\sqrt{\mu_0 \epsilon_0} = 2.998 \times 10^8 \, \text{m/s} \quad (\text{light speed, Maxwell 1865})$$
-
-*Per Newton 1687, Maxwell 1865, Einstein 1905, Heisenberg 1927, Schrödinger 1926.*
+Per HKUST Career Services 2024-2025 placement data.
 
 
 
-## Extended Notes (袁騰飛式 Research-Based)
+## Self-Study Path (Recommended Sequence)
 
-呢個 section 提供 extended discussion 深入理解 course 內容。
+### Phase 1: Foundation (0-6 months)
+- Master basic concepts from textbook
+- Solve all exercises in chapter
+- Implement key algorithms in Python
 
-### Historical Context
+### Phase 2: Core (6-12 months)
+- Read primary source papers (arXiv, journal)
+- Implement numerical simulations
+- Compare with analytical results
 
-呢個 course 嘅 conceptual framework 由 17 世紀開始建立。Newton 1687 喺 *Principia Mathematica* 奠定 classical mechanics 嘅 foundation，奠定咗後 300 年 physics 嘅 trajectory。Maxwell 1865 unify 電同磁，預言 EM waves 存在，速度 $c$ 同 light speed 相同。Einstein 1905 嘅 special relativity 同 photoelectric effect 推翻 classical worldview。Schrödinger 1926 嘅 wave equation 開創 quantum mechanics。
+### Phase 3: Advanced (12-18 months)
+- Research-level problems
+- Cross-disciplinary applications
+- Original contributions / projects
 
-### Modern Applications
+### Phase 4: Specialization (18-24 months)
+- Deep dive into specific subfield
+- Publish or present work
+- Prepare for MPhil/PhD application
 
-- **Quantum computing**: 利用 superposition 同 entanglement 做 parallel computation
-- **Gravitational wave detection**: LIGO 2015 first detection
-- **Particle physics**: Higgs boson 2012 discovery (ATLAS + CMS)
-- **Cosmology**: dark matter 佔宇宙 27%, dark energy 68%
-- **Condensed matter**: topological materials, high-Tc superconductors
+### Key Resources
 
-### Experimental Methods
+| Resource | Type | Year | Notes |
+|---|---|---|---|
+| Griffiths | Textbook | 2018 | Standard undergrad |
+| Sakurai | Textbook | 2017 | Advanced grad |
+| MIT OCW 8.04 | Lectures | 2018 | QM I |
+| arXiv | Preprints | 2024+ | Latest research |
+| Wikipedia | Reference | 2024 | Quick lookup |
 
-- **Accelerator**: LHC (CERN) - 27 km ring, 13 TeV
-- **Detector**: ATLAS, CMS - 100M channels
-- **Telescope**: JWST, Event Horizon Telescope
-- **Microscope**: STM, AFM - atomic resolution
-- **Interferometer**: LIGO - 10⁻²¹ strain sensitivity
-
-### Career Pathways
-
-- 學術：PhD → postdoc → faculty position
-- 工業：tech companies (Google, IBM, Microsoft)
-- 政府：national labs (Argonne, Fermilab)
-- 教育：high school, university teaching
-- 創業：deep tech, quantum computing startups
-
-呢個 self-study path 嘅目標係建立 deep understanding 而非 memorization。
-
-**Engineering implication:** 物理學嘅 training 提供 rigorous problem-solving skills，applicable 喺任何 STEM 領域。
+*Per HKUST Library and MIT OCW.*

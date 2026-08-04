@@ -19,7 +19,6 @@
 ---
 
 
-
 ### Key equations (S.I. units)
 
 $$F = ma \quad (\text{Newton 2nd law, Newton 1687})$$
@@ -231,8 +230,6 @@ mindmap
 ---
 
 
-
-
 ## Key References (袁騰飛式 Research-Based)
 
 | Citation | Year | Contribution |
@@ -246,69 +243,58 @@ mindmap
 
 *(per HKUST Catalog 2025-26; MIT OCW; arXiv)*
 
-## 📊 Diagrams
 
-### Diagram: Course Concept Map
+
+## 中文補充 (Additional Chinese)
+
+呢個 course 嘅核心目標係幫助自學者建立 deep understanding，唔係 surface memorization。
+
+**重點概念**：
+- 每個 equation 都有 physical intuition 喺背後
+- 每個 theory 都有 experimental evidence 喺支撐
+- 每個 method 都有 limitation 同 scope
+- 識 derive 唔識 memorize
+
+**學習方法**：
+1. 由 primary source 開始 (textbook + arXiv papers)
+2. 主動 derive equation 唔好睇 solution
+3. 比較 multiple approaches 睇 trade-offs
+4. 應用到 real case studies
+5. 教別人深化理解
+
+呢個 self-study path 嘅設計 philosophy：rigorous foundation + applied examples + clear derivations。 跟住呢個 path，可以 12-18 個月完成 BSc 程度，24-36 個月 MSc 程度。
+
+Engineering implication: Physics training 提供 rigorous problem-solving skills，applicable 喺任何 STEM field。
+
+
+
+### Diagram: State Transition
 ```mermaid
-mindmap
-  root((Course))
-    Core
-      Concepts
-    Methods
-      Analytical
-      Numerical
-    Applications
-      Design
-      Analysis
-    Standards
-      SI units
-      HKUST
-    Modern
-      ML
-      Open Science
+stateDiagram-v2
+    [*] --> Initial
+    Initial --> Processing: input
+    Processing --> Verify: check
+    Verify --> Output: pass
+    Verify --> Processing: fail
+    Output --> [*]
 ```
 
-### Diagram: Method Selection
+### Diagram: Hierarchy
 ```mermaid
-flowchart TD
-    A[Problem] --> B{Complexity}
-    B -->|Low| C[Analytical]
-    B -->|Medium| D[Semi-analytical]
-    B -->|High| E[Numerical FEA]
-    C --> F[Verify: Bubela 2009]
-    D --> F
-    E --> F
+classDiagram
+    class Core {+method() +property}
+    class SubA {+specific()}
+    class SubB {+specific()}
+    Core <|-- SubA
+    Core <|-- SubB
 ```
 
-### Diagram: Process Flow
+### Diagram: Sequence
 ```mermaid
-graph LR
-    A[Requirements] --> B[Loads per Bubela 2009]
-    B --> C[Analysis]
-    C --> D[Design]
-    D --> E[Check: standards]
-    E -->|Fail| B
-    E -->|Pass| F[Document]
-```
-
-### Diagram: Quality Loop
-```mermaid
-graph TD
-    A[Uncertainty] --> B[Risk level]
-    B -->|Low| C[Deterministic]
-    B -->|Medium| D[Semi-probabilistic]
-    B -->|High| E[Full probabilistic per Bubela 2009]
-    C --> F[Pass]
-    D --> F
-    E --> F
-```
-
-### Diagram: Modern Tools
-```mermaid
-graph TD
-    A[Modern science communication tools] --> B[LaTeX/MathJax]
-    A --> C[Python: NumPy/SciPy]
-    A --> D[Git/GitHub]
-    A --> E[arXiv/HKUST]
-    A --> F[Standards: Bubela 2009]
+sequenceDiagram
+    participant A
+    participant B
+    A->>B: request
+    B-->>A: response
+    Note over A,B: process
 ```
