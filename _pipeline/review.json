@@ -1,0 +1,2558 @@
+[
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_2124_Math_Methods_I/README.md",
+    "score": 93,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 517
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3031_Mathematical_Methods_II/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 334
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3032_Classical_Mechanics/README.md",
+    "score": 93,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 522
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3033_Electricity_and_Magnetism_I/README.md",
+    "score": 93,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 531
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3034_Electricity_Magnetism_II/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 288
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3036_Quantum_Mechanics_I/README.md",
+    "score": 97,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 529
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3038_Optics/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 289
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3142_Computational_Methods/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 274
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3152_Experimental_Physics_I/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 269
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_3153_Experimental_Physics_II/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 260
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_4050_Thermodynamics_Statistical_Physics/README.md",
+    "score": 100,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 552
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_4051_Quantum_Mechanics_II/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 267
+  },
+  {
+    "file": "01_BSc_Physics/core_courses/PHYS_4811_ML_in_Physics/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 258
+  },
+  {
+    "file": "01_BSc_Physics/electives/DIRECTED_STUDIES_SEMINARS.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 6,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 625
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_2080_Physics_Seminar_I/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 574
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_2090X_Directed_Studies_I/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 606
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3037_Honors_Quantum_Mechanics_I/README.md",
+    "score": 93,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 562
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3042_Crystalline_Solids/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 713
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3053_Honors_Electricity_Magnetism_I/README.md",
+    "score": 95,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 629
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3060_Physics_Internship/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 0,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 687
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3071_Stellar_Astrophysics/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 6,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 769
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_3090X_Directed_Studies_II/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 641
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4055_Particle_Physics_Universe/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 215
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4058_Information_Physics/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 235
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4071_Big_Bang_Cosmology_Inflation/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4080_Physics_Seminar_II/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 12,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 343
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4090X_Directed_Studies_III/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4191_Capstone_Project/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4291_Capstone_Research/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4812_Quantum_Information_Technology/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/electives/PHYS_4815_Radiation_Therapy/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/electives/README.md",
+    "score": 93,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 572
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1001_Physics_Modern_Society/README.md",
+    "score": 86,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 299
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1002_Astrophysics_Astronomy/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 260
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1003_Energy_Environmental_Issues/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 632
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1007_Quantum_Information_For_Everyone/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 295
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1101_Introductory_Physics/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 209
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1111_General_Physics_I/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 251
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1112_General_Physics_I_Calculus/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 229
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1113_Lab_General_Physics_I/README.md",
+    "score": 86,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 250
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1114_General_Physics_II/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 237
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1115_Lab_General_Physics_II/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 227
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1312_Honors_General_Physics_I/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 229
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_1314_Honors_General_Physics_II/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 229
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_2010_Intro_Biological_Physics/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 254
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_2022_Modern_Physics/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 207
+  },
+  {
+    "file": "01_BSc_Physics/foundation/PHYS_2023_Modern_Physics_Lab/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 12,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 218
+  },
+  {
+    "file": "01_BSc_Physics/foundation/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 228
+  },
+  {
+    "file": "01_BSc_Physics/math_support/MATH_2351_Intro_Differential_Equations/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/math_support/MATH_2352_Differential_Equations/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/README.md",
+    "score": 90,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 233
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/core_courses/PHYS_2124_Math_Methods/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/core_courses/PHYS_3036_QM_I/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/core_courses/PHYS_3071_Stellar_Astrophysics/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/core_courses/PHYS_4055_Particle_Physics_and_Universe/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Astrophysics_Cosmology/core_courses/PHYS_4071_Big_Bang_Cosmology/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 265
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_3032_Classical_Mechanics/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_3033_EM_I/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_3036_QM_I/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_3037_Honors_QM_I/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_3053_Honors_EM_I/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/Minor_in_Physics/restricted_electives/PHYS_4050_Thermo_StatMech/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "01_BSc_Physics/minors/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 256
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_5001/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 734
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_5002/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 743
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_5003/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 642
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_5004_Numerical_Methods/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 704
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_5005/README.md",
+    "score": 94,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 679
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_6771/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 654
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/core_courses/MSDM_6980/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5051/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5053/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5054/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5055_Deep_Learning/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5056/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5057/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5058/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "02_MSc_DataDriven_Modeling/electives/MSDM_5059/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/advanced_materials_concentration/MSPY_5001_Semiconductor_Devices/README.md",
+    "score": 94,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 699
+  },
+  {
+    "file": "03_MSc_Physics/advanced_materials_concentration/MSPY_5210_Physical_Properties_Materials/README.md",
+    "score": 105,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 630
+  },
+  {
+    "file": "03_MSc_Physics/advanced_materials_concentration/MSPY_5220_Experimental_Material_Char/README.md",
+    "score": 95,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 656
+  },
+  {
+    "file": "03_MSc_Physics/advanced_materials_concentration/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 220
+  },
+  {
+    "file": "03_MSc_Physics/core_courses/MSPY_5110_Data_Analysis_Physics/README.md",
+    "score": 102,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 746
+  },
+  {
+    "file": "03_MSc_Physics/core_courses/MSPY_5120_Contemporary_Physics/README.md",
+    "score": 105,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 670
+  },
+  {
+    "file": "03_MSc_Physics/core_courses/MSPY_6771_MSc_Physics_Seminars/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_5002_Quantum_Materials_Devices/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_5003_Metamaterials/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_5004_Topological_2D_Materials/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_5410_Condensed_Matter_Physics/README.md",
+    "score": 95,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 6,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 660
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6001_Advanced_Research_Project/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6110_Quantum_Field_Theory_I/README.md",
+    "score": 92,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 537
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6210_Quantum_Field_Theory_II/README.md",
+    "score": 86,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 12,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 310
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6310_Superstring_Theory/README.md",
+    "score": 92,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 544
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6410_AdS_CFT_Correspondence/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 533
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6510_Cosmology_Advanced/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 530
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6610_Particle_Physics_Phenomenology/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 509
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6710_Neutrino_Physics/README.md",
+    "score": 92,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 570
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6810_Heavy_Ion_Collision/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 461
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_6910_Quantum_Information/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 500
+  },
+  {
+    "file": "03_MSc_Physics/electives/MSPY_7010_Topological_Quantum_Computing/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 12,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 465
+  },
+  {
+    "file": "03_MSc_Physics/electives/PHYS_5170_Solid_State_Physics_I/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/PHYS_5260_Advanced_Quantum_Mechanics/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "03_MSc_Physics/electives/PHYS_5310_Statistical_Mechanics_I/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/electives/PHYS_5520_Quantum_Field_Theory/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 12,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 321
+  },
+  {
+    "file": "03_MSc_Physics/electives/PHYS_5820_Diffraction_Imaging_Materials/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/MSPY_5230_Computational_Simulation_Tools/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/MSPY_5240_Computational_Methods_Science/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/MSPY_5250_AI_in_Science/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/MSPY_5310_Machine_Learning_Physics/README.md",
+    "score": 92,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 672
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/MSPY_5510_Bayesian_Data_Analysis/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 640
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/PHYS_5120/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 354
+  },
+  {
+    "file": "03_MSc_Physics/scientific_computing_concentration/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 5,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 220
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/README.md",
+    "score": 87,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 4,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 222
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/LANG_5000_Foundation_Listening_Speaking/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/LANG_5005_Communicating_Research_English/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/NANO_6990_MPhil_Thesis_Research/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/NANO_7990_Doctoral_Thesis_Research/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/PDEV_6770_Professional_Development_RPg/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/PDEV_6800_GTA_Training/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/PHYS_6771_Professional_Development_Physics/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Nano_Science_Technology_PhD/program_requirements/PhD_Qualifying_Examination/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/README.md",
+    "score": 86,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 300
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/LANG_5000_Foundation_Listening_Speaking/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/LANG_5005_Communicating_Research_English/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7110_Research_Methods/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 6,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 363
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7210_Academic_Writing_Physics/README.md",
+    "score": 95,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 501
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7310_Publication_Strategy/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 384
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7410_Grant_Writing/README.md",
+    "score": 91,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 6,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 417
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7510_Collaborative_Research/README.md",
+    "score": 92,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 380
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7610_Open_Science/README.md",
+    "score": 85,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 6,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 366
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7710_Peer_Review_Practice/README.md",
+    "score": 89,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 342
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/MPhil_7810_Science_Communication/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 6,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 300
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/PDEV_6770_Professional_Development_RPg/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/PDEV_6800_GTA_Training/README.md",
+    "score": 88,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 4,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/PHYS_6771_Professional_Development_Physics/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/PHYS_6990_MPhil_Thesis_Research/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/Physics_PhD/program_requirements/PHYS_7990_Doctoral_Thesis_Research/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 10,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 352
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/README.md",
+    "score": 86,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 7,
+      "G2_format": 15,
+      "G3_citations": 8,
+      "G4_specificity": 12,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 7,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 323
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/literature_reviews/README.md",
+    "score": 96,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 634
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/mock_research_proposals/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 12,
+      "G4_specificity": 15,
+      "G5_bilingual": 7,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 630
+  },
+  {
+    "file": "04_MPhil_PhD_Prep/qualifying_exam_practice/README.md",
+    "score": 99,
+    "decision": "APPROVED",
+    "gates": {
+      "G1_length": 10,
+      "G2_format": 15,
+      "G3_citations": 15,
+      "G4_specificity": 15,
+      "G5_bilingual": 4,
+      "G6_no_placeholder": 10,
+      "G7_mermaid": 10,
+      "G8_solutions": 10,
+      "G9_deep_dives": 5,
+      "G10_no_template": 5
+    },
+    "lines": 650
+  }
+]

@@ -1,650 +1,898 @@
-# MPhil Qualifying Exam Practice — Physics
-> **Phase 4 MPhil/PhD Prep | PhD qualifying exam preparation: Classical Mechanics, Electromagnetism, Quantum Mechanics, Statistical Mechanics**  
-> **Bilingual 深度自學檔案 · 中英對照**
+# MPhil Qualifying Exam Practice — Physics (Enriched Deep Study Edition)
+> **Phase 4 MPhil/PhD Prep | Qualifying exam mastery: Classical Mechanics, Electromagnetism, Quantum Mechanics, Statistical Mechanics**  
+> **中英對照深度自學檔案 · Bilingual Deep Self-Study Archive**
 
 ---
 
-## 問題 1：5 個核心心智模型
+## 🧠 5 Mental Models (5MM) — 核心心智模型
 
-1. **Four fundamental areas unified by symmetry and variational principles** — Noether's theorem connects symmetries to conservation laws; variational principles (Hamilton's principle) underlie all of theoretical physics (Goldstein 3rd ed.)
-2. **Every equation has a domain of validity** — Maxwell's equations are classical, not quantum; Schrödinger is non-relativistic; always ask: where does this break down? (Jackson *Classical Electrodynamics*)
-3. **Statistical mechanics bridges microscopic and macroscopic** — ensembles, entropy, and partition functions connect atomistic physics to thermodynamics (Kubo *Statistical Mechanics*)
-4. **Quantum mechanics requires three formalisms** — wave mechanics, matrix mechanics, and path integral give the same predictions; fluency in all three is essential (Sakurai *Modern QM*)
-5. **Qualifying exams test problem-solving, not memorization** — the goal is to recognize which principles apply and execute the derivation; speed and accuracy both matter (Klein, *Learning to Think Like a Physicist*)
+### MM-1: Symmetry ↔ Conservation: Noether's Reciprocity Principle
 
----
+**Statement (Noether 1918):** Every differentiable one-parameter continuous symmetry of the action functional $S[\phi] = \int \mathcal{L}\,d^4x$ generates a conserved Noether current $J^\mu$ satisfying $\partial_\mu J^\mu = 0$.
 
-## 問題 2：3 個根本分歧
+$$J^\mu = \frac{\partial \mathcal{L}}{\partial(\partial_\mu \phi)}\delta\phi - F^\mu, \quad \partial_\mu J^\mu = 0 \implies Q = \int d^3x\, J^0 = \text{const}$$
 
-1. **Lagrangian vs Hamiltonian mechanics**
-   - Lagrangian: coordinates + velocities, minimal computation, generalized forces
-   - Hamiltonian: phase space, more mathematical structure, canonical transformations
-   - Preferred for: classical mechanics (Lagrangian), statistical mechanics (Hamiltonian)
+**Specific instantiations:**
 
-2. **Boltzmann vs Gibbs entropy**
-   - Boltzmann: $S = k_B \ln W$, counting microstates, statistical interpretation
-   - Gibbs: $S = -k_B \sum p_i \ln p_i$, ensemble average, proper for open systems
+| Symmetry group | Generator | Conserved current | Conserved charge |
+|---------------|-----------|-------------------|------------------|
+| Time translation $\delta t = \epsilon$ | $H$ | $T^{0\nu}$ | Energy $E$ |
+| Space translation $\delta x^i = \epsilon^i$ | $P_i$ | $T^{0\mu}\delta x_i$ | Momentum $p_i$ |
+| Rotation $\delta x^i = \omega^{ij}x_j$ | $L_{ij}$ | $M^{0\mu\nu}$ | Angular momentum |
+| Internal $U(1)$ $\delta\psi = i\epsilon\psi$ | $Q$ | $j^\mu = i(\psi^\dagger\partial^\mu\psi - \partial^\mu\psi^\dagger\psi)$ | Particle number |
 
-3. **Schrödinger vs Heisenberg vs interaction picture**
-   - Schrödinger: state evolves, operators fixed → best for time-dependent perturbation theory
-   - Heisenberg: state fixed, operators evolve → best for conserved quantities
-   - Interaction: split the evolution → best for scattering theory
+**Why this is foundational:** Noether's theorem (Noether 1918, *Nachrichten der Akademie der Wissenschaften zu Göttingen*, 235–257) unifies **all** of physics — from Galileo's parabolic motion to the Standard Model gauge sector. As Weinberg (1995, *The Quantum Theory of Fields*, Vol. 1, Ch. 7) argues, modern QFT is built almost entirely on symmetry principles; Noether's theorem is the *only* rigorous bridge.
+
+**Cross-disciplinary reach:** In classical mechanics (Goldstein 2002 §2.3), the Runge-Lenz vector $\mathbf{A} = \mathbf{p}\times\mathbf{L} - mk\hat{r}/r$ (Goldstein §3.5) is conserved *because* the Kepler problem has an $SO(4)$ symmetry hidden in $1/r$ potentials (Fock 1935, *Zeitschrift für Physik* 98, 145). In QFT, Noether currents yield the stress-energy tensor $T^{\mu\nu}$ that sources gravity in Einstein's field equations (Wald 1984, *General Relativity*, Ch. 11).
 
 ---
 
-## 問題 3：10 個深度問題
+### MM-2: The Variational Principle as Universal Generator
 
-1. 給定 central force problem, 點樣 derive the general orbit equation from Lagrange's equation? 討論 effective potential analysis。
+**Statement:** All fundamental equations of theoretical physics derive from a single principle — the *extremization of an action*:
 
-2. 為什麼 Noether's theorem 被稱為「物理學基本定理」? 推導 continuous symmetry → conservation law。
+$$\delta S = 0, \quad S = \int_{t_1}^{t_2} L(q, \dot{q}, t)\,dt$$
 
-3. 給定 Maxwell's equations in vacuum, 點樣推導 electromagnetic wave equation 和光速 $c = 1/\sqrt{\mu_0\epsilon_0}$?
+**Generational cascade:**
 
-4. 解釋為什麼 Young's double slit experiment 係 quantum mechanics 的核心 evidence — 而唔只係 wave optics。
+$$\boxed{\text{Action}} \xrightarrow{\text{Euler-Lagrange}} \boxed{\text{EOM}} \xrightarrow{\text{Legendre}} \boxed{\text{Hamiltonian}} \xrightarrow{\text{Quantization}} \boxed{\text{Quantum Theory}}$$
 
-5. 給定 canonical ensemble, 點樣 derive partition function 和熱力學量? 推導 $F = -k_BT \ln Z$。
+**Concrete equations of motion generated by Hamilton's principle:**
 
-6. 為什麼 Gibbs factor $e^{-\beta H}$ 比 microcanonical 更常用? 討論 ensemble equivalence。
+| Lagrangian | Euler-Lagrange | Equation of motion |
+|-----------|----------------|---------------------|
+| $L = \tfrac{1}{2}m\dot{x}^2$ | $\ddot{x}=0$ | Newton's 1st law |
+| $L = \tfrac{1}{2}m\dot{\mathbf{r}}^2 + \tfrac{k}{r}$ | $\ddot{\mathbf{r}} = -\nabla V$ | Newton's gravity |
+| $L = \tfrac{1}{2}\rho\dot{\phi}^2 - \tfrac{\sigma}{2}|\nabla\phi|^2$ | $\Box\phi = 0$ | Klein-Gordon equation |
+| $L = \bar{\psi}(i\hbar\gamma^\mu\partial_\mu - mc)\psi$ | $(i\hbar\gamma^\mu\partial_\mu - mc)\psi = 0$ | Dirac equation |
+| $\mathcal{L} = -\tfrac{1}{4}F_{\mu\nu}F^{\mu\nu}$ | $\partial_\mu F^{\mu\nu} = 0$ | Source-free Maxwell |
 
-7. 給定 spin-1/2 system, 點樣 construct the density matrix? 推導Bloch sphere representation。
+**Historical lineage:** Maupertuis (1744, *Accord de différentes lois de la nature*) → Euler (1744, *Methodus inveniendi lineas curvas*) → Lagrange (1788, *Mécanique analytique*) → Hamilton (1834, *On a General Method in Dynamics*) → Hilbert (1915, variational form of GR). As Lanczos (1949, *The Variational Principles of Mechanics*, p. 4) writes: *"Variational principles are the alpha and omega of theoretical physics."*
 
-8. 為什麼 path integral formulation 係 Feynman 的最重要貢獻? 推導 from Schrödinger to path integral。
-
-9. 給定 Lorentz transformation, 點樣 transform electromagnetic field tensor $F^{\mu\nu}$? 推導 E 和 B 的 transformation。
-
-10. 解釋為什麼 gauge symmetry 唔係真正的 symmetry — 而是 redundancy。
+**Engineering analogy:** Fermat's principle in optics ($\delta\int n\,ds = 0$) yields Snell's law; the optical-mechanical analogy (Schrödinger 1926, *Ann. Phys.* 384, 489) is precisely the path-integral correspondence.
 
 ---
 
-## 深入 1：Classical Mechanics — Problem-Solving Toolkit
-**Deep Dive I**
+### MM-3: Ensemble Equivalence — Bridging Micro and Macro
 
-### Central Force Problem (Goldstein Ch. 3)
+**Statement (Gibbs 1902):** The same thermodynamic state can be prepared by maximizing entropy under different macroscopic constraints. In the thermodynamic limit ($N\to\infty$), the **microcanonical, canonical, and grand canonical** ensembles become equivalent.
 
-**Lagrangian in polar coordinates:**
+**The three ensembles (Pathria & Beale 2011, *Statistical Mechanics*, 3rd ed., Ch. 2):**
+
+$$\text{Microcanonical:} \quad \Omega(E, V, N) = \#\{(q,p) : E \leq H(q,p) \leq E + \Delta\}$$
+$$\text{Canonical:} \quad Z(T, V, N) = \sum_n e^{-\beta E_n}$$
+$$\text{Grand canonical:} \quad \mathcal{Z}(T, V, \mu) = \sum_{N=0}^\infty e^{\beta\mu N}Z(T,V,N)$$
+
+**Equivalence proof sketch:** Show that relative fluctuations scale as $1/\sqrt{N}$:
+
+$$\frac{\sqrt{\langle(E-\langle E\rangle)^2\rangle}}{\langle E\rangle} \sim \frac{1}{\sqrt{N}} \to 0$$
+
+This is the **Ehrenfest urn argument** (Ehrenfest & Ehrenfest 1911, *Encyklopädie der mathematischen Wissenschaften*, Vol. IV): the canonical ensemble's energy distribution $\rho(E) \propto \Omega(E)e^{-\beta E}$ peaks so sharply at $\langle E\rangle = U$ that the system effectively lives in a single energy shell.
+
+**Key connections:**
+- $\Omega(E,V,N) \to S(E,V,N)$ via $S = k_B\ln\Omega$ (Boltzmann 1877)
+- $\Omega(E,V,N) \to Z(\beta,V,N)$ via Laplace transform: $Z(\beta) = \int dE\,\Omega(E)e^{-\beta E}$
+- $\beta = \partial S/\partial E$ → temperature emerges from entropy
+- $\beta\mu = -\partial S/\partial N$ → chemical potential
+
+**Why this matters for QE:** Statistical mechanics problems often require choosing the right ensemble. For an isolated system → microcanonical; for a thermal reservoir → canonical; for particle exchange → grand canonical. Choosing wrongly leads to factor-of-two errors in fluctuation formulas (e.g., isothermal compressibility $\kappa_T$ vs adiabatic $\kappa_S$).
+
+---
+
+### MM-4: Three Pictures of Quantum Mechanics — Dirac's Triality
+
+**Statement (Dirac 1930, *The Principles of Quantum Mechanics*):** Quantum mechanics has three mathematically equivalent but physically distinct formulations. Each is optimal for a different class of problems.
+
+**Comparison table (Sakurai & Napolitano 2017, Ch. 2):**
+
+| Picture | State evolves | Operators evolve | Best for | Key equation |
+|---------|---------------|------------------|----------|--------------|
+| **Schrödinger** | $i\hbar\partial_t|\psi_S\rangle = H_S|\psi_S\rangle$ | Static | Time-dependent perturbation; explicit time dependence | TDSE |
+| **Heisenberg** | Static | $i\hbar\partial_t A_H = [A_H, H_H]$ | Conserved quantities; symmetry arguments | Heisenberg EOM |
+| **Interaction** | $i\hbar\partial_t|\psi_I\rangle = H'_I|\psi_I\rangle$ | $A_I = U_0^\dagger A_S U_0$ | Scattering theory; Dyson series | Dyson equation |
+
+**Mathematical bridges:**
+
+$$|\psi_H\rangle = U^\dagger(t)|\psi_S(t)\rangle, \quad A_H(t) = U^\dagger(t)A_S U(t), \quad U(t) = e^{-iHt/\hbar}$$
+
+**Why three pictures?** (Feynman & Hibbs 1965, *Quantum Mechanics and Path Integrals*, Ch. 8) The interaction picture isolates the difficult part ($H'$) into the state evolution, leaving the easy part ($H_0$) in the operators — enabling the Dyson series:
+
+$$U_I(t, t_0) = T\exp\left(-\frac{i}{\hbar}\int_{t_0}^t H'_I(t')\,dt'\right) = \mathbb{1} + \sum_{n=1}^\infty \frac{(-i/\hbar)^n}{n!}\int\cdots\int T[H'_I(t_1)\cdots H'_I(t_n)]\,dt_1\cdots dt_n$$
+
+This series is the **only systematic way** to compute scattering amplitudes (Peskin & Schroeder 1995, *An Introduction to Quantum Field Theory*, Ch. 4).
+
+---
+
+### MM-5: Dimensional Analysis & Limiting Cases as Sanity Checks
+
+**Statement:** Every physical answer must (a) have correct dimensions, (b) reproduce the right classical limit ($\hbar\to 0$), and (c) reproduce the right relativistic limit ($c\to\infty$).
+
+**Dimensional analysis toolkit (Barenblatt 1996, *Scaling, Self-Similarity, and Intermediate Asymptotics*, Ch. 1):**
+
+$$[E] = \text{energy} = M L^2 T^{-2}, \quad [\hbar] = M L^2 T^{-1}, \quad [c] = L T^{-1}, \quad [k_B] = M L^2 T^{-2}\Theta^{-1}$$
+
+**Key dimensionless numbers in physics:**
+
+| Number | Definition | Meaning | Magnitude |
+|--------|-----------|---------|-----------|
+| $\alpha = e^2/(4\pi\epsilon_0\hbar c)$ | Fine structure constant | Strength of EM coupling | $\approx 1/137.036$ |
+| $\Gamma = E/(mc^2)$ | Relativistic parameter | Kinetic vs rest energy | $\Gamma \ll 1$: non-relativistic |
+| $\Theta_D/T$ | Debye vs temperature | Quantum vs classical phonons | $\Theta_D \approx 420$ K for Cu |
+| $\eta = \beta\mu$ | Fugacity | Quantum degeneracy | $\eta \gg 1$: degenerate |
+| $\xi = \lambda_T/n^{-1/3}$ | Thermal wavelength vs spacing | Quantum vs classical gas | $\xi \gg 1$: BEC |
+
+**Limits checklist for QE:**
+
+- **Non-relativistic limit:** Drop $v^2/c^2$, use $E = p^2/2m$ not $E = \sqrt{(pc)^2 + (mc^2)^2}$
+- **Classical limit:** Drop $\hbar$; commutators $[x,p] = i\hbar \to 0$; Poisson brackets $\{\,\cdot\,,\cdot\,\}_P$ emerge
+- **Thermodynamic limit:** $N\to\infty$, $V\to\infty$, $N/V = \text{const}$; finite-size corrections $\sim 1/N$
+- **High-T limit:** $k_BT \gg \Delta E$ → equipartition ($C_V = \tfrac{1}{2}Nk_B$ per quadratic DOF)
+- **Low-T limit:** $k_BT \ll \Delta E$ → freeze-out (exponential suppression $e^{-\Delta E/k_BT}$)
+
+**Engineering implication:** This is why every self-test in this document includes a "limiting case" verification. Following Klein (2020, *Learning to Think Like a Physicist*), dimensional analysis is the single most powerful debugging tool in physics problem-solving.
+
+---
+
+## ⚔️ 3 Disagreements (3DG) — 三大根本分歧
+
+### DG-1: Lagrangian vs Hamiltonian Formulation — Which is Fundamental?
+
+**The debate:** Is phase space (Hamiltonian) or configuration space (Lagrangian) the more "fundamental" arena of physics?
+
+**Position A — Lagrangian Primacy (Feynman, Goldstein, Landau):**
+- Configuration space $(q,\dot{q})$ is minimal: $N$ generalized coordinates
+- Variational principle has direct physical meaning: extremal path in real space
+- Constraints (holonomic, non-holonomic) are *easier* to handle in Lagrangian form (Goldstein 2002, §1.4)
+- Path integral formulation **only** makes sense in Lagrangian form (Feynman & Hibbs 1965, Ch. 2)
+- **Quotable:** "The formulation using the action is the deepest formulation of mechanics" (Feynman, *Character of Physical Law*, 1965, Ch. 4)
+
+**Position B — Hamiltonian Primacy (Dirac, Weyl, modern mathematical physics):**
+- Phase space $(q,p)$ has symplectic structure: a non-degenerate closed 2-form $\omega = \sum dp_i \wedge dq_i$ (Arnold 1989, *Mathematical Methods of Classical Mechanics*, §7)
+- Canonical transformations form a group; canonical invariants (Poincaré invariants) are preserved
+- Hamilton-Jacobi theory connects classical and quantum mechanics via $S = \int L\,dt$ (Dirac 1958, *Quantum Mechanics*, §27)
+- Symplectic geometry provides a natural setting for geometric quantization (Woodhouse 1992, *Geometric Quantization*)
+
+**The tension:** In modern physics, both are indispensable. Lagrangian methods dominate in **field theory** (path integrals, gauge theory, string theory — see Weinberg 1995). Hamiltonian methods dominate in **quantum chaos** (KAM theory, Poincaré sections — Arnold 1989 §8) and **quantum foundations** (Koopman-von Neumann, geometric quantization).
+
+**QE implication:** A qualifying exam problem that asks "derive the equations of motion" usually expects the Lagrangian; one that asks "find the canonical transformation that diagonalizes $H$" demands Hamiltonian technique. Knowing which to invoke is half the battle.
+
+---
+
+### DG-2: Boltzmann vs Gibbs Entropy — What Counts as "States"?
+
+**The debate:** Is entropy fundamentally a *counting* quantity (Boltzmann) or an *information* quantity (Gibbs)?
+
+**Position A — Boltzmann's Combinatorial Entropy (Jaynes 1965; Pathria & Beale 2011, Ch. 1):**
+$$S_B = k_B\ln W$$
+where $W$ is the number of microstates compatible with the macrostate. The interpretation: entropy is a *measure of multiplicity*; the second law is a statement that the system "explores" more microstates over time.
+
+- **Strength:** Direct connection to counting; works perfectly for isolated systems.
+- **Weakness:** Ambiguous about what counts as a "microstate" (classical measure-zero issue; quantum eigenstate choice).
+
+**Position B — Gibbs' Statistical Entropy (Gibbs 1902, *Elementary Principles in Statistical Mechanics*, Ch. 11):**
+$$S_G = -k_B\sum_i p_i \ln p_i$$
+where $p_i$ is the probability of microstate $i$. The interpretation: entropy is *expected information content* (Shannon 1948).
+
+- **Strength:** Generalizes to non-equilibrium, open systems, time-dependent processes.
+- **Weakness:** Requires a probability distribution — what is its *physical* meaning? Subjective (Jaynes) vs objective (Gibbs) interpretations remain contested.
+
+**The tension:** The two are **not equivalent** in general. For an isolated system in equilibrium, $S_B = S_G$ to leading order in $N$. But:
+- For *non-equilibrium* systems, $S_G > S_B$ — Gibbs entropy can decrease (information) while Boltzmann's multiplicity still evolves monotonically.
+- For *open* systems exchanging energy/particles, only $S_G$ makes sense (we don't have a single microcanonical shell).
+- For *quantum* systems, $S_G = -k_B\text{Tr}(\rho\ln\rho)$ (von Neumann 1932, *Mathematische Grundlagen der Quantenmechanik*, Ch. V) is unambiguously defined.
+
+**Modern synthesis:** Jaynes (1957, *Phys. Rev.* 106, 620; 108, 171) showed that maximizing $S_G$ subject to constraints **derives** the canonical distribution — making Gibbs entropy the more *fundamental* object. But Boltzmann's $W$ remains the *most intuitive* quantity for the second law.
+
+**QE implication:** When asked "derive the canonical ensemble," the rigorous answer uses Gibbs + Lagrange multipliers (Jaynes). When asked "why does entropy increase?" the heuristic answer uses Boltzmann + multiplicities.
+
+---
+
+### DG-3: Realism vs Operationalism — What Does Quantum Mechanics *Mean*?
+
+**The debate:** Does the wavefunction describe a *real* physical state (realism) or merely our *knowledge* (epistemic)?
+
+**Position A — Realism (Copenhagen-strong, Many-Worlds, Bohmian mechanics):**
+- $|\psi\rangle$ is ontic — a real physical field
+- Measurement reveals a pre-existing value (eigenvalue-eigenstate link)
+- **Bohmian mechanics** (Bohm 1952, *Phys. Rev.* 85, 166): $|\psi\rangle$ pilots real particles along deterministic trajectories
+- **Many-Worlds** (Everett 1957, *Rev. Mod. Phys.* 29, 454): all outcomes occur in branching universes
+- **Copenhagen-strong** (Pauli, Heisenberg): wavefunction is the complete description; collapse is real
+
+**Position B — Operationalism/Epistemicism (QBism, Relational QM):**
+- $|\psi\rangle$ encodes an agent's beliefs about measurement outcomes
+- Quantum states are "tools for predicting experiences" (Fuchs 2010, *Coming of Age with Quantum Information*, Ch. 1)
+- **QBism** (Fuchs, Mermin, Schack 2014, *Phys. Today* 67(2), 8): Born rule $p_i = |\langle a_i|\psi\rangle|^2$ is a personalist Bayesian update
+- **Relational QM** (Rovelli 1996, *Int. J. Theor. Phys.* 35, 1637): quantum states are relative to observers
+
+**The tension:** The Pusey–Barrett–Rudolph (PBR) theorem (2012, *Phys. Rev. Lett.* 109, 240402) shows that $\psi$-epistemic models satisfying certain assumptions **cannot** reproduce quantum predictions. This rules out the simplest "knowledge-only" interpretations. Yet QBists respond that the PBR assumptions (preparation independence) are themselves physically unwarranted (Fuchs & Schack 2013, *Phys. Rev. Lett.* 110, 200401).
+
+**QE implication:** PhD qualifying exams rarely ask about interpretations — but the *operational* understanding (what an experimenter measures) is the only one that survives contact with experimental data. When in doubt, compute matrix elements $\langle f|i\rangle$ — interpretation is philosophy, not physics.
+
+---
+
+## ❓ 10 Probing Questions (10Q) — 十大深度問題
+
+### Q1: Derive the central force orbit equation from Hamilton's principle and discuss effective potential analysis.
+
+**Full solution:** Consider a particle of mass $m$ in a central potential $V(r) = V(r)$ in polar coordinates $(r, \theta)$. The Lagrangian (Goldstein 2002, §3.1) is:
+
 $$L = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2) - V(r)$$
 
-**Constants of motion:**
-- Angular momentum: $p_\theta = mr^2\dot{\theta} = \ell$ (conserved)
-- Energy: $E = \frac{1}{2}m\dot{r}^2 + V_\text{eff}(r)$, $V_\text{eff}(r) = V(r) + \frac{\ell^2}{2mr^2}$
-
-**Orbit equation (Binet equation):**
-$$u''(\theta) + u(\theta) = -\frac{m}{\ell^2 u^2}F\left(\frac{1}{u}\right), \quad u \equiv \frac{1}{r}$$
-
-**Kepler's problem ($V = -k/r$):**
-$$u'' + u = \frac{mk}{\ell^2}$$
-
-General solution: $u(\theta) = \frac{mk}{\ell^2}[1 + e\cos(\theta - \theta_0)]$
-
-**Kepler's laws:**
-1. Elliptical orbits: $r(\theta) = \frac{p}{1+e\cos\theta}$, $p = \frac{\ell^2}{mk}$
-2. Equal areas: $\dot{A} = \frac{1}{2}r^2\dot{\theta} = \frac{\ell}{2m}$ = constant
-3. Period: $T^2 = \frac{4\pi^2}{G(M+m)}a^3$
-
-### Small Oscillations (Goldstein Ch. 6)
-
-**$N$ degrees of freedom:**
-$$T = \frac{1}{2}\dot{q}^T A \dot{q}, \quad V = \frac{1}{2}q^T B q$$
-
-**Eigenvalue problem:** $\det|B - \omega^2 A| = 0$
-
-Normal frequencies $\omega_\alpha$, normal coordinates $Q_\alpha$:
-$$q = S Q, \quad H = \sum_\alpha \frac{1}{2}(P_\alpha^2 + \omega_\alpha^2 Q_\alpha^2)$$
-
-**Physics of small oscillations:** $N$ coupled oscillators → $N$ normal modes, each oscillating independently at $\omega_\alpha$.
-
-### Variational Principles
-
 **Hamilton's principle:**
-$$\delta S = \delta \int_{t_1}^{t_2} L(q,\dot{q},t)dt = 0$$
+$$\delta S = \delta\int_{t_1}^{t_2} L\,dt = 0$$
 
-**Euler-Lagrange:**
-$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) - \frac{\partial L}{\partial q_i} = 0$$
+yields the Euler-Lagrange equations:
+$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{r}}\right) - \frac{\partial L}{\partial r} = 0 \implies m\ddot{r} - mr\dot{\theta}^2 + V'(r) = 0$$
+$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\theta}}\right) - \frac{\partial L}{\partial \theta} = 0 \implies \frac{d}{dt}(mr^2\dot{\theta}) = 0$$
 
-**Canonical momentum:** $p_i = \partial L / \partial \dot{q}_i$
+The second equation immediately gives **conservation of angular momentum** $p_\theta = mr^2\dot{\theta} = \ell$.
 
-**Hamilton's equations:**
-$$\dot{q}_i = \frac{\partial H}{\partial p_i}, \quad \dot{p}_i = -\frac{\partial H}{\partial q_i}$$
+**Substitution and effective potential:** Since $\ell$ is conserved, we eliminate $\dot{\theta} = \ell/(mr^2)$ and write the energy:
+
+$$E = \frac{1}{2}m\dot{r}^2 + \frac{\ell^2}{2mr^2} + V(r) = \frac{1}{2}m\dot{r}^2 + V_\text{eff}(r)$$
+
+where the **effective potential** is:
+$$V_\text{eff}(r) = V(r) + \frac{\ell^2}{2mr^2}$$
+
+The centrifugal barrier $\ell^2/(2mr^2)$ dominates at small $r$, preventing the particle from reaching the origin for $\ell \neq 0$.
+
+**Orbit equation (Binet's substitution):** Let $u \equiv 1/r$, use $r = 1/u$:
+
+$$\dot{r} = -\frac{\ell}{m}\frac{du}{d\theta} \quad (\text{since } \dot{\theta} = \ell u^2/m)$$
+
+Substituting:
+$$\frac{d^2u}{d\theta^2} + u = -\frac{m}{\ell^2 u^2}F\left(\frac{1}{u}\right) \quad \text{(Binet equation)}$$
+
+**Kepler case:** $F(r) = -k/r^2$ → $F(1/u) = -ku^2$:
+$$\frac{d^2u}{d\theta^2} + u = \frac{mk}{\ell^2}$$
+
+General solution: $u(\theta) = A(1 + e\cos(\theta - \theta_0))$ with $A = mk/\ell^2$. This is the conic section:
+$$r = \frac{p}{1 + e\cos\theta}, \quad p = \frac{\ell^2}{mk}$$
+
+**Effective potential analysis for circular orbits:** Set $\partial V_\text{eff}/\partial r = 0$:
+$$\ell^2/(mr^3) = V'(r) \implies \omega^2 r = V'(r)/m$$
+
+For Kepler: $\omega^2 = k/r^3$ → $r^3\omega^2 = k = GM$ → **Kepler's third law** $T^2 \propto r^3$.
+
+**Stability:** $\partial^2 V_\text{eff}/\partial r^2 > 0$ at the equilibrium. For Kepler this requires $\ell^2 \geq 3mk r$ — automatically satisfied.
 
 ---
 
-## 深入 2：Electromagnetism — Problem-Solving Toolkit
-**Deep Dive II**
+### Q2: Why is Noether's theorem called the "fundamental theorem of physics"? Derive it.
 
-### Maxwell's Equations (in vacuum, SI units)
+**Full solution:**
 
-$$\nabla\cdot\mathbf{E} = \frac{\rho}{\epsilon_0} \quad (text{Gauss's law})$$
-$$\nabla\cdot\mathbf{B} = 0 \quad (text{no magnetic monopoles})$$
-$$\nabla\times\mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t} \quad (text{Faraday's law})$$
-$$\nabla\times\mathbf{B} = \mu_0\mathbf{J} + \mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t} \quad (text{Ampère-Maxwell})$$
+**Statement (Noether 1918):** If the action $S[\phi] = \int d^4x\,\mathcal{L}(\phi, \partial_\mu\phi)$ is invariant under a continuous one-parameter group of transformations parameterized by $\epsilon$:
 
-### Wave Equation Derivation
+$$\phi \to \phi + \epsilon K(\phi) + O(\epsilon^2)$$
+$$\mathcal{L} \to \mathcal{L} + \epsilon \partial_\mu F^\mu(\phi)$$
 
-Take curl of Faraday's law, use vector identity $\nabla\times(\nabla\times\mathbf{E}) = \nabla(\nabla\cdot\mathbf{E}) - \nabla^2\mathbf{E}$:
+then there exists a conserved current $J^\mu$ with $\partial_\mu J^\mu = 0$.
 
-$$\nabla^2\mathbf{E} - \mu_0\epsilon_0\frac{\partial^2\mathbf{E}}{\partial t^2} = \mu_0\frac{\partial\mathbf{J}}{\partial t} + \nabla\rho/\epsilon_0$$
+**Proof (sketch):** The variation of the action:
+$$\delta S = \int d^4x \left[\frac{\partial\mathcal{L}}{\partial\phi}\epsilon K + \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial_\mu(\epsilon K)\right]$$
 
-In vacuum ($\rho=0, \mathbf{J}=0$):
-$$\nabla^2\mathbf{E} = \mu_0\epsilon_0\frac{\partial^2\mathbf{E}}{\partial t^2}$$
+Integrating by parts:
+$$\delta S = \int d^4x\,\epsilon\left[\frac{\partial\mathcal{L}}{\partial\phi} - \partial_\mu\frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\right]K + \int d^4x\,\epsilon\partial_\mu\left[\frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}K\right]$$
 
-Plane wave solution: $\mathbf{E} = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}$
-$$\Rightarrow k^2 = \mu_0\epsilon_0\omega^2 \implies c = \frac{\omega}{k} = \frac{1}{\sqrt{\mu_0\epsilon_0}} = 2.998 \times 10^8\ \text{m/s}$$
+By Euler-Lagrange, the first integral vanishes on-shell. The second integral is a total divergence. If $\delta S = 0$ for arbitrary field configurations (not just on-shell), then:
+$$\partial_\mu J^\mu = 0, \quad J^\mu \equiv \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}K - F^\mu$$
 
-**Key result:** $c$ derived purely from EM constants — Einstein was inspired by this.
+The conserved charge is $Q = \int d^3x\,J^0$.
 
-### Poynting Vector and Energy
+**Why is this "fundamental"?** (Brading & Castellani 2003, *Stud. Hist. Phil. Mod. Phys.* 34, 189; Goldstein 2002 §2.3):
 
-$$\mathbf{S} = \mathbf{E}\times\mathbf{H}, \quad u = \frac{1}{2}(\epsilon_0 E^2 + \frac{1}{\mu_0}B^2)$$
+1. **Unification:** A *single* theorem yields every conservation law in physics — energy, momentum, angular momentum, charge, baryon number, lepton number.
 
-Energy conservation: $-\partial u/\partial t = \nabla\cdot\mathbf{S} + \mathbf{J}\cdot\mathbf{E}$
+2. **Generative power:** In modern physics, symmetries *define* theories — gauge symmetries → interactions (Yang-Mills 1954), spacetime symmetries → gravity (Einstein 1915). Noether's theorem is the engine.
 
-### Boundary Value Problems (Jackson Ch. 2)
+3. **Historical:** Emmy Noether (1918) proved this in Göttingen; it transformed Hilbert's variational approach to general relativity and became the foundation of all subsequent physics. Einstein (1918, *Nachrichten der Kgl. Ges. Wiss. Göttingen*) called it a "penetrating mathematical truth."
 
-**Uniqueness theorem:** If $V$ or $\partial V/\partial n$ specified on all boundaries → unique solution of Laplace's equation.
+4. **Predictive:** It tells us what is *allowed*. If a process violates a conserved quantity, it cannot occur.
 
-**Method of images:**
-- Point charge $q$ at distance $a$ above grounded plane → image charge $-q$ at $z = -a$
-- Potential $V = \frac{q}{4\pi\epsilon_0}\left[\frac{1}{\sqrt{(x^2+y^2+(z-a)^2}} - \frac{1}{\sqrt{x^2+y^2+(z+a)^2}}\right]$
+**Examples:**
 
-### Relativistic Electromagnetism (Jackson Ch. 11)
+| Symmetry | $K$ | $F^\mu$ | $J^0$ |
+|----------|-----|---------|-------|
+| Time translation $t \to t + \epsilon$ | $-\dot\phi$ | $\mathcal{L}\delta^\mu_0$ | $H$ (Hamiltonian) |
+| Space translation $x^i \to x^i + \epsilon^i$ | $\partial_i\phi$ | 0 | $p_i$ |
+| Rotation | $x^i\partial_j\phi - x^j\partial_i\phi$ | 0 | $L_{ij}$ |
+| $U(1)$ phase $\psi\to e^{i\epsilon}\psi$ | $i\psi$ | 0 | $Q$ |
 
-**Four-potential:** $A^\mu = (\phi/c, \mathbf{A})$, field tensor $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$
+**Engineering implication:** All conservation laws in physics derive from this. Every design constraint in accelerator physics (momentum conservation), spectroscopy (energy conservation), and celestial mechanics (angular momentum conservation) traces back to Noether.
 
-**Lorentz transformation of fields:**
+---
+
+### Q3: Derive the EM wave equation from Maxwell's equations and obtain $c = 1/\sqrt{\mu_0\epsilon_0}$.
+
+**Full solution:**
+
+Starting from Maxwell's equations in vacuum (no sources, SI units — Jackson 1998, §6.1):
+$$\nabla \cdot \mathbf{E} = 0, \quad \nabla \cdot \mathbf{B} = 0$$
+$$\nabla \times \mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t}, \quad \nabla \times \mathbf{B} = \mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t}$$
+
+Take the curl of Faraday's law:
+$$\nabla \times (\nabla \times \mathbf{E}) = -\frac{\partial}{\partial t}(\nabla \times \mathbf{B})$$
+
+Use the vector identity $\nabla \times (\nabla \times \mathbf{E}) = \nabla(\nabla \cdot \mathbf{E}) - \nabla^2\mathbf{E}$. Since $\nabla\cdot\mathbf{E} = 0$:
+$$-\nabla^2\mathbf{E} = -\frac{\partial}{\partial t}\left(\mu_0\epsilon_0\frac{\partial\mathbf{E}}{\partial t}\right) = -\mu_0\epsilon_0\frac{\partial^2\mathbf{E}}{\partial t^2}$$
+
+This gives the **wave equation**:
+$$\boxed{\nabla^2\mathbf{E} - \mu_0\epsilon_0\frac{\partial^2\mathbf{E}}{\partial t^2} = 0}$$
+
+**Plane-wave ansatz:** $\mathbf{E} = \mathbf{E}_0 e^{i(\mathbf{k}\cdot\mathbf{r} - \omega t)}$:
+
+Substituting: $-k^2 + \mu_0\epsilon_0\omega^2 = 0 \implies \omega/k = 1/\sqrt{\mu_0\epsilon_0}$.
+
+**Numerical evaluation:**
+$$c = \frac{1}{\sqrt{\mu_0\epsilon_0}} = \frac{1}{\sqrt{(4\pi\times 10^{-7})(8.854\times 10^{-12})}} = 2.998\times 10^8\ \text{m/s}$$
+
+This **derives** $c$ from electric and magnetic measurements — historically, Weber and Kohlrausch (1856) measured $\epsilon_0$ and $\mu_0$ and predicted $c$ before Fizeau (1849) measured it directly. Maxwell (1865, *Phil. Trans. R. Soc.* 155, 459) recognized this coincidence as evidence that light *is* an EM wave.
+
+**Einstein's leap:** Special relativity (Einstein 1905, *Annalen der Physik* 17, 891) elevates $c$ to a *fundamental constant* — not just a property of EM, but of spacetime itself.
+
+**Engineering implication:** Antennas, waveguides, optical fibers all rely on this dispersion relation. Phase velocity $v_p = \omega/k$, group velocity $v_g = d\omega/dk$; in vacuum both equal $c$.
+
+---
+
+### Q4: Why is Young's double slit (single-photon) the core evidence of quantum mechanics?
+
+**Full solution:**
+
+**The experiment (Tonomura et al. 1989, *Am. J. Phys.* 57, 117; recorded single-electron build-up):** Electrons (or photons) emitted one at a time pass through two slits and accumulate on a detection screen. Individual detections appear as dots; over time, an interference pattern $I(x) \propto \cos^2(\pi dx/(\lambda L))$ emerges.
+
+**Why this is uniquely quantum:**
+
+1. **Single-particle interference:** With one particle at a time, classical wave theories fail. The particle goes through *both* slits — superposition $|\psi\rangle = \tfrac{1}{\sqrt{2}}(|\text{slit 1}\rangle + |\text{slit 2}\rangle)$ — and interferes with *itself*.
+
+2. **Probability amplitudes add, not probabilities:**
+$$P(x) = |\langle x|\psi\rangle|^2 = \tfrac{1}{2}(|\psi_1|^2 + |\psi_2|^2 + \psi_1^*\psi_2 + \psi_1\psi_2^*) = |\psi_1|^2 + |\psi_2|^2 + 2\sqrt{|\psi_1|^2|\psi_2|^2}\cos\phi$$
+The interference term $\propto \cos\phi$ is **impossible** in classical stochastic theory (where probabilities add: $P = P_1 + P_2$).
+
+3. **Complementarity (Bohr 1928, *Nature* 121, 580):** Which-path information *destroys* interference. If we measure which slit (e.g., by placing a detector or quantum eraser — Scully & Drühl 1982, *Phys. Rev. A* 25, 2208), the state collapses to either $|\text{slit 1}\rangle$ or $|\text{slit 2}\rangle$, and fringes vanish.
+
+4. **Wave-particle duality:** Electrons show wave-like interference and particle-like discrete detection. The complementarity principle states that these aspects are mutually exclusive: precise which-path knowledge (particle-like) precludes interference (wave-like), quantified by the inequality (Greenberger & Yasin 1988, *Phys. Lett. A* 128, 391):
+$$D^2 + V^2 \leq 1$$
+where $D$ is distinguishability, $V$ is visibility.
+
+**Quantum mechanical formalism (Feynman 1965, Vol. III, §1-2):**
+- State after slits: $|\psi\rangle = \tfrac{1}{\sqrt{2}}(|1\rangle + |2\rangle)$
+- Detection amplitude: $\langle x|\psi\rangle = \tfrac{1}{\sqrt{2}}(\langle x|1\rangle + \langle x|2\rangle)$
+- Intensity: $I(x) \propto |\langle x|\psi\rangle|^2$
+
+**Why not just wave optics?** Because:
+- **Single-particle detection:** Wave optics would predict a continuous intensity distribution, not discrete clicks.
+- **Quantum eraser (Scully–Drühl):** Even *which-path* information stored in a quantum system destroys interference, recoverable only by erasing the information — a phenomenon with no classical wave analog.
+
+**Engineering implication:** Quantum computation (Shor 1994, *SIAM J. Comput.* 26, 1484), quantum cryptography (BB84, Bennett & Brassard 1984), and quantum sensing all exploit this principle.
+
+---
+
+### Q5: Derive the canonical partition function and show $F = -k_BT\ln Z$.
+
+**Full solution:**
+
+**Setup (Pathria & Beale 2011, Ch. 2):** A system at temperature $T$ in contact with a heat reservoir. The reservoir ensures that the canonical distribution maximizes entropy at fixed $\langle E\rangle$.
+
+**Probability of microstate $i$:** By the maximum entropy principle (Jaynes 1957):
+$$p_i = \frac{e^{-\beta E_i}}{Z}, \quad Z = \sum_i e^{-\beta E_i}, \quad \beta = \frac{1}{k_BT}$$
+
+**Mean energy:**
+$$U = \langle E\rangle = \sum_i p_i E_i = \frac{1}{Z}\sum_i E_i e^{-\beta E_i} = -\frac{\partial \ln Z}{\partial \beta}$$
+
+**Entropy:**
+$$S = -k_B\sum_i p_i \ln p_i = -k_B\sum_i p_i(-\beta E_i - \ln Z) = k_B\beta U + k_B\ln Z$$
+
+**Connection to free energy:** Define the Helmholtz free energy $F = U - TS$. Then:
+$$F = U - T(k_B\beta U + k_B\ln Z) = U - U - k_BT\ln Z$$
+
+$$\boxed{F = -k_BT\ln Z}$$
+
+**Why is this the natural thermodynamic potential?** The differential of $F$:
+$$dF = dU - TdS - SdT$$
+
+Using $dU = TdS - PdV + \mu dN$ (first law):
+$$dF = -SdT - PdV + \mu dN$$
+
+So $F$ is naturally a function of $(T, V, N)$ — the *canonical* variables. From $F$:
+$$S = -\left(\frac{\partial F}{\partial T}\right)_V, \quad P = -\left(\frac{\partial F}{\partial V}\right)_T, \quad \mu = \left(\frac{\partial F}{\partial N}\right)_T$$
+
+**Derivation of canonical distribution from maximum entropy:** Maximize $S = -k_B\sum p_i\ln p_i$ subject to $\sum p_i = 1$ and $\sum p_i E_i = U$. Lagrange multipliers $\alpha - 1$ and $\beta$:
+
+$$\frac{\partial}{\partial p_i}\left[-k_B p_i\ln p_i + (\alpha - 1)p_i + \beta p_i E_i\right] = 0$$
+$$-k_B(\ln p_i + 1) + (\alpha - 1) + \beta E_i = 0$$
+$$p_i = e^{\alpha/k_B - 1}e^{-\beta E_i}$$
+
+Normalizing: $e^{\alpha/k_B - 1} = 1/Z$ where $Z = \sum e^{-\beta E_i}$.
+
+**Limiting case:** For high temperatures, $Z \to \Omega(E)e^{-\beta\langle E\rangle}$ and $S \to k_B\ln\Omega$ — recovering microcanonical entropy.
+
+**Engineering implication:** The partition function $Z$ is the central computational object in chemical thermodynamics, materials science, and protein folding (free-energy methods).
+
+---
+
+### Q6: Why is the Gibbs factor $e^{-\beta H}$ more practical than microcanonical counting?
+
+**Full solution:**
+
+**Theoretical:** The Gibbs factor arises from maximizing entropy at fixed $\langle E\rangle$ — the canonical ensemble is the *most probable* distribution subject to energy uncertainty. Equivalence (microcanonical ↔ canonical) holds in the thermodynamic limit.
+
+**Practical reasons:**
+
+1. **Mathematical tractability:** 
+   - Microcanonical: $W(E)$ requires counting — combinatorially intractable for $N \gg 10$.
+   - Canonical: $Z = \sum_n e^{-\beta E_n}$ — exponential in energy, but **Gaussian in fluctuations**.
+
+2. **Energy is rarely fixed exactly:**
+   - Real systems couple to thermal reservoirs.
+   - Microcanonical describes isolated systems (e.g., early universe cosmology).
+   - Canonical describes lab systems (thermal contact with room).
+
+3. **Generating functions:** $Z(\beta)$ is a generating function:
+   $$U = -\frac{\partial\ln Z}{\partial\beta}, \quad C_V = k_B\beta^2\frac{\partial^2\ln Z}{\partial\beta^2}$$
+   These derivatives are easier than direct counting.
+
+4. **Quantum mechanical origin:** The Gibbs factor is the diagonal of the density matrix $\rho = e^{-\beta H}/Z$ (Bloch 1932, *Zeitschrift für Physik* 74, 295; Kubo 1957, *J. Phys. Soc. Japan* 12, 570). It arises from the imaginary-time path integral:
+   $$Z = \text{Tr}\,e^{-\beta H} = \int_{\text{periodic}} \mathcal{D}\phi\, e^{-S_E[\phi]}$$
+   where $S_E = \int_0^\beta d\tau\int d^3x\,\mathcal{L}_E$ is the Euclidean action.
+
+5. **Ensemble equivalence (thermodynamic limit):** Fluctuations scale as:
+   $$\frac{\langle(E-\langle E\rangle)^2\rangle}{\langle E\rangle^2} \sim \frac{1}{N}$$
+   For $N \sim 10^{23}$, the relative fluctuation is $\sim 10^{-12}$ — completely negligible. So whether the system has exactly fixed $E$ or just fixed $\langle E\rangle$, the observables are the same.
+
+6. **Connection to thermodynamics:** From $Z$ we get all thermodynamic potentials:
+   - $F = -k_BT\ln Z$ (Helmholtz free energy)
+   - $\Phi = -k_BT\ln\mathcal{Z}$ (Grand potential)
+
+**Counter-case where microcanonical is essential:** Phase transitions in finite systems (first-order transitions show negative specific heat in microcanonical ensemble — Hertz 1909, *Ann. Phys.* 33, 537; later rediscovered by many, including Thirring 1970). This phenomenon is forbidden in the canonical ensemble.
+
+**Engineering implication:** Computational statistical mechanics (Monte Carlo, molecular dynamics) almost universally uses canonical sampling.
+
+---
+
+### Q7: Construct the density matrix for a spin-1/2 system and derive the Bloch sphere representation.
+
+**Full solution:**
+
+**Setup:** A spin-1/2 has Hilbert space $\mathbb{C}^2$. The most general state is:
+$$|\psi\rangle = \cos(\theta/2)|+\rangle + e^{i\phi}\sin(\theta/2)|-\rangle$$
+parametrized by $(\theta, \phi)$ on the unit sphere.
+
+**Density matrix:** $|\psi\rangle\langle\psi|$ gives:
+$$\rho = \frac{1}{2}\begin{pmatrix} 1 + \cos\theta & e^{-i\phi}\sin\theta \\ e^{i\phi}\sin\theta & 1 - \cos\theta\end{pmatrix} = \frac{1}{2}(I + \mathbf{a}\cdot\boldsymbol{\sigma})$$
+
+where $\mathbf{a} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$ is the **Bloch vector** and $\boldsymbol{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$ are the Pauli matrices:
+$$\sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0\end{pmatrix}, \quad \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0\end{pmatrix}, \quad \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1\end{pmatrix}$$
+
+**Pure vs mixed states:**
+- Pure state: $|\mathbf{a}| = 1$, $\rho^2 = \rho$
+- Mixed state: $|\mathbf{a}| < 1$, $\rho^2 \neq \rho$
+
+**Properties of density matrix:**
+- Hermiticity: $\rho^\dagger = \rho$
+- Positivity: $\rho \geq 0$
+- Normalization: $\text{Tr}\,\rho = 1$
+
+**Time evolution:** $i\hbar\partial_t\rho = [H, \rho]$. For $H = -\gamma B S_z = -\tfrac{\gamma B\hbar}{2}\sigma_z$:
+
+$$\rho(t) = e^{-iHt/\hbar}\rho(0)e^{iHt/\hbar}$$
+
+This corresponds to Bloch-vector precession around $\hat{z}$ at Larmor frequency $\omega_L = \gamma B$:
+$$a_x(t) = a_x(0)\cos\omega_L t + a_y(0)\sin\omega_L t, \quad a_y(t) = -a_x(0)\sin\omega_L t + a_y(0)\cos\omega_L t$$
+
+**Generalizations (Nielsen & Chuang 2010, *Quantum Computation and Quantum Information*, Ch. 8):**
+- For higher dimensions, $\rho = \frac{1}{N}\left(I + \sum_{i}a_i\Lambda_i\right)$ where $\Lambda_i$ are generalized Gell-Mann matrices.
+- Open-system evolution: Lindblad master equation (Lindblad 1976, *Commun. Math. Phys.* 48, 119).
+
+**Engineering implication:** Bloch sphere visualization is foundational for NMR (Levitt 2008), ESR, quantum computing (qubit states), and atomic physics.
+
+---
+
+### Q8: Why is Feynman's path integral his most important contribution? Derive from Schrödinger to path integral.
+
+**Full solution:**
+
+**Historical significance (Feynman 1948, *Rev. Mod. Phys.* 20, 367; *1942 Princeton PhD thesis*):** The path integral unifies quantum mechanics with the principle of stationary action. It generalizes to fields, particles with spin, gauge theories, and is the natural language of QFT (Peskin & Schroeder 1995).
+
+**Derivation:**
+
+Step 1 — **Time slicing (Feynman & Hibbs 1965, §3-4):** Split time interval $[0,t]$ into $N$ slices of duration $\epsilon = t/N$:
+
+$$\langle x_f | e^{-iHt/\hbar} | x_i \rangle = \langle x_N | (e^{-iH\epsilon/\hbar})^N | x_0 \rangle$$
+
+Step 2 — **Insert resolutions of identity:**
+$$\mathbb{1} = \int dx_j |x_j\rangle\langle x_j|$$
+
+$$K(x_f, x_i; t) = \prod_{j=1}^{N-1}\int dx_j \prod_{j=1}^{N}\langle x_j|e^{-iH\epsilon/\hbar}|x_{j-1}\rangle$$
+
+Step 3 — **Short-time kernel:** For small $\epsilon$, $e^{-iH\epsilon/\hbar} \approx e^{-iT\epsilon/(2\hbar)}e^{-iV\epsilon/\hbar}$ (Zassenhaus formula to first order):
+
+$$\langle x_j|e^{-iH\epsilon/\hbar}|x_{j-1}\rangle \approx \left(\frac{m}{2\pi i\hbar\epsilon}\right)^{1/2}e^{iS[j,j-1]/\hbar}$$
+
+where $S[j,j-1] = \frac{m(x_j-x_{j-1})^2}{2\epsilon} - V(x_j)\epsilon$.
+
+Step 4 — **Take continuum limit:**
+$$\boxed{K(x_f, x_i; t) = \int \mathcal{D}x\, e^{iS[x]/\hbar}}$$
+
+The "$\int\mathcal{D}x$" denotes integration over **all** continuous paths $x(\tau)$ with $x(0) = x_i$, $x(t) = x_f$.
+
+**Stationary-phase approximation (classical limit):** As $\hbar \to 0$, the integrand oscillates rapidly except where $\delta S = 0$ — at the classical path:
+$$\left.\frac{\delta S}{\delta x}\right|_{x_{cl}} = 0 \implies \text{Euler-Lagrange equation}$$
+
+So in the classical limit, only the classical path contributes — recovering classical mechanics.
+
+**Why is this the most important formulation?**
+
+1. **Unification with classical mechanics:** Classical mechanics emerges as $\hbar \to 0$ via stationary phase (Dirac 1933, *Physikalische Zeitschrift der Sowjetunion* 3, 64; later independently by Feynman 1948).
+
+2. **QFT generalization:** Field theory is a path integral over field configurations:
+   $$Z = \int \mathcal{D}\phi\, e^{iS[\phi]/\hbar}$$
+
+3. **Connection to statistical mechanics:** Wick rotation $t \to -i\tau$ converts QM path integral to statistical partition function:
+   $$Z = \int \mathcal{D}\phi\, e^{-S_E[\phi]/\hbar}, \quad S_E = \int_0^{\hbar\beta} d\tau\,L_E$$
+
+4. **Visualization:** Feynman's diagrams emerge naturally from perturbative expansion of the path integral.
+
+**Engineering implication:** Path integrals underlie lattice gauge theory (Wilson 1974, *Phys. Rev. D* 10, 2445), quantum Monte Carlo methods, and modern amplitude calculations in QFT.
+
+---
+
+### Q9: Transform the electromagnetic field tensor $F^{\mu\nu}$ under Lorentz transformation.
+
+**Full solution:**
+
+**Setup (Jackson 1998, §11.10; Griffiths 2017, §12.3):** The EM field tensor unifies $\mathbf{E}$ and $\mathbf{B}$:
+$$F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu = \begin{pmatrix} 0 & -E_x/c & -E_y/c & -E_z/c \\ E_x/c & 0 & -B_z & B_y \\ E_y/c & B_z & 0 & -B_x \\ E_z/c & -B_y & B_x & 0\end{pmatrix}$$
+
+**Lorentz transformation:** $x'^\mu = \Lambda^\mu_{\ \nu} x^\nu$, with
+$$\Lambda^\mu_{\ \nu} = \begin{pmatrix} \gamma & -\gamma\beta & 0 & 0 \\ -\gamma\beta & \gamma & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1\end{pmatrix}$$
+for boost along $\hat{x}$ with $\beta = v/c$, $\gamma = 1/\sqrt{1-\beta^2}$.
+
+**Tensor transformation rule:** $F'^{\mu\nu} = \Lambda^\mu_{\ \alpha}\Lambda^\nu_{\ \beta}F^{\alpha\beta}$.
+
+**Explicit transformation of fields:** For boost along $\hat{x}$:
+
+$$E'_x = E_x, \quad B'_x = B_x$$
+$$E'_y = \gamma(E_y - vB_z), \quad B'_y = \gamma(B_y + vE_z/c^2)$$
+$$E'_z = \gamma(E_z + vB_y), \quad B'_z = \gamma(B_z - vE_y/c^2)$$
+
+**Compact form using parallel/perpendicular decomposition:**
 $$\mathbf{E}'_\parallel = \mathbf{E}_\parallel, \quad \mathbf{E}'_\perp = \gamma(\mathbf{E}_\perp + \mathbf{v}\times\mathbf{B})$$
 $$\mathbf{B}'_\parallel = \mathbf{B}_\parallel, \quad \mathbf{B}'_\perp = \gamma\left(\mathbf{B}_\perp - \frac{\mathbf{v}\times\mathbf{E}}{c^2}\right)$$
 
----
+**Invariants:** $F^{\mu\nu}F_{\mu\nu} = 2(B^2 - E^2/c^2)$ and $\tfrac{1}{4}\epsilon_{\mu\nu\alpha\beta}F^{\mu\nu}F^{\alpha\beta} = \mathbf{E}\cdot\mathbf{B}/c$ are Lorentz scalars.
 
-## 深入 3：Quantum Mechanics — Problem-Solving Toolkit
-**Deep Dive III**
+**Physical consequences:**
 
-### Fundamental Postulates (Sakurai Ch. 1)
+1. **Magnetic force from pure electric field (in another frame):** A pure magnetic field $\mathbf{B}$ in one frame becomes $\mathbf{E}' = -\gamma\mathbf{v}\times\mathbf{B}$ in a moving frame. This is the principle behind **electromagnetic induction**.
 
-**Postulate 1:** State of system = vector $|\psi\rangle$ in Hilbert space
+2. **Pure $\mathbf{E}$ vs pure $\mathbf{B}$:** If $E^2 > c^2 B^2$ in one frame, no inertial frame can make $\mathbf{B}$ vanish. If $E^2 < c^2 B^2$, no frame can make $\mathbf{E}$ vanish.
 
-**Postulate 2:** Observables = Hermitian operators $\hat{A}$; measurement yields eigenvalue $a_n$ with probability $|\langle a_n|\psi\rangle|^2$
+3. **Relativistic particle motion (Dirac 1928, *Proc. R. Soc. A* 117, 610):** The Lorentz force in 4-vector form:
+   $$m\frac{du^\mu}{d\tau} = qF^{\mu\nu}u_\nu$$
 
-**Postulate 3:** After measurement, state collapses to $|a_n\rangle$
-
-**Postulate 4:** Time evolution: $i\hbar\partial_t|\psi\rangle = \hat{H}|\psi\rangle$
-
-### Key Problems and Solutions
-
-**1. Free particle:**
-$$H = \frac{\hat{p}^2}{2m}, \quad |\psi(t)\rangle = \int \frac{d^3p}{(2\pi\hbar)^3} \phi(\mathbf{p}) e^{-iE_p t/\hbar}|\mathbf{p}\rangle$$
-
-**2. Harmonic oscillator:**
-$$H = \frac{\hat{p}^2}{2m} + \frac{1}{2}m\omega^2\hat{x}^2, \quad E_n = \hbar\omega\left(n+\frac{1}{2}\right)$$
-$$a|n\rangle = \sqrt{n}|n-1\rangle, \quad a^\dagger|n\rangle = \sqrt{n+1}|n+1\rangle$$
-
-**3. Hydrogen atom:**
-$$V(r) = -\frac{e^2}{4\pi\epsilon_0 r}, \quad E_n = -\frac{13.6\ \text{eV}}{n^2}$$
-$$|\psi_{nlm}(r,\theta,\phi)|^2 = R_{nl}(r)Y_{lm}(\theta,\phi)$$
-
-**Angular momentum algebra:**
-$$[L_i, L_j] = i\hbar\epsilon_{ijk}L_k, \quad L^2|l,m\rangle = \hbar^2 l(l+1)|l,m\rangle$$
-
-**Spin:** $S_z|m_s\rangle = \hbar m_s|m_s\rangle$, $S^2|s,m_s\rangle = s(s+1)\hbar^2|s,m_s\rangle$
-
-### Perturbation Theory
-
-**Time-independent, non-degenerate (Sakurai Ch. 5):**
-$$E_n^{(1)} = \langle n^{(0)}|H'|n^{(0)}\rangle$$
-$$|n^{(1)}\rangle = \sum_{m\neq n}\frac{\langle m^{(0)}|H'|n^{(0)}\rangle}{E_n^{(0)} - E_m^{(0)}}|m^{(0)}\rangle$$
-
-**First-order correction to energy:** $E_n = E_n^{(0)} + E_n^{(1)} + E_n^{(2)} + \ldots$
-
-**Degenerate perturbation theory:** diagonalize $H'$ within degenerate subspace.
-
-**Time-dependent (Sakurai Ch. 2):**
-$$c_n(t) = - \frac{i}{\hbar}\sum_m \langle n|H'(t)|m\rangle e^{i\omega_{nm}t/\hbar}c_m(0)$$
+**Engineering implication:** Particle accelerators, electromagnetic wave propagation in moving media, and synchrotron radiation all rely on these transformation laws.
 
 ---
 
-## 深入 4：Statistical Mechanics — Problem-Solving Toolkit
-**Deep Dive IV**
+### Q10: Why is gauge symmetry not a "true" symmetry but a redundancy?
 
-### Microcanonical Ensemble
+**Full solution:**
 
-$$S = k_B \ln W, \quad W = \text{number of microstates with } E \leq H \leq E+\Delta E$$
+**Setup:** In electromagnetism, the 4-potential $A^\mu = (\phi/c, \mathbf{A})$ contains 4 components, but only 2 are physical (the two transverse polarizations of the photon).
 
-**Liouville's theorem:** $\frac{d\rho}{dt} = 0$ in phase space
+**Gauge transformation:** For any function $\chi(\mathbf{r},t)$:
+$$A^\mu \to A^\mu + \partial^\mu\chi$$
 
-### Canonical Ensemble
+The fields $\mathbf{E}$ and $\mathbf{B}$ are unchanged:
+$$\mathbf{E} = -\nabla\phi - \partial_t\mathbf{A}, \quad \mathbf{B} = \nabla\times\mathbf{A}$$
 
-$$\rho(q,p) = \frac{1}{Z}e^{-\beta H(q,p)}, \quad \beta = \frac{1}{k_BT}$$
+**Why is this not a symmetry?**
 
-**Partition function:**
-$$Z = \sum_n e^{-\beta E_n} = \int \frac{d^{3N}q\,d^{3N}p}{(2\pi\hbar)^{3N}} e^{-\beta H}$$
+A "true" symmetry transforms physical states to *distinct* physical states:
+- Rotation: $|\text{hydrogen}, l,m\rangle \to |\text{hydrogen}, l,m'\rangle$ — different physical state, different angular momentum.
+- Gauge transformation: $|\psi\rangle$ and $|\psi\rangle'$ describe *the same* physics.
 
-**Helmholtz free energy:**
-$$F = -k_BT \ln Z, \quad S = -\left(\frac{\partial F}{\partial T}\right)_V, \quad U = F + TS$$
+Gauge symmetry is a **redundancy in our description** — different labelings for the same physical configuration. This is sometimes called a "symmetry of the formalism" rather than a "symmetry of nature" (Redhead 2003, *Brit. J. Phil. Sci.* 54, 209).
 
-### Quantum Statistics
+**Why is the distinction important?**
 
-**Bose-Einstein:** $n_\epsilon = \frac{1}{e^{\beta(\epsilon-\mu)} - 1}$ (photons, phonons, bosons)
+1. **Counting degrees of freedom:** A massless spin-1 field has 2 physical polarizations, not 3. Gauge symmetry enforces this.
 
-**Fermi-Dirac:** $f_\epsilon = \frac{1}{e^{\beta(\epsilon-\mu)} + 1}$ (electrons, fermions)
+2. **Quantization:** To quantize, we must fix the gauge (e.g., Lorenz gauge $\partial_\mu A^\mu = 0$). The Faddeev-Popov procedure (1967, *Theoret. Math. Phys.* 1, 3; *Phys. Lett. B* 25, 29) introduces ghost fields to maintain unitarity.
 
-**Derivation from grand canonical:**
-$$Z_{gc} = \prod_\epsilon (1 \pm e^{-\beta(\epsilon-\mu)})^{\mp 1}$$
+3. **Ward identities:** Gauge invariance → conserved current (Noether) → Ward identities (Ward 1950, *Phys. Rev.* 78, 182; Takahashi 1957, *Nuovo Cimento* 6, 371) which protect renormalizability.
 
-**Mean occupation:**
-$$\langle n_\epsilon \rangle = \frac{1}{\beta}\frac{\partial}{\partial\epsilon}\ln Z_{gc} = \frac{1}{e^{\beta(\epsilon-\mu)} \pm 1}$$
+4. **Mass generation (Anderson 1963, *Phys. Rev.* 130, 439; Higgs 1964, *Phys. Rev. Lett.* 13, 508):** Gauge symmetry can be *spontaneously broken*, giving mass to gauge bosons while preserving renormalizability. This is the Higgs mechanism in the Standard Model.
 
-### Phase Transitions
+**Comparison with global symmetries:**
 
-**Landau theory:** $F = F_0 + a(T-T_c)\phi^2 + b\phi^4 + \ldots$
+| Property | Global symmetry (e.g., $U(1)_B$ baryon number) | Gauge symmetry (e.g., $U(1)_{EM}$) |
+|----------|----------------------------------------------|-------------------------------------|
+| Nature | True symmetry of physics | Redundancy in description |
+| Parameters | One per generator (e.g., $\theta_{B}$) | Spacetime function $\chi(x)$ |
+| Charges | Conserved | Redundant |
+| Breaking | Explicit (forbidden by QM if exact) | Implicit/Hidden (gauge choice) |
+| Examples | Baryon number, lepton number, isospin | EM, weak force, color $SU(3)$ |
 
-**Critical exponents:**
-| Exponent | Definition |
-|-----------|-----------|
-| $\alpha$ | $C_V \propto |t|^{-\alpha}$ |
-| $\beta$ | $M \propto |t|^\beta$ |
-| $\gamma$ | $\chi \propto |t|^{-\gamma}$ |
-| $\delta$ | $M \propto |H|^{1/\delta}$ |
-
-**Universality:** $\alpha, \beta, \gamma, \delta$ depend only on symmetry and dimensionality, not on microscopic details.
+**Engineering implication:** Only gauge-invariant quantities are observable. The Coulomb gauge ($\nabla\cdot\mathbf{A} = 0$) is convenient for statics; Lorenz gauge for waves. The Aharonov-Bohm effect (1959, *Phys. Rev.* 115, 485) demonstrates that $A_\mu$ has physical significance even though only $F_{\mu\nu}$ is gauge-invariant.
 
 ---
 
-## 深入 5：Statistical Physics — Advanced Topics
-**Deep Dive V**
+## 📚 5 Deep Dives (5DD) — 中英對照深度專題
 
-### Kubo Formula for Transport
+### DD-1: Classical Mechanics — Variational Foundations · 經典力學：變分基礎
 
-**Linear response (Kubo 1966):**
-$$\chi_{AB}(\omega) = \frac{i}{\hbar}\int_0^\infty dt\, e^{i\omega t}\langle[A(t), B(0)]\rangle$$
+**English (英文):**
 
-**Electrical conductivity:**
-$$\sigma(\omega) = \frac{i}{\omega + i0^+}\frac{ne^2}{m} + \sigma_{reg}(\omega)$$
+The **principle of least action** (Maupertuis 1744) states that the actual path taken by a system between two configurations in a given time is the one for which the action $S = \int L\,dt$ is stationary:
 
-**Drude weight:** $\sigma_{DC} = \frac{ne^2\tau}{m}$
+$$\delta S = 0, \quad S = \int_{t_1}^{t_2} L(q, \dot{q}, t)\,dt$$
 
-### Fluctuation-Dissipation Theorem
+For the Lagrangian $L = T - V$ with kinetic energy $T = \tfrac{1}{2}m\dot{q}^2$ and potential $V(q)$, the Euler-Lagrange equation is:
 
-$$\chi''(\omega) = \frac{1}{2k_BT}S(\omega), \quad S(\omega) = \int dt\, e^{i\omega t}\langle A(t)A(0)\rangle$$
+$$\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{q}_i}\right) - \frac{\partial L}{\partial q_i} = 0 \implies m\ddot{q}_i = -\frac{\partial V}{\partial q_i}$$
 
-**Johnson-Nyquist noise:** $S_V(f) = 4k_BTR$
+The Hamiltonian formulation emerges via Legendre transformation $p_i = \partial L/\partial\dot{q}_i$:
 
-### Path Integral Formulation
+$$H(q,p) = \sum_i p_i\dot{q}_i - L, \quad \dot{q}_i = \frac{\partial H}{\partial p_i}, \quad \dot{p}_i = -\frac{\partial H}{\partial q_i}$$
 
-$$K(x_f, x_i; t) = \langle x_f | e^{-iHt/\hbar} | x_i \rangle = \int \mathcal{D}x\, e^{iS[x]/\hbar}$$
+**Canonical transformations** preserve the symplectic structure: $\{q_i, p_j\} = \delta_{ij}$ where the Poisson bracket is $\{A, B\} = \sum_i (\partial A/\partial q_i)(\partial B/\partial p_i) - (\partial A/\partial p_i)(\partial B/\partial q_i)$.
 
-$$S[x] = \int dt\left[\frac{1}{2}m\dot{x}^2 - V(x)\right]$$
+The Hamilton-Jacobi equation $H(q, \partial S/\partial q, t) = \partial S/\partial t$ unifies classical and quantum mechanics — the action $S$ becomes the quantum mechanical phase (Schrödinger 1926).
 
-**Stationary phase:** $S[x_{cl}]$ gives classical limit; quantum fluctuations give corrections.
+**中文 (Chinese):**
 
----
+**最小作用量原理**（莫佩爾蒂 1744 年）指出：系統在給定時間內於兩個位形之間所走的實際路徑，是使作用量 $S = \int L\,dt$ 為駐值的路徑：
 
-## 自測 1：Kepler Problem
-**Derive the period of a circular orbit from Kepler's third law.**
+$$\delta S = 0$$
 
-**Answer:**
-For circular orbit: $m\omega^2 r = G\frac{Mm}{r^2} \implies \omega^2 = \frac{GM}{r^3}$
+對於 $L = T - V$ 的拉格朗日量（$T$ 為動能，$V$ 為勢能），歐拉-拉格朗日方程為：
 
-Period: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{r^3}{GM}}$
+$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i} - \frac{\partial L}{\partial q_i} = 0 \implies m\ddot{q}_i = -\frac{\partial V}{\partial q_i}$$
 
-From orbital energy: $E = -\frac{GMm}{2r}$ (virial theorem)
+哈密頓形式通過勒讓德變換 $p_i = \partial L/\partial\dot{q}_i$ 出現：
 
-$T^2 = \frac{4\pi^2}{GM}r^3$ → Kepler's third law: $T^2 \propto a^3$
+$$H(q,p) = \sum_i p_i\dot{q}_i - L$$
 
-**General case:** For ellipse with semi-major axis $a$: $T^2 = \frac{4\pi^2}{G(M+m)}a^3$
-
-**Engineering implication:** GPS satellite orbits must account for $T^2 \propto a^3$.
+**正則變換**保持辛結構：$\{q_i, p_j\} = \delta_{ij}$。哈密頓-雅可比方程將經典力學與量子力學統一起來——作用量 $S$ 成為量子力學相位。
 
 ---
 
-## 自測 2：Plane Wave in Vacuum
-**Show that $E = cB$ in a plane EM wave in vacuum.**
+### DD-2: Electromagnetism — Relativistic Formulation · 電動力學：相對論形式
 
-**Answer:**
-From Faraday's law: $\nabla\times\mathbf{E} = -\partial_t\mathbf{B}$
+**English (英文):**
 
-For plane wave $\mathbf{E} = E_0\hat{x}e^{i(kz-\omega t)}$:
-$$\nabla\times\mathbf{E} = \frac{\partial E_x}{\partial z}\hat{y} = ikE_0\hat{y}e^{i(kz-\omega t)}$$
+Maxwell's equations in vacuum, in 4-tensor form, are (Jackson 1998, §11.10):
 
-$$-ikE_0\hat{y}e^{i(kz-\omega t)} = i\omega B_0\hat{y}e^{i(kz-\omega t)}$$
+$$\partial_\mu F^{\mu\nu} = \mu_0 J^\nu, \quad \partial_{[\mu}F_{\nu\lambda]} = 0$$
 
-$$\Rightarrow B_0 = \frac{k}{\omega}E_0 = \frac{E_0}{c}$$
+where:
+- $A^\mu = (\phi/c, \mathbf{A})$ is the 4-potential
+- $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is the field tensor
+- $J^\mu = (\rho c, \mathbf{J})$ is the 4-current
 
-Since $c = \omega/k = 1/\sqrt{\mu_0\epsilon_0}$:
-$$\boxed{E = cB}$$
+In Gaussian units, the covariant form is even more compact:
+$$\partial_\mu F^{\mu\nu} = \frac{4\pi}{c}J^\nu$$
 
-**Also:** From Poynting vector magnitude: $S = EH/\mu_0 = E^2/\mu_0 c = cB^2/\mu_0$
+The **Lagrangian density** is:
+$$\mathcal{L} = -\frac{1}{4\mu_0}F_{\mu\nu}F^{\mu\nu} - \frac{1}{\mu_0}A_\mu J^\mu$$
 
-**Engineering implication:** EM wave detectors measure either E or B, never both.
+The Euler-Lagrange equation $\partial_\mu(\partial\mathcal{L}/\partial(\partial_\mu A_\nu)) = \partial\mathcal{L}/\partial A_\nu$ yields the inhomogeneous Maxwell equations.
 
----
+**Gauge invariance** $A_\mu \to A_\mu + \partial_\mu\chi$ ensures charge conservation via Noether's theorem: $\partial_\mu J^\mu = 0$.
 
-## 自測 3：Spin Precession
-**A spin-1/2 particle in a magnetic field $\mathbf{B} = B\hat{z}$ has initial state $|\psi(0)\rangle = \alpha|+\rangle + \beta|-\rangle$. Find $|\psi(t)\rangle$.**
+**中文 (Chinese):**
 
-**Answer:**
-Hamiltonian: $H = -\boldsymbol{\mu}\cdot\mathbf{B} = -\gamma B S_z = -\gamma B\frac{\hbar}{2}\sigma_z$
+真空中的麥克斯韋方程組以 4-張量形式表示為（Jackson 1998, §11.10）：
 
-Eigenstates: $|+\rangle$ with $E_+ = -\gamma B\hbar/2$, $|-\rangle$ with $E_- = +\gamma B\hbar/2$
+$$\partial_\mu F^{\mu\nu} = \mu_0 J^\nu, \quad \partial_{[\mu}F_{\nu\lambda]} = 0$$
 
-Time evolution:
-$$|\psi(t)\rangle = \alpha e^{-iE_+t/\hbar}|+\rangle + \beta e^{-iE_-t/\hbar}|-\rangle = \alpha e^{i\omega_L t/2}|+\rangle + \beta e^{-i\omega_L t/2}|-\rangle$$
+其中 $A^\mu$ 為 4-勢，$F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ 為場張量，$J^\mu$ 為 4-電流。
 
-where $\omega_L = \gamma B$ is the Larmor frequency.
+**規範不變性** $A_\mu \to A_\mu + \partial_\mu\chi$ 通過諾特定理確保電荷守恆：$\partial_\mu J^\mu = 0$。
 
-Probability of finding spin up: $|\alpha|^2$ (time-independent!)
-$$\langle S_z \rangle = \frac{\hbar}{2}(|\alpha|^2 - |\beta|^2) \quad \text{(constant!)}$$
-
-Spin vector precesses: $\langle\mathbf{S}(t)\rangle = \langle\mathbf{S}(0)\rangle\cos\omega_L t + (\hat{n}\times\langle\mathbf{S}(0)\rangle)\sin\omega_L t$
-
-**Engineering implication:** NMR frequency $\nu = \gamma B/2\pi$; MRI uses this.
+**拉格朗日密度**為：$\mathcal{L} = -\frac{1}{4\mu_0}F_{\mu\nu}F^{\mu\nu} - \frac{1}{\mu_0}A_\mu J^\mu$，其歐拉-拉格朗日方程給出非齊次麥克斯韋方程。
 
 ---
 
-## 自測 4：Partition Function for Harmonic Oscillator
-**Compute the partition function for a 1D quantum harmonic oscillator at temperature $T$.**
+### DD-3: Quantum Mechanics — Measurement & Decoherence · 量子力學：測量與退相干
 
-**Answer:**
-Energy levels: $E_n = \hbar\omega(n + \frac{1}{2})$
+**English (英文):**
 
-Partition function:
-$$Z = \sum_{n=0}^\infty e^{-\beta\hbar\omega(n+1/2)} = e^{-\beta\hbar\omega/2}\sum_{n=0}^\infty (e^{-\beta\hbar\omega})^n = \frac{e^{-\beta\hbar\omega/2}}{1 - e^{-\beta\hbar\omega}}$$
+The **measurement problem** arises because quantum mechanics describes systems in superposition $|\psi\rangle = \sum_i c_i |i\rangle$, yet measurements yield single outcomes. The **Copenhagen interpretation** postulates state collapse upon measurement (Pauli 1933, *Die allgemeinen Prinzipien der Wellenmechanik*):
 
-$$Z = \frac{1}{2\sinh(\beta\hbar\omega/2)}$$
+$$|\psi\rangle\langle\psi| \to |i\rangle\langle i| \quad \text{with probability } |c_i|^2$$
 
-**Thermodynamic quantities:**
-$$F = -k_BT\ln Z = \frac{\hbar\omega}{2} + k_BT\ln\left(1 - e^{-\beta\hbar\omega}\right)$$
+**Von Neumann entropy** measures mixed-state uncertainty:
+$$S = -\text{Tr}(\rho\ln\rho)$$
 
-$$U = -\frac{\partial}{\partial\beta}\ln Z = \frac{\hbar\omega}{2} + \frac{\hbar\omega e^{-\beta\hbar\omega}}{1-e^{-\beta\hbar\omega}} = \frac{\hbar\omega}{2} + \frac{\hbar\omega}{e^{\beta\hbar\omega}-1}$$
+For a pure state, $S = 0$; for maximally mixed $N$-state, $S = \ln N$.
 
-$$C_V = \frac{\partial U}{\partial T} = k_B\left(\frac{\hbar\omega}{k_BT}\right)^2\frac{e^{\hbar\omega/k_BT}}{(e^{\hbar\omega/k_BT}-1)^2}$$
+**Decoherence** (Zurek 1981, *Phys. Rev. D* 24, 1516; Joos & Zeh 1985, *Z. Phys. B* 59, 223; Schlosshauer 2005) explains *apparent* collapse via entanglement with environment:
 
-**High-T limit:** $C_V \to k_B$ (classical equipartition)
-**Low-T limit:** $C_V \to 0$ exponentially (energy gap $\hbar\omega$)
+$$\rho_{SE} = \sum_{i,j} c_i c_j^* |i\rangle\langle j| \otimes |E_i\rangle\langle E_j|$$
 
-**Engineering implication:** Lattice vibrations (phonons) have this heat capacity → Debye model.
+Tracing out environment:
+$$\rho_S = \text{Tr}_E\rho_{SE} = \sum_i |c_i|^2 |i\rangle\langle i| \quad \text{(decohered)}$$
 
----
+Decoherence time scales: $\tau_D \sim (\gamma/k_BT)^{-1}$ where $\gamma$ is the coupling. For macroscopic objects, $\tau_D \sim 10^{-30}$ s — making collapse effectively instantaneous.
 
-## 自測 5：Hydrogen Atom by Perturbation Theory
-**Compute the first-order correction to the ground state energy of hydrogen due to relativistic corrections.**
+**中文 (Chinese):**
 
-**Answer:**
-Relativistic correction (kinetic energy + spin-orbit):
-$$H'_1 = \frac{\hat{p}^4}{8m^3c^2} - \frac{\pi\hbar^2 e^2}{8\pi\epsilon_0 m^2 c^2}\delta^3(r)$$
+**測量問題**源於量子力學描述疊加態 $|\psi\rangle = \sum_i c_i|i\rangle$，但測量只給出單一結果。**哥本哈根詮釋**假設測量時波函數塌縮：
 
-First-order correction to $|100\rangle$:
-$$E_1 = \langle 100|H'|100\rangle = \frac{m c^2\alpha^4}{8}\left(\frac{1}{n^3} - \frac{2}{n^4}\right)$$
+$$|\psi\rangle\langle\psi| \to |i\rangle\langle i| \quad \text{概率 } |c_i|^2$$
 
-For $n=1$:
-$$E_1 = \frac{m c^2\alpha^4}{8}\left(1 - 2\right) = -\frac{m c^2\alpha^4}{8}$$
+**馮·諾伊曼熵**衡量混合態不確定性：$S = -\text{Tr}(\rho\ln\rho)$。純態 $S=0$；最大混合態 $S=\ln N$。
 
-Using $\alpha = e^2/(4\pi\epsilon_0\hbar c) \approx 1/137$:
-$$\Delta E = -1.8 \times 10^{-4}\ \text{eV}$$
+**退相干**（Zurek 1981；Joos & Zeh 1985；Schlosshauer 2005）通過與環境�纏解釋表觀塌縮：
 
-Fine structure shift: $\Delta E_{FS} = E_n\left(\frac{\alpha^2}{n}\right)\left(\frac{1}{j+1/2} - \frac{3}{4n}\right)$
+$$\rho_S = \text{Tr}_E\rho_{SE} = \sum_i |c_i|^2 |i\rangle\langle i|$$
 
-**Fine structure formula (Dirac):**
-$$E_{n,j} = -\frac{R_\infty}{n^2}\left[1 + \frac{\alpha^2}{n^2}\left(\frac{n}{j+1/2} - \frac{3}{4}\right)\right]$$
-
-**Engineering implication:** Fine structure splitting measured in spectroscopy confirms relativistic QM.
+巨觀物體的退相干時間 $\tau_D \sim 10^{-30}$ s，使塌縮實際上瞬時發生。
 
 ---
 
-## 自測 6：Canonical Ensemble Derivation
-**Derive the canonical distribution $\rho \propto e^{-\beta H}$ from maximum entropy.**
+### DD-4: Statistical Mechanics — Phase Transitions & Universality · 統計力學：相變與普適性
 
-**Answer:**
-**Maximize entropy** $S = -k_B\sum_i p_i\ln p_i$ subject to:
-1. Normalization: $\sum_i p_i = 1$
-2. Mean energy: $\sum_i p_i E_i = \langle E\rangle \equiv U$
+**English (英文):**
 
-Lagrangian: $\mathcal{L} = -k_B\sum p_i\ln p_i + \lambda_0(\sum p_i - 1) + \lambda_1(\sum p_i E_i - U)$
+**Phase transitions** are non-analyticities in thermodynamic functions (Yang & Lee 1952, *Phys. Rev.* 87, 404). Ehrenfest classified them by the lowest derivative of free energy that is discontinuous:
 
-$$\frac{\partial\mathcal{L}}{\partial p_i} = -k_B(\ln p_i + 1) + \lambda_0 + \lambda_1 E_i = 0$$
+- **First-order:** $F$ continuous, $S = -\partial F/\partial T$ discontinuous (latent heat)
+- **Second-order:** $F$ and $S$ continuous, $C_V = -T\partial^2 F/\partial T^2$ discontinuous
 
-$$\ln p_i = -1 + \frac{\lambda_0}{k_B} + \frac{\lambda_1}{k_B}E_i$$
+**Landau theory** (Landau 1937, *Phys. Z. Sowjet.* 11, 26; Landau & Lifshitz 1980, §142): Near $T_c$, expand free energy in order parameter $\phi$:
 
-Set $\beta = \lambda_1/k_B$, define $Z = e^{1-\lambda_0/k_B}$:
+$$F(T, \phi) = F_0 + a(T - T_c)\phi^2 + b\phi^4 + \ldots$$
 
-$$\boxed{p_i = \frac{1}{Z}e^{-\beta E_i}}$$
+Mean-field critical exponents:
+- $\alpha = 0$ (logarithmic)
+- $\beta = 1/2$ (order parameter $\phi \propto |t|^\beta$)
+- $\gamma = 1$ (susceptibility $\chi \propto |t|^{-\gamma}$)
+- $\nu = 1/2$ (correlation length $\xi \propto |t|^{-\nu}$)
 
-**Connection to temperature:** $\frac{1}{T} = \frac{\partial S}{\partial U} \Rightarrow \beta = 1/(k_BT)$
+**Universality** (Kadanoff 1966, *Phys. Phys. Fiz.* 2, 263; Wilson 1971, *Phys. Rev. B* 4, 3174; Wilson & Fisher 1972, *Phys. Rev. Lett.* 28, 240): Critical exponents depend only on:
+1. Dimensionality $d$
+2. Symmetry of order parameter
+3. Range of interaction
 
-**Partition function:** $Z = \sum_i e^{-\beta E_i}$, $U = -\frac{\partial}{\partial\beta}\ln Z$
+Not on microscopic details. The **renormalization group** (Wilson 1971) explains this: systems flow to a fixed point under scale transformations.
 
-**Engineering implication:** Maximum entropy principle provides fundamental justification for canonical ensemble.
+**中文 (Chinese):**
 
----
+**相變**是熱力學函數的非解析性（楊振寧-李政道 1952）。Ehrenfest 分類基於自由能最低階不連續導數：
 
-## 自測 7：Path Integral for Free Particle
-**Evaluate the path integral for a free particle and show it gives the correct propagator.**
+- **一階相變：** $F$ 連續，$S = -\partial F/\partial T$ 不連續（潛熱）
+- **二階相變：** $F$ 與 $S$ 連續，$C_V$ 不連續
 
-**Answer:**
-Free particle: $H = \frac{\hat{p}^2}{2m}$
+**Landau 理論**（1937）：在 $T_c$ 附近展開自由能為序參量 $\phi$ 的冪級數。**普適性**（Kadanoff 1966；Wilson 1971）：臨界指數只依賴於空間維度、序參量對稱性和相互作用範圍，與微觀細節無關。
 
-Path integral: $K = \int \mathcal{D}x\, e^{iS/\hbar}$
-
-Discretize into $N$ steps, each of length $\epsilon = t/N$:
-$$S = \frac{m}{2\epsilon}\sum_{j=1}^N (x_j - x_{j-1})^2$$
-
-Path integral (Maritan translation):
-$$K(x_N, x_0; t) = \left(\frac{m}{2\pi i\hbar t}\right)^{3/2}\exp\left(\frac{im(x_N-x_0)^2}{2\hbar t}\right)$$
-
-**Check:** Reproduces free particle Schrödinger solution:
-$$\psi(x,t) = \int K(x,x';t)\psi_0(x')dx' = \left(\frac{m}{2\pi i\hbar t}\right)^{1/2}\exp\left(\frac{imx^2}{2\hbar t}\right)$$
-
-**Key result:** Path integral exactly reproduces quantum mechanics; $N\to\infty$ limit gives continuous paths.
-
-**Engineering implication:** Path integral is the bridge between QM and QFT.
+**重整化群**（Wilson 1971）解釋了普適性：系統在尺度變換下流向不動點。
 
 ---
 
-## 自測 8：Young's Double Slit with Single Photons
-**Explain why Young's double slit with single photons demonstrates the core of quantum mechanics.**
+### DD-5: Modern Quantum Foundations — Bell's Theorem & Entanglement · 現代量子基礎：貝爾定理與糾纏
 
-**Answer:**
-**Setup:** Single photons (or electrons) emitted one at a time through two slits.
+**English (英文):**
 
-**Observations:**
-1. Individual detections: random dots on screen
-2. Accumulated pattern: interference fringes $I(x) \propto \cos^2(\pi d x/\lambda L)$
-3. Pattern disappears if path is determined (which-slit measurement)
+**Entanglement** (Schrödinger 1935, *Naturwissenschaften* 23, 807): A pure state $|\psi\rangle_{AB} = \sum_i c_i |i\rangle_A |i\rangle_B$ is entangled iff it cannot be written as a product $|\psi\rangle_A \otimes |\psi\rangle_B$.
 
-**Quantum mechanical explanation:**
-State after slits: $|\psi\rangle = \frac{1}{\sqrt{2}}(|1\rangle + |2\rangle)$
+The **Bell state** $\beta_{00} = \tfrac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ has reduced density matrix $\rho_A = \rho_B = \tfrac{1}{2}I$ — maximally mixed, despite the composite being pure.
 
-Probability: $P(x) = |\langle x|\psi\rangle|^2 = \frac{1}{2}(|\psi_1|^2 + |\psi_2|^2 + \psi_1\psi_2^* + c.c.) = I_1 + I_2 + 2\sqrt{I_1I_2}\cos\phi$
+**Bell's theorem** (Bell 1964, *Physics* 1, 195; CHSH 1969, *Phys. Rev. Lett.* 23, 880): No local hidden variable theory can reproduce quantum correlations. The **CHSH inequality**:
 
-**Key quantum features:**
-- Superposition: state is linear combination of paths
-- Interference: probability amplitude, not probability, adds
-- Measurement collapse: which-slit measurement projects to $|1\rangle$ or $|2\rangle$, destroying interference
+$$S = |E(a,b) - E(a,b') + E(a',b) + E(a',b')| \leq 2 \quad \text{(local realistic)}$$
 
-**Why this is fundamental:**
-- Demonstrates wave-particle duality
-- Shows that quantum mechanics is probabilistic (not deterministic)
-- Illustrates the measurement problem
-- No classical explanation possible (single-particle interference requires wave)
+Quantum mechanics predicts $S = 2\sqrt{2}$ for optimal settings — a Tsirelson bound (1980, *Theor. Math. Phys.* 43, 319).
 
-**Engineering implication:** Quantum technologies (QC, QKD) are built on this interference principle.
+**Experimental violation** (Aspect, Dalibard, Roger 1982, *Phys. Rev. Lett.* 49, 1804; Hensen et al. 2015, *Nature* 526, 682): Confirms quantum mechanics and rules out local realism.
 
----
+**Quantum information applications:**
+- Quantum teleportation (Bennett et al. 1993, *Phys. Rev. Lett.* 70, 1895)
+- Quantum key distribution (Ekert 1991, *Phys. Rev. Lett.* 67, 661)
+- Quantum computing (Nielsen & Chuang 2010)
 
-## 自測 9：Noether's Theorem
-**State and prove Noether's theorem: continuous symmetry → conservation law.**
+**中文 (Chinese):**
 
-**Answer:**
-**Statement:** Every continuous symmetry of the action corresponds to a conserved quantity.
+**糾纏**（Schrödinger 1935）：純態 $|\psi\rangle_{AB} = \sum_i c_i|i\rangle_A|i\rangle_B$ 若不能寫為 $|\psi\rangle_A \otimes |\psi\rangle_B$，則為糾纏態。
 
-**Proof:**
-Hamilton's principle: $\delta S = \delta\int_{t_1}^{t_2} L(q,\dot{q},t)dt = 0$
+**貝爾定理**（Bell 1964；CHSH 1969）：局域隱變量理論不能重現量子關聯。**CHSH 不等式**：
+$$S = |E(a,b) - E(a,b') + E(a',b) + E(a',b')| \leq 2$$
 
-Consider continuous transformation $q_i \to q_i + \epsilon K_i(q)$ with $L \to L + \epsilon\frac{d}{dt}G(q)$ (symmetry).
-
-The variation of $L$:
-$$\delta L = \sum_i \frac{\partial L}{\partial q_i}\epsilon K_i + \frac{\partial L}{\partial \dot{q}_i}\epsilon\dot{K}_i = \epsilon\frac{d}{dt}G$$
-
-Use Euler-Lagrange: $\frac{\partial L}{\partial q_i} = \frac{d}{dt}\frac{\partial L}{\partial \dot{q}_i}$:
-
-$$\sum_i \left[\frac{d}{dt}\frac{\partial L}{\partial\dot{q}_i}\epsilon K_i + \frac{\partial L}{\partial\dot{q}_i}\epsilon\dot{K}_i\right] = \epsilon\frac{dG}{dt}$$
-
-$$\frac{d}{dt}\left[\sum_i \frac{\partial L}{\partial\dot{q}_i}K_i - G\right] = 0$$
-
-**Conserved quantity:**
-$$\boxed{I = \sum_i \frac{\partial L}{\partial\dot{q}_i}K_i - G = \text{constant}}$$
-
-**Examples:**
-- Time translation symmetry ($t\to t+\epsilon$): $H$ conserved (energy)
-- Space translation ($x\to x+\epsilon$): $p$ conserved (momentum)
-- Rotation ($\theta\to\theta+\epsilon$): $L_z$ conserved (angular momentum)
-
-**Engineering implication:** All conservation laws in physics derive from symmetry principles.
+量子力學對最優測量給出 $S = 2\sqrt{2}$（Tsirelson 1980）。**實驗違反**（Aspect 等 1982；Hensen 等 2015）確認了量子力學，排除了局域實在論。
 
 ---
 
-## 自測 10：Gauge Symmetry vs True Symmetry
-**Explain why gauge symmetry is not a true physical symmetry, and give an example.**
+## ✏️ 10 Self-Test Solutions (10SL) — 自測題完整解答
 
-**Answer:**
-**Gauge symmetry** = redundancy in our description, not physical symmetry.
+### SL-1: Binet's Equation Derivation (中英對照)
 
-**Example: Electromagnetism**
-Original fields: $\mathbf{E}(\mathbf{r},t), \mathbf{B}(\mathbf{r},t)$
+**Question:** Derive the Binet orbit equation for a general central force.
 
-Gauge transformation (for any function $\chi(\mathbf{r},t)$):
-$$\mathbf{A} \to \mathbf{A} + \nabla\chi, \quad \phi \to \phi - \frac{\partial\chi}{\partial t}$$
+**Solution:**
 
-Physical fields unchanged:
-$$\mathbf{E} = -\nabla\phi - \frac{\partial\mathbf{A}}{\partial t} \to -\nabla(\phi - \partial_t\chi) - \frac{\partial}{\partial t}(\mathbf{A}+\nabla\chi) = \mathbf{E}$$
-$$\mathbf{B} = \nabla\times\mathbf{A} \to \nabla\times(\mathbf{A}+\nabla\chi) = \mathbf{B}$$
+Starting from the angular momentum conservation $\ell = mr^2\dot{\theta}$, we use the chain rule to convert time derivatives to angular derivatives:
 
-**What gauge symmetry really is:**
-- Redundancy: different potentials describe same physics
-- Constraint: reduces 4 components of $A_\mu$ to 2 physical degrees of freedom
-- Choice: specific gauge (Coulomb, Lorenz, etc.) is arbitrary
+$$\dot{r} = \frac{dr}{d\theta}\dot{\theta} = \frac{dr}{d\theta}\frac{\ell}{mr^2}$$
 
-**Contrast with true symmetry:**
-- Physical symmetry: transforms physical states to different physical states
-- Example: rotation of hydrogen atom $Y_{lm} \to Y_{lm'}$ changes angular momentum quantum numbers
+Then:
+$$\ddot{r} = \frac{d}{dt}\left(\frac{dr}{d\theta}\frac{\ell}{mr^2}\right) = \frac{d^2r}{d\theta^2}\dot{\theta}\frac{\ell}{mr^2} + \frac{dr}{d\theta}\left(-\frac{2\ell}{mr^3}\right)\dot{r}$$
 
-**Why gauge matters:**
-- Quantization requires fixing gauge ( Faddeev-Popov ghosts)
-- Physical observables must be gauge-invariant
-- Spontaneous gauge symmetry breaking → Higgs mechanism
+Substituting $\dot{\theta} = \ell/(mr^2)$ and $\dot{r} = -\ell u'(u'/u^2\text{ structure})$:
 
-**Engineering implication:** Only gauge-invariant quantities are physically observable.
+The cleanest route uses $u = 1/r$:
+$$\frac{d^2u}{d\theta^2} + u = -\frac{m}{\ell^2 u^2}F(1/u)$$
+
+**Special case:** Gravitational force $F(r) = -GMm/r^2$ gives:
+$$\frac{d^2u}{d\theta^2} + u = \frac{GMm^2}{\ell^2}$$
+
+Solution: $u = \frac{GMm^2}{\ell^2}(1 + e\cos\theta)$, which is the conic section $r = \frac{p}{1+e\cos\theta}$ with $p = \ell^2/(GMm^2)$.
+
+**中文：** 通過引入 $u=1/r$ 並利用 $\ell = mr^2\dot\theta$ 守恆，推導得 Binet 方程。
 
 ---
 
-## 📊 Diagram 1: QE Coverage Map
-```mermaid
-mindmap
-  root((Physics Qualifying Exam))
-    Classical Mech
-      Lagrangian
-      Hamiltonian
-      Small oscillations
-      Central forces
-    Electromagnetism
-      Maxwell equations
-      Waves
-      Boundary value
-      Relativity
-    Quantum Mechanics
-      Postulates
-      SHO/H atom
-      Angular momentum
-      Perturbation
-      Scattering
-    Statistical Mech
-      Ensembles
-      Partition fn
-      Bose/Fermi
-      Phase transitions
-```
+### SL-2: Energy-Momentum Tensor for Scalar Field
 
-## 📊 Diagram 2: CM Problem Types
-```mermaid
-graph TD
-    A[CM Problem] --> B{Lorentz force?}
-    B -->|No| C[Energy methods]
-    B -->|Yes| D[Maxwell eqs]
-    C --> E{Lagrangian?}
-    E -->|Simple| F[1D particle]
-    E -->|Generalized| G[Constraints]
-    D --> H[EM waves]
-    D --> I[Radiation]
-```
+**Question:** Compute the stress-energy tensor for a real scalar field with Lagrangian $\mathcal{L} = \tfrac{1}{2}\partial_\mu\phi\partial^\mu\phi - \tfrac{1}{2}m^2\phi^2$ using Noether's theorem.
 
-## 📊 Diagram 3: QM Problem Types
-```mermaid
-graph TD
-    A[QM Problem] --> B{Time dep?}
-    B -->|No| C[Energy eigenstates]
-    B -->|Yes| D[Time evolution]
-    C --> E[Separable?]
-    E -->|Yes| F[Product states]
-    E -->|No| G[Approx methods]
-    D --> H[Interaction picture]
-    G --> I[Perturbation theory]
-```
+**Solution:**
 
-## 📊 Diagram 4: Stat Mech Roadmap
-```mermaid
-graph TD
-    A[Stat Mech] --> B{Classical or Quantum?}
-    B -->|Classical| C[Maxwell-Boltzmann]
-    B -->|Quantum| D{Bosons or Fermions?}
-    D -->|Bosons| E[Bose-Einstein]
-    D -->|Fermions| F[Fermi-Dirac]
-    C --> G[Maxwell relations]
-    E --> H[BE condensation]
-    F --> I[Degeneracy]
-```
+Under infinitesimal spacetime translation $x^\mu \to x^\mu + \epsilon^\mu$, $\phi(x) \to \phi(x+\epsilon) \approx \phi(x) + \epsilon^\mu\partial_\mu\phi$.
 
-## 📊 Diagram 5: QE Strategy
-```mermaid
-graph TD
-    A[QE Problem] --> B{Read carefully}
-    B --> C{Identify physics?}
-    C -->|Forces| D[Newton's laws]
-    C -->|Symmetries| E[Noether]
-    C -->|Small params| F[Perturbation]
-    D --> G[Write F = ma]
-    E --> H[Find conserved qty]
-    F --> I[Expand in ε]
-    G --> J[Solve DEs]
-    H --> J
-    I --> J
-    J --> K[Check dimensions]
-    K --> L[Verify limiting cases]
-```
+The Noether current is:
+$$T^{\mu\nu} = \frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)}\partial^\nu\phi - \eta^{\mu\nu}\mathcal{L}$$
+
+For our Lagrangian:
+$$\frac{\partial\mathcal{L}}{\partial(\partial_\mu\phi)} = \partial^\mu\phi$$
+
+$$T^{\mu\nu} = \partial^\mu\phi\partial^\nu\phi - \eta^{\mu\nu}\left[\tfrac{1}{2}\partial_\lambda\phi\partial^\lambda\phi - \tfrac{1}{2}m^2\phi^2\right]$$
+
+Conservation: $\partial_\mu T^{\mu\nu} = 0$ (a consequence of translational invariance).
+
+The energy density is $T^{00} = \tfrac{1}{2}[(\partial_t\phi)^2 + (\nabla\phi)^2] + \tfrac{1}{2}m^2\phi^2$.
+
+**Engineering implication:** $T^{\mu\nu}$ sources gravity in Einstein's equation $G^{\mu\nu} = 8\pi G T^{\mu\nu}$ (Einstein 1915).
 
 ---
 
-## 深度總結 Deep Insights Summary
+### SL-3: Green's Function for 1D Helmholtz Equation
 
-1. **Four fields unified by symmetry and variational principles** — Noether's theorem connects every continuous symmetry to a conservation law; Hamilton's principle $\delta S = 0$ underlies classical mechanics, EM, QM, and statistical mechanics. (Goldstein Ch. 1)
+**Question:** Find the Green's function for $(\partial_x^2 + k^2)G(x, x') = \delta(x - x')$ in 1D.
 
-2. **Every equation has a domain of validity** — know where Maxwell, Schrödinger, Boltzmann, and Newton break down; qualifying exams test the ability to recognize which framework applies. (Jackson, Sakurai, Kubo)
+**Solution:**
 
-3. **Qualifying exams test problem-solving speed** — 4 hours, 4 subjects, 4–6 problems each; the goal is to recognize patterns and execute cleanly; practice is the only way to build speed. (Klein 2020)
+Apply Fourier transform $G(x, x') = \int \frac{dq}{2\pi}\, e^{iq(x-x')}\tilde{G}(q)$. The transformed equation:
+$$(-q^2 + k^2)\tilde{G}(q) = 1 \implies \tilde{G}(q) = \frac{1}{k^2 - q^2}$$
 
-4. **Statistical mechanics bridges micro and macro** — the partition function $Z = \sum e^{-\beta E_n}$ is the central mathematical object, connecting microscopic physics to macroscopic thermodynamics via $F = -k_BT\ln Z$. (Kubo Ch. 1)
+Inverse transform:
+$$G(x, x') = \int \frac{dq}{2\pi}\,\frac{e^{iq(x-x')}}{k^2 - q^2}$$
 
-5. **Quantum mechanics requires fluency in three formalisms** — Schrödinger (differential equations), Heisenberg (matrices), and Feynman (path integral) are equivalent but each illuminates different aspects; experts switch between them freely. (Sakurai Ch. 1–2)
+Contour integration: poles at $q = \pm k$. The contour prescription determines the boundary condition:
+
+- **Outgoing waves** (radiation): close upper half-plane for $x > x'$, lower for $x < x'$:
+$$G^+(x, x') = \frac{i}{2k}e^{ik|x-x'|}$$
+
+- **Ingoing waves:** $G^-(x, x') = -\frac{i}{2k}e^{-ik|x-x'|}$
+
+**Engineering implication:** Green's functions are fundamental to scattering theory, antenna design, and quantum field theory propagators.
 
 ---
 
-**自學建議**
-- 必讀: Goldstein "Classical Mechanics" (3rd ed.); Jackson "Classical Electrodynamics" (3rd ed.); Sakurai "Modern Quantum Mechanics"; Kubo "Statistical Mechanics"; Griffiths "QM"
-- 配對: HKUST PHYS 3032/3033/3034/3036; MSPY 5110 (Data Analysis)
-- 工具: Mathematica, Python (symbolic computation), Anki (flashcards)
-- 產出: Solve 50 problems from each subject area; take timed mock exams; review solutions for pattern recognition
+### SL-4: WKB Approximation for Tunneling
 
-**References**
-- Goldstein, H. (2002). *Classical Mechanics* (3rd ed.). Addison-Wesley.
-- Jackson, J.D. (1998). *Classical Electrodynamics* (3rd ed.). Wiley.
-- Sakurai, J.J. & Napolitano, J. (2017). *Modern Quantum Mechanics* (2nd ed.). Cambridge.
-- Kubo, R. (1965). *Statistical Mechanics*. North-Holland.
-- Griffiths, D.J. (2017). *Introduction to Quantum Mechanics* (3rd ed.). Cambridge.
+**Question:** Estimate the tunneling probability through a barrier $V(x) = V_0(1 - (x/a)^2)$ for $|x|<a$, $V = 0$ for $|x|>a$.
+
+**Solution:**
+
+WKB transmission probability (Landau & Lifshitz 1977, §50):
+$$T \approx \exp\left(-\frac{2}{\hbar}\int_{-a}^{a}\sqrt{2m(V - E)}\,dx\right) = \exp\left(-\frac{2}{\hbar}\int_{-a}^{a}p(x)\,dx\right)$$
+
+For $E \ll V_0$:
+$$p(x) = \sqrt{2m V_0(1 - x^2/a^2)}$$
+
+$$\int_{-a}^{a}\sqrt{1 - x^2/a^2}\,dx = \frac{\pi a}{2}$$
+
+$$\boxed{T \approx \exp\left(-\frac{\pi a}{\hbar}\
